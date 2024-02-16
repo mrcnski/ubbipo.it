@@ -1,0 +1,20 @@
+---
+const { sectionTitle } = Astro.props;
+---
+
+<div class="menu-section">
+    <h2>{ sectionTitle }</h2>
+    
+        <slot />
+</div> 
+
+<style>
+    .menu-section {
+        border-top: 1px solid #c0c0c0;
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+</style>

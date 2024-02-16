@@ -5,23 +5,59 @@ import iconBio from "../assets/images/icon-bio.svg";
 const { name, description, producer, location, tags, bio, glass, bottle } = Astro.props;
 ---
 
-<h3>
-    {name}
-    {(bio) 
-        ? <Image src={iconBio} alt="Bio." width="30" 
-        style="display:inline-block" 
-        />
-        : ""}
+<div class="menu-item">
+    <h3>
+        {name}
+        {(bio) 
+            ? <Image src={iconBio} alt="Bio." width="30" 
+            style="display:inline-block" 
+            />
+            : ""
+        }
     </h3>
     
-    <div class="menu-details">
-        <span>{description}</span>
-        <br />
-        <span>Producer: {producer}</span>
+    <div class="menu-item-content">
+        <div class="menu-item-row">
+            <span></i>{description}</i></span>
+            <span class="price">glass <div class="price-value">{glass}</div></span>
+        </div>
+        <div class="menu-item-row">
+            <span>Producer: {producer}</span>
+            <span class="price">bottle <div class="price-value">{bottle}</div></span>
+        </div>
     </div>
+</div>
+
+<style>
+    .menu-item {
+        margin-top: 2rem;
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+    }
     
-    <style>
-        .menu-details {
-            color: var(--brown);
-        }
-    </style>
+    .menu-item-content {
+        color: var(--brown);
+        font-weight: bold;
+        
+        flex-direction: column;
+    }
+    
+    .menu-item-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    .menu-item-row span {
+        margin-bottom: 0rem;
+    }
+    
+    .price {
+        white-space: nowrap;
+    }
+    .price-value {
+        display: inline-block;
+        width: 2rem;
+        text-align: right;
+    }
+</style>

@@ -1,19 +1,39 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import MenuLayout from "../../layouts/MenuLayout.astro";
 import MenuItem from "../../components/MenuItem.astro";
+import MenuSection from "../../components/MenuSection.astro";
 ---
 
-<Layout title="Wine Menu">
+<MenuLayout title="Wine Menu">
+    <MenuSection sectionTitle="Vini Rossi">
+        
+        <MenuItem 
+            name="Cellaia Rosso" 
+            description="Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020"
+            producer="Azienda Agricola Marino"
+            location="Agropoli"
+            tags="vegan"
+            bio
+            glass="7"
+            bottle="20"
+        />
+        <MenuItem name="Caos" />
+        
+    </MenuSection>
 
-    <MenuItem 
-        name="Cellaia Rosso" 
-        description="Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020"
-        producer="Azienda Agricola Marino"
-        location="Agropoli"
-        tags="vegan"
-        bio
-        glass="7"
-        bottle="20"
-    />
-    <MenuItem name="Caos" />
-</Layout>
+    <MenuSection sectionTitle="Vini Rossi">
+        
+        <MenuItem 
+            name="Cellaia Rosso" 
+            description="Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020"
+            producer="Azienda Agricola Marino"
+            location="Agropoli"
+            tags="vegan"
+            bio
+            glass="7"
+            bottle="20"
+        />
+        <MenuItem name="Caos" />
+        
+    </MenuSection>
+</MenuLayout>
