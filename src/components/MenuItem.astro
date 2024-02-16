@@ -2,27 +2,28 @@
 import { Image } from 'astro:assets';
 import iconBio from "../assets/images/icon-bio.svg";
 
-const { name, description, producer, location, tags, bio, glass, bottle } = Astro.props;
+const { name, description, producer, location, tags, glass, bottle } = Astro.props;
+const splitTags = tags.split(",").map(tag => tag.trim());
 ---
 
 <div class="menu-item">
     <h3>
         {name}
-        {(bio) 
-            ? <Image src={iconBio} alt="Bio." width="30" 
-            style="display:inline-block" 
+        {(splitTags.includes("bio")) 
+            ? <Image src={iconBio} alt="Bio." width="24" 
+            class="icon-bio" 
             />
             : ""
         }
     </h3>
     
     <div class="menu-item-content">
-        <div class="menu-item-row">
-            <span></i>{description}</i></span>
-            <span class="price">glass <div class="price-value">{glass}</div></span>
+        <div class="menu-item-column">
+            <span><i>{description}</i></span>
+            <span><span class="producer">Producer</span>{producer}</span>
         </div>
-        <div class="menu-item-row">
-            <span>Producer: {producer}</span>
+        <div class="menu-item-column">
+            {(glass) ? <span class="price">glass <div class="price-value">{glass}</div></span> : ""}
             <span class="price">bottle <div class="price-value">{bottle}</div></span>
         </div>
     </div>
@@ -39,25 +40,48 @@ const { name, description, producer, location, tags, bio, glass, bottle } = Astr
         color: var(--brown);
         font-weight: bold;
         
-        flex-direction: column;
-    }
-    
-    .menu-item-row {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         gap: 2rem;
+    }
+    .menu-item-content span {
+        margin-bottom: 0.25rem;
+    }
+    
+    .menu-item-column {
+        display: flex;
+        flex-direction: column;
     }
     
     .menu-item-row span {
         margin-bottom: 0rem;
     }
+
+    .icon-bio {
+        display: inline-block;
+        margin-left: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     
+    .producer {
+        margin-right: 0.75rem;
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+        font-weight: 400;
+    }
     .price {
         white-space: nowrap;
+
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
     }
     .price-value {
         display: inline-block;
         width: 2rem;
-        text-align: right;
+        
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+        font-weight: 400;
     }
 </style>

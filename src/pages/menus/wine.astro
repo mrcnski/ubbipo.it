@@ -2,38 +2,40 @@
 import MenuLayout from "../../layouts/MenuLayout.astro";
 import MenuItem from "../../components/MenuItem.astro";
 import MenuSection from "../../components/MenuSection.astro";
+
+import { viniRossi, viniBianci } from "../../../oreste.js";
 ---
 
 <MenuLayout title="Wine Menu">
     <MenuSection sectionTitle="Vini Rossi">
         
-        <MenuItem 
-            name="Cellaia Rosso" 
-            description="Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020"
-            producer="Azienda Agricola Marino"
-            location="Agropoli"
-            tags="vegan"
-            bio
-            glass="7"
-            bottle="20"
-        />
-        <MenuItem name="Caos" />
+        {viniRossi.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
         
     </MenuSection>
 
-    <MenuSection sectionTitle="Vini Rossi">
+    <MenuSection sectionTitle="Vini Bianci">
         
-        <MenuItem 
-            name="Cellaia Rosso" 
-            description="Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020"
-            producer="Azienda Agricola Marino"
-            location="Agropoli"
-            tags="vegan"
-            bio
-            glass="7"
-            bottle="20"
-        />
-        <MenuItem name="Caos" />
+        {viniBianci.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
         
     </MenuSection>
 </MenuLayout>
