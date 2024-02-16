@@ -5,7 +5,7 @@ const { sectionTitle } = Astro.props;
 <div class="menu-section">
     <h2>{ sectionTitle }</h2>
     
-        <slot />
+    <slot />
 </div> 
 
 <style>
@@ -18,5 +18,4 @@ const { sectionTitle } = Astro.props;
     .menu-section h2 {
         margin-top: 1rem;
     }
-
 </style>
