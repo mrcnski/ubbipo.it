@@ -16,8 +16,12 @@ const { title } = Astro.props;
 
 <style>
 	.menu-container {
-		width: 80%;
-		max-width: 1000px;
+		width: 60%;
+		max-width: 900px;
 		margin: 0 auto;
+
+		@media (max-width: 600px) {
+			width: 95%;
+		}
 	}
 </style>
