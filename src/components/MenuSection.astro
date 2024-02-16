@@ -3,7 +3,7 @@ const { sectionTitle } = Astro.props;
 ---
 
 <div class="menu-section">
-    <h2>{ sectionTitle }</h2>
+    <h2 id={sectionTitle.toLowerCase().split(" ").join("-")}>{ sectionTitle }</h2>
     
     <slot />
 </div> 

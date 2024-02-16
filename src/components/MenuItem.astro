@@ -23,7 +23,7 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
     </div>
 
     <div class="menu-item-content">
-        <div class="menu-item-column">
+        <div class="menu-item-column menu-item-description">
             {(description) ? <span><i>{description}</i></span> : ""}
             {(producer) ? <span><span class="producer">Producer:</span>{producer}</span> : ""}
         </div>
@@ -75,7 +75,7 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
         justify-content: space-between;
         gap: 2rem;
     }
-    .menu-item-content span {
+    .menu-item-description span {
         margin-bottom: 0.25rem;
     }
     
@@ -101,6 +101,8 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
         font-weight: 400;
     }
     .price {
+        margin-bottom: 0;
+        line-height: 1.5rem;
         white-space: nowrap;
         
         display: flex;
