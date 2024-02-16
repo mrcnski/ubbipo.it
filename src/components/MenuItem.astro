@@ -5,12 +5,13 @@ import iconLocation from "../assets/images/icon-location.svg";
 import iconVegan from "../assets/images/icon-vegan.svg";
 import iconNoSulfites from "../assets/images/icon-no-sulfites.svg";
 
-const { name, description, producer, location, tags, glass, bottle } = Astro.props;
-const splitTags = tags.split(",").map(tag => tag.trim());
+const { name, description, producer, location, tags, glass, bottle, price } = Astro.props;
+const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
+const headingName = (price) ? "menu-heading-price" : "menu-heading";
 ---
 
 <div class="menu-item">
-    <div class="menu-heading">
+    <div class={headingName}>
         <h3>{name}</h3>
         {(splitTags.includes("bio")) 
             ? <Image src={iconBio} alt="Bio." width="24" 
@@ -18,31 +19,34 @@ const splitTags = tags.split(",").map(tag => tag.trim());
             />
             : ""
         }
+        {(price) ? <span class="price" style="margin-bottom: 0">price <div class="price-value">{price}</div></span> : ""}
     </div>
 
     <div class="menu-item-content">
         <div class="menu-item-column">
-            <span><i>{description}</i></span>
-            <span><span class="producer">Producer</span>{producer}</span>
+            {(description) ? <span><i>{description}</i></span> : ""}
+            {(producer) ? <span><span class="producer">Producer:</span>{producer}</span> : ""}
         </div>
         <div class="menu-item-column">
-            {(glass) ? <span class="price">glass <div class="price-value">{glass}</div></span> : ""}
-            <span class="price">bottle <div class="price-value">{bottle}</div></span>
+            {(glass)  ? <span class="price">glass <div class="price-value">{glass}</div></span> : ""}
+            {(bottle) ? <span class="price">bottle <div class="price-value">{bottle}</div></span> : ""}
         </div>
     </div>
 
+    {(location || splitTags.length > 0) ?
     <div class="menu-tags">
-        <Image src={iconLocation} alt="Location." width="16" /> <span>{location}</span>
+        {(location) ? <Image src={iconLocation} alt="Location." width="16" /> <span>{location}</span> : ""}
 
         {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt="Vegan." width="16" /> <span>Vegan</span> : ""}
 
         {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt="No sulfites." width="16" /> <span>No Sulfites</span> : ""}
     </div>
+    : ""}
 </div>
 
 <style>
     .menu-item {
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         /* padding-left: 1rem;
         padding-right: 1rem; */
     }
@@ -54,6 +58,12 @@ const splitTags = tags.split(",").map(tag => tag.trim());
         @media (max-width: 600px) {
             justify-content: space-between;
         }
+    }
+    .menu-heading-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--brown);
     }
     
     .menu-item-content {
@@ -86,7 +96,7 @@ const splitTags = tags.split(",").map(tag => tag.trim());
     }
     
     .producer {
-        margin-right: 0.75rem;
+        margin-right: 0.5rem;
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-weight: 400;
     }
@@ -107,6 +117,7 @@ const splitTags = tags.split(",").map(tag => tag.trim());
 
     .menu-tags {
         margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
 
         display: flex;
         align-items: center;

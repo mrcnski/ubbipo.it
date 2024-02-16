@@ -3,7 +3,7 @@ import MenuLayout from "../../layouts/MenuLayout.astro";
 import MenuItem from "../../components/MenuItem.astro";
 import MenuSection from "../../components/MenuSection.astro";
 
-import { viniRossi, viniBianci } from "../../../oreste.js";
+import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../../../oreste/wine.js";
 ---
 
 <MenuLayout title="Wine Menu">
@@ -23,6 +23,48 @@ import { viniRossi, viniBianci } from "../../../oreste.js";
 
     <MenuSection sectionTitle="Vini Bianci">
         {viniBianci.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle="Vini Rosati">
+        {viniRosati.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle="Vini Vivaci">
+        {viniVivaci.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle="Vini Spumanti">
+        {viniSpumanti.map((vino) => (
             <MenuItem 
                 name={vino.name} 
                 description={vino.description}

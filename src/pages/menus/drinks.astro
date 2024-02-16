@@ -1,0 +1,39 @@
+---
+import MenuLayout from "../../layouts/MenuLayout.astro";
+import MenuItem from "../../components/MenuItem.astro";
+import MenuSection from "../../components/MenuSection.astro";
+
+import { beers, drinks } from "../../../oreste/drinks.js";
+---
+
+<MenuLayout title="Beer and Drinks Menu">
+    <MenuSection sectionTitle="Beer">
+        {beers.map((drink) => (
+            <MenuItem 
+                name={drink.name} 
+                description={drink.description}
+                producer={drink.producer}
+                location={drink.location}
+                tags={drink.tags}
+                glass={drink.glass}
+                bottle={drink.bottle}
+                price={drink.price}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle="Drinks">
+        {drinks.map((drink) => (
+            <MenuItem 
+                name={drink.name} 
+                description={drink.description}
+                producer={drink.producer}
+                location={drink.location}
+                tags={drink.tags}
+                glass={drink.glass}
+                bottle={drink.bottle}
+                price={drink.price}
+            />
+        ))}
+    </MenuSection>
+</MenuLayout>
