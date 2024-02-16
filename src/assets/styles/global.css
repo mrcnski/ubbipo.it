@@ -1,0 +1,27 @@
+:root {
+    --green:#6B8F00;
+    --brown:#704F45;
+}
+
+@font-face {
+    font-family: 'MADETommySoft';
+    src: url('/fonts/made-tommy-soft-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+h1, h2, h3, h4, h5, h6, p, span {  
+  font-family: 'MADETommySoft', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import iconBio from "../assets/images/icon-bio.svg";
+
+const { name, description, producer, location, tags, bio, glass, bottle } = Astro.props;
+---
+
+<h3>
+    {name}
+    {(bio) 
+        ? <Image src={iconBio} alt="Bio." width="30" 
+        style="display:inline-block" 
+        />
+        : ""}
+    </h3>
+    
+    <div class="menu-details">
+        <span>{description}</span>
+        <br />
+        <span>Producer: {producer}</span>
+    </div>
+    
+    <style>
+        .menu-details {
+            color: var(--brown);
+        }
+    </style>
