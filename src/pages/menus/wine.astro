@@ -8,7 +8,6 @@ import { viniRossi, viniBianci } from "../../../oreste.js";
 
 <MenuLayout title="Wine Menu">
     <MenuSection sectionTitle="Vini Rossi">
-        
         {viniRossi.map((vino) => (
             <MenuItem 
                 name={vino.name} 
@@ -20,11 +19,9 @@ import { viniRossi, viniBianci } from "../../../oreste.js";
                 bottle={vino.bottle}
             />
         ))}
-        
     </MenuSection>
 
     <MenuSection sectionTitle="Vini Bianci">
-        
         {viniBianci.map((vino) => (
             <MenuItem 
                 name={vino.name} 
@@ -36,6 +33,5 @@ import { viniRossi, viniBianci } from "../../../oreste.js";
                 bottle={vino.bottle}
             />
         ))}
-        
     </MenuSection>
 </MenuLayout>

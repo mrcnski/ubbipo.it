@@ -1,22 +1,25 @@
 ---
 import { Image } from 'astro:assets';
 import iconBio from "../assets/images/icon-bio.svg";
+import iconLocation from "../assets/images/icon-location.svg";
+import iconVegan from "../assets/images/icon-vegan.svg";
+import iconNoSulfites from "../assets/images/icon-no-sulfites.svg";
 
 const { name, description, producer, location, tags, glass, bottle } = Astro.props;
 const splitTags = tags.split(",").map(tag => tag.trim());
 ---
 
 <div class="menu-item">
-    <h3>
-        {name}
+    <div class="menu-heading">
+        <h3>{name}</h3>
         {(splitTags.includes("bio")) 
             ? <Image src={iconBio} alt="Bio." width="24" 
             class="icon-bio" 
             />
             : ""
         }
-    </h3>
-    
+    </div>
+
     <div class="menu-item-content">
         <div class="menu-item-column">
             <span><i>{description}</i></span>
@@ -27,13 +30,26 @@ const splitTags = tags.split(",").map(tag => tag.trim());
             <span class="price">bottle <div class="price-value">{bottle}</div></span>
         </div>
     </div>
+
+    <div class="menu-tags">
+        <Image src={iconLocation} alt="Location." width="16" /> <span>{location}</span>
+
+        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt="Vegan." width="16" /> <span>Vegan</span> : ""}
+
+        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt="No sulfites." width="16" /> <span>No Sulfites</span> : ""}
+    </div>
 </div>
 
 <style>
     .menu-item {
-        margin-top: 2rem;
+        margin-top: 1rem;
         /* padding-left: 1rem;
         padding-right: 1rem; */
+    }
+
+    .menu-heading {
+        display: flex;
+        align-items: center;
     }
     
     .menu-item-content {
@@ -57,10 +73,10 @@ const splitTags = tags.split(",").map(tag => tag.trim());
     .menu-item-row span {
         margin-bottom: 0rem;
     }
-
+    
     .icon-bio {
         display: inline-block;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-bottom: 0;
         padding-bottom: 0;
     }
@@ -72,7 +88,7 @@ const splitTags = tags.split(",").map(tag => tag.trim());
     }
     .price {
         white-space: nowrap;
-
+        
         display: flex;
         justify-content: space-between;
         text-align: right;
@@ -83,5 +99,22 @@ const splitTags = tags.split(",").map(tag => tag.trim());
         
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-weight: 400;
+    }
+
+    .menu-tags {
+        margin-top: 0.75rem;
+
+        display: flex;
+        align-items: center;
+    }
+    .menu-tags img {
+        margin-left: 0.75rem;
+        margin-right: 0.5rem;
+    }
+    .menu-tags span {
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-left: 0.25rem;
+        margin-right: 1rem;
     }
 </style>
