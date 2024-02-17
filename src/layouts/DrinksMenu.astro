@@ -5,16 +5,15 @@ import MenuSection from "../components/MenuSection.astro";
 
 import { beers, drinks } from "../../oreste/drinks.js";
 
-import { getLangFromUrl, useTranslations, useDataTranslations, useTranslatedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const d = useDataTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <MenuLayout title={t("menu.drinks-menu")}>
     <MenuSection sectionTitle={t("menu.beer")}>
-        {beers.map((drink) => (
+        {beers.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)} 
                 description={d(drink.description)}
@@ -29,7 +28,7 @@ const translatePath = useTranslatedPath(lang);
     </MenuSection>
 
     <MenuSection sectionTitle={t("menu.drinks")}>
-        {drinks.map((drink) => (
+        {drinks.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)}
                 description={d(drink.description)}

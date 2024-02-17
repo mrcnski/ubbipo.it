@@ -5,10 +5,9 @@ import MenuSection from "../components/MenuSection.astro";
 
 import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../../oreste/wine.js";
 
-import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <MenuLayout title={t("menu.wine-menu")}>

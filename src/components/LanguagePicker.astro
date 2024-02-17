@@ -1,12 +1,10 @@
 ---
-import { Image } from 'astro:assets';
-import iconLanguage from "../assets/images/icon-language.svg";
+// import { Image } from 'astro:assets';
+// import iconLanguage from "../assets/images/icon-language.svg";
 
 import { languages } from '../i18n/ui';
-import { getLangFromUrl, urlToLang, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { getLangFromUrl, urlToLang } from '../i18n/utils';
 const pageLang = getLangFromUrl(Astro.url);
-const t = useTranslations(pageLang);
-const translatePath = useTranslatedPath(pageLang);
 ---
 
 <div class="languages-container">

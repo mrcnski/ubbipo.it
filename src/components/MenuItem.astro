@@ -20,10 +20,9 @@ const { name, description, producer, location, tags, glass, bottle, price } = As
 const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
 const headingName = (price) ? "menu-heading-price" : "menu-heading";
 
-import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <div class="menu-item">
