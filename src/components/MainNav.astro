@@ -4,30 +4,40 @@ import logoFullLong from "../assets/images/logo-full-long.svg";
 import logoGreen from "../assets/images/logo-green.svg";
 import iconBeer from "../assets/images/icon-beer.svg";
 import iconWine from "../assets/images/icon-wine.svg";
+
+import LanguagePicker from '../components/LanguagePicker.astro';
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
-<div class="navbar-container">
+<div>
     <nav id="navbar">
-        <a class="nav-link" href="/index.html">
+        <a class="nav-link" href={translatePath("/index.html")}>
             <div class="navbox">
-                <Image src={logoGreen} alt="Wine." width="32" />
-                Home
+                <Image src={logoGreen} alt="Ubbìpò" width="32" />
+                Ubbìpò
             </div>
         </a>
         <div></div>
-        <a class="nav-link" href="/menus/wine">
+        <a class="nav-link" href={translatePath("/menus/wine")}>
             <div class="navbox">
-                <Image src={iconWine} alt="Wine." width="16" />
-                Wine
+                <Image src={iconWine} alt={t('nav.wine')} width="16" />
+                {t('nav.wine')}
             </div>
         </a>
-        <a class="nav-link" href="/menus/drinks">
+        <a class="nav-link" href={translatePath("/menus/drinks")}>
             <div class="navbox">
-                <Image src={iconBeer} alt="Drinks." width="16" />
-                Drinks
+                <Image src={iconBeer} alt={t('nav.drinks')} width="16" />
+                {t('nav.drinks')}
             </div>
         </a>
     </nav>
+    <div>
+        <LanguagePicker />
+    </div>
 </div>
 
 <style>
@@ -44,7 +54,7 @@ import iconWine from "../assets/images/icon-wine.svg";
 		max-width: 1100px;
         
         border-bottom: 2px solid #ddd;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
         
 		transition: top 0.3s; /* Transition effect when sliding down (and up) */
         

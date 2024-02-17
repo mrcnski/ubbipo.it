@@ -1,0 +1,45 @@
+---
+import MenuLayout from "./MenuLayout.astro";
+import MenuItem from "../components/MenuItem.astro";
+import MenuSection from "../components/MenuSection.astro";
+
+import { beers, drinks } from "../../oreste/drinks.js";
+
+import { getLangFromUrl, useTranslations, useDataTranslations, useTranslatedPath } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const d = useDataTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<MenuLayout title={t("menu.drinks-menu")}>
+    <MenuSection sectionTitle={t("menu.beer")}>
+        {beers.map((drink) => (
+            <MenuItem 
+                name={d(drink.name)} 
+                description={d(drink.description)}
+                producer={drink.producer}
+                location={drink.location}
+                tags={drink.tags}
+                glass={drink.glass}
+                bottle={drink.bottle}
+                price={drink.price}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle={t("menu.drinks")}>
+        {drinks.map((drink) => (
+            <MenuItem 
+                name={d(drink.name)}
+                description={d(drink.description)}
+                producer={drink.producer}
+                location={drink.location}
+                tags={drink.tags}
+                glass={drink.glass}
+                bottle={drink.bottle}
+                price={drink.price}
+            />
+        ))}
+    </MenuSection>
+</MenuLayout>

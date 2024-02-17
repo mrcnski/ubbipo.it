@@ -38,8 +38,14 @@ export const beers = [
 
 export const drinks = [
     {
-        name: "Acqua Microfiltrata",
-        description: "Sistema Culligan, 75 cl",
+        name: {
+            it: "Acqua Microfiltrata",
+            en: "Microfiltered Water",
+        },
+        description: {
+            it: "Sistema Culligan, 75 cl",
+            en: "Culligan System, 75 cl",
+        },
         price: "2",
     },
     {
@@ -55,7 +61,10 @@ export const drinks = [
         price: "7",
     },
     {
-        name: "Artisan liqueurs",
+        name: {
+            it: "Liquori artigianali",
+            en: "Artisanal liqueurs",
+        },
         price: "4",
     },
     {

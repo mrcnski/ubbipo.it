@@ -1,0 +1,84 @@
+---
+import MenuLayout from "./MenuLayout.astro";
+import MenuItem from "../components/MenuItem.astro";
+import MenuSection from "../components/MenuSection.astro";
+
+import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../../oreste/wine.js";
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<MenuLayout title={t("menu.wine-menu")}>
+    <MenuSection sectionTitle={t("menu.vini-rossi")}>
+        {viniRossi.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle={t("menu.vini-bianchi")}>
+        {viniBianci.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle={t("menu.vini-rosati")}>
+        {viniRosati.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle={t("menu.vini-vivaci")}>
+        {viniVivaci.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+
+    <MenuSection sectionTitle={t("menu.vini-spumanti")}>
+        {viniSpumanti.map((vino) => (
+            <MenuItem 
+                name={vino.name} 
+                description={vino.description}
+                producer={vino.producer}
+                location={vino.location}
+                tags={vino.tags}
+                glass={vino.glass}
+                bottle={vino.bottle}
+            />
+        ))}
+    </MenuSection>
+</MenuLayout>

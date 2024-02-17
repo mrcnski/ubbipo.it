@@ -8,6 +8,11 @@ import iconNoSulfites from "../assets/images/icon-no-sulfites.svg";
 const { name, description, producer, location, tags, glass, bottle, price } = Astro.props;
 const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
 const headingName = (price) ? "menu-heading-price" : "menu-heading";
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <div class="menu-item">
@@ -19,27 +24,27 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
             />
             : ""
         }
-        {(price) ? <span class="price" style="margin-bottom: 0">price <div class="price-value">{price}</div></span> : ""}
+        {(price) ? <span class="price" style="margin-bottom: 0">{t("menu.price")} <div class="price-value">{price}</div></span> : ""}
     </div>
 
     <div class="menu-item-content">
         <div class="menu-item-column menu-item-description">
             {(description) ? <span></i>{description}</i></span> : ""}
-            {(producer) ? <span class="producer"><span class="producer-field">Producer:</span>{producer}</span> : ""}
+            {(producer) ? <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>{producer}</span> : ""}
         </div>
         <div class="menu-item-column">
-            {(glass)  ? <span class="price">glass <div class="price-value">{glass}</div></span> : ""}
-            {(bottle) ? <span class="price">bottle <div class="price-value">{bottle}</div></span> : ""}
+            {(glass)  ? <span class="price">{t("menu.glass")} <div class="price-value">{glass}</div></span> : ""}
+            {(bottle) ? <span class="price">{t("menu.bottle")} <div class="price-value">{bottle}</div></span> : ""}
         </div>
     </div>
 
     {(location || splitTags.length > 0) ?
     <div class="menu-tags">
-        {(location) ? <Image src={iconLocation} alt="Location." width="14" /> <span>{location}</span> : ""}
+        {(location) ? <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span>{location}</span> : ""}
 
-        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt="Vegan." width="14" /> <span>Vegan</span> : ""}
+        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt={t("menu.vegan")} width="14" /> <span>{t("menu.vegan")}</span> : ""}
 
-        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt="No sulfites." width="14" /> <span>No Sulfites</span> : ""}
+        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt={t("menu.no-sulfites")} width="14" /> <span>{t("menu.no-sulfites")}</span> : ""}
     </div>
     : ""}
 </div>
