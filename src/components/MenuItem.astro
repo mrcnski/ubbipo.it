@@ -1,4 +1,15 @@
 ---
+interface Props {
+    name: string;
+    description?: string;
+    producer?: string;
+    location?: string;
+    tags?: string;
+    glass?: string;
+    bottle?: string;
+    price?: string;
+}
+
 import { Image } from 'astro:assets';
 import iconBio from "../assets/images/icon-bio.svg";
 import iconLocation from "../assets/images/icon-location.svg";

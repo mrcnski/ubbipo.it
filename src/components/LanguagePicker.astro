@@ -15,7 +15,10 @@ const translatePath = useTranslatedPath(pageLang);
     <div class="picker-container">
         {Object.entries(languages).map(([lang, label]) => (
             <a class={"lang-link" + ((pageLang === lang) ? " lang-link-active" : "")}
-               href={urlToLang(Astro.url, lang)}>{lang}
+               href={urlToLang(Astro.url, lang)}
+               title={label}
+               >
+               {lang}
             </a>
         ))}
     </div>

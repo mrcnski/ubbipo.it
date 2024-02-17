@@ -6,7 +6,7 @@ export function getLangFromUrl(url: URL) {
     return defaultLang;
 }
 
-export function urlToLang(oldUrl: URL, newLang: keyof typeof ui) {
+export function urlToLang(oldUrl: URL, newLang: string) {
     const urlParts = oldUrl.pathname.split('/');
     
     if (urlParts[1] in ui) urlParts.splice(1, 1);
