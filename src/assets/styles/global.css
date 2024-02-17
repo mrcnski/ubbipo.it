@@ -1,6 +1,8 @@
 :root {
   --green:#6B8F00;
   --brown:#704F45;
+  --gray-bg:#ddd;
+  --gray-light-bg:#eee;
 }
 
 @font-face {

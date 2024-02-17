@@ -1,6 +1,6 @@
 export const languages = {
-    en: 'English',
     it: 'Italiano',
+    en: 'English',
   };
   
   export const defaultLang = 'it';
@@ -10,6 +10,7 @@ export const languages = {
     en: {
       'nav.wine': 'Wine',
       'nav.drinks': 'Drinks',
+      'nav.languages': 'Languages',
 
       'menu.wine-menu': 'Wine Menu',
       'menu.drinks-menu': 'Beer and Drinks Menu',
@@ -33,6 +34,7 @@ export const languages = {
     it: {
       'nav.wine': 'Vini',
       'nav.drinks': 'Bevande',
+      'nav.languages': 'Lingue',
 
       'menu.wine-menu': 'Carta dei Vini',
       'menu.drinks-menu': 'Menù Birre e Bevande',
