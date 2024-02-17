@@ -118,8 +118,9 @@ const translatePath = useTranslatedPath(lang);
 </style>
 
 <script>
-	// Set the current page in the navbar to active.
-    const currentPage = window.location.pathname;
+    // Set the current page in the navbar to active.
+    // Trim any trailing slashes from the current page.
+    const currentPage = window.location.pathname.replace(/\/$/, '');
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         if (link.getAttribute('href') === currentPage) {
