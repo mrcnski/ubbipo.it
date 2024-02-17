@@ -24,8 +24,8 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
 
     <div class="menu-item-content">
         <div class="menu-item-column menu-item-description">
-            {(description) ? <span><i>{description}</i></span> : ""}
-            {(producer) ? <span><span class="producer">Producer:</span>{producer}</span> : ""}
+            {(description) ? <span></i>{description}</i></span> : ""}
+            {(producer) ? <span class="producer"><span class="producer-field">Producer:</span>{producer}</span> : ""}
         </div>
         <div class="menu-item-column">
             {(glass)  ? <span class="price">glass <div class="price-value">{glass}</div></span> : ""}
@@ -35,11 +35,11 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
 
     {(location || splitTags.length > 0) ?
     <div class="menu-tags">
-        {(location) ? <Image src={iconLocation} alt="Location." width="16" /> <span>{location}</span> : ""}
+        {(location) ? <Image src={iconLocation} alt="Location." width="14" /> <span>{location}</span> : ""}
 
-        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt="Vegan." width="16" /> <span>Vegan</span> : ""}
+        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt="Vegan." width="14" /> <span>Vegan</span> : ""}
 
-        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt="No sulfites." width="16" /> <span>No Sulfites</span> : ""}
+        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt="No sulfites." width="14" /> <span>No Sulfites</span> : ""}
     </div>
     : ""}
 </div>
@@ -63,6 +63,8 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1.5rem;
+        
         color: var(--brown);
     }
     
@@ -96,9 +98,13 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
     }
     
     .producer {
+        font-size: 16px;
+    }
+    .producer-field {
         margin-right: 0.5rem;
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-weight: 400;
+        font-size: 16px;
     }
     .price {
         margin-bottom: 0;
@@ -112,7 +118,7 @@ const headingName = (price) ? "menu-heading-price" : "menu-heading";
     }
     .price-value {
         display: inline-block;
-        width: 2rem;
+        width: 1.75rem;
         
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-weight: 400;

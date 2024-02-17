@@ -1,6 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from "./Layout.astro";
 import MenuNav from "../components/MenuNav.astro";
+
+import logoFull from "../assets/images/logo-full.svg";
 
 interface Props {
 	title: string;
@@ -10,6 +13,9 @@ const { title } = Astro.props;
 ---
 
 <Layout title={title}>
+	<div class="menu-header">
+		<Image src={logoFull} alt="Logo" width="300" />
+	</div>
 	<div class="menu-container">
 		<slot />
 	</div>
@@ -18,6 +24,12 @@ const { title } = Astro.props;
 <MenuNav />
 
 <style>
+	.menu-header {
+		margin-top: 5rem;
+		display: flex;
+		justify-content: center;
+	}
+	
 	.menu-container {
 		width: 60%;
 		max-width: 900px;
