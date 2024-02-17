@@ -1,5 +1,4 @@
 ---
-const { links } = Astro.props;
 ---
 
 <nav id="navbar"></nav> 
@@ -10,24 +9,33 @@ const { links } = Astro.props;
 		position: fixed;
 		bottom: 0;
 		width: 100%; 
-		transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
-
-        height: 4rem;
-        border-top: 2px solid #ddd;
         
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        border-top: 2px solid #ddd;
+        padding: 0 1rem;
+        
+		transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
+        
+        display: table;
 	}
 	
 	:global(.nav-link) {
-		display: block;
+		display: table-cell;
 		text-align: center;
-		padding: 15px;
+        vertical-align: middle;
 		text-decoration: none;
+        height: 4rem;
+        
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
 
 		color: var(--brown);
         font-size: 22px;
+
+        transition: background-color 0.3s; /* Transition effect on hover */
+
+		@media (max-width: 700px) {
+			font-size: 14px;
+		}
 	}
 	
 	:global(.nav-link):hover {
