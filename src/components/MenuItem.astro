@@ -34,17 +34,17 @@ const t = useTranslations(lang);
             />
             : ""
         }
-        {(price) ? <span class="price" style="margin-bottom: 0">{t("menu.price")} <div class="price-value">{price}</div></span> : ""}
+        {(price) ? <span class="price" style="margin-bottom: 0"><span class="price-field">{t("menu.price")}</span><span class="price-value">{price}</span></span> : ""}
     </div>
 
     <div class="menu-item-content">
-        <div class="menu-item-column menu-item-description">
-            {(description) ? <span></i>{description}</i></span> : ""}
-            {(producer) ? <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>{producer}</span> : ""}
-        </div>
         <div class="menu-item-column">
-            {(glass)  ? <span class="price">{t("menu.glass")} <div class="price-value">{glass}</div></span> : ""}
-            {(bottle) ? <span class="price">{t("menu.bottle")} <div class="price-value">{bottle}</div></span> : ""}
+            {(description) ? <span class="menu-item-description"></i>{description}</i></span> : ""}
+            {(producer) ? <span class="producer"><span class="producer-field">{t("menu.producer")}</span>{producer}</span> : ""}
+        </div>
+        <div class="menu-item-row">
+            {(glass)  ? <span class="price"><span class="price-field">{t("menu.glass")}</span><span class="price-value separator">{glass} / </span></span> : ""}
+            {(bottle) ? <span class="price"><span class="price-field">{t("menu.bottle")}</span><span class="price-value">{bottle}</span></span> : ""}
         </div>
     </div>
 
@@ -85,17 +85,27 @@ const t = useTranslations(lang);
     
     .menu-item-content {
         color: var(--brown);
-        font-weight: bold;
         
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
+        row-gap: 0.5rem;
+        column-gap: 2rem;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
-    .menu-item-description span {
-        margin-bottom: 0.25rem;
+    .menu-item-description {
+        /* font-family: 'MADE Tommy Soft Regular', sans-serif; */
     }
     
+    .menu-item-row {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.5rem;
+    }
     .menu-item-column {
         display: flex;
         flex-direction: column;
@@ -121,39 +131,39 @@ const t = useTranslations(lang);
         font-weight: 400;
         font-size: 16px;
     }
+
     .price {
         margin-bottom: 0;
         line-height: 1.5rem;
         white-space: nowrap;
-        font-size: 16px;
-        
-        display: flex;
-        justify-content: space-between;
         text-align: right;
     }
-    .price-value {
-        display: inline-block;
-        width: 1.75rem;
-        
+    .price-field {
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-weight: 400;
     }
+    .price-value {
+        margin-left: 0.5rem;
+    }
+    .price, .price-field, .price-value {
+        font-size: 16px;
+    }
 
     .menu-tags {
-        margin-top: 0.75rem;
+        margin-top: 1rem;
         margin-bottom: 0.75rem;
 
         display: flex;
         align-items: center;
     }
     .menu-tags img {
-        margin-left: 0.75rem;
+        /* margin-left: 0.75rem; */
         margin-right: 0.5rem;
     }
     .menu-tags span {
         font-size: 14px;
         margin-bottom: 0;
         margin-left: 0.25rem;
-        margin-right: 1rem;
+        margin-right: 1.75rem;
     }
 </style>
