@@ -40,7 +40,7 @@ const t = useTranslations(lang);
     <div class="menu-item-content">
         <div class="menu-item-column">
             {(description) ? <span class="menu-item-description"></i>{description}</i></span> : ""}
-            {(producer) ? <span class="producer"><span class="producer-field">{t("menu.producer")}</span>{producer}</span> : ""}
+            {(producer) ? <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>{producer}</span> : ""}
         </div>
         <div class="menu-item-row">
             {(glass)  ? <span class="price"><span class="price-field">{t("menu.glass")}</span><span class="price-value separator">{glass} / </span></span> : ""}
@@ -98,7 +98,7 @@ const t = useTranslations(lang);
         }
     }
     .menu-item-description {
-        /* font-family: 'MADE Tommy Soft Regular', sans-serif; */
+        margin-bottom: 0.5rem;
     }
     
     .menu-item-row {
@@ -127,8 +127,7 @@ const t = useTranslations(lang);
     }
     .producer-field {
         margin-right: 0.5rem;
-        font-family: 'MADE Tommy Soft Regular', sans-serif;
-        font-weight: 400;
+        /* font-family: 'MADE Tommy Soft Regular', sans-serif; */
         font-size: 16px;
     }
 
@@ -140,7 +139,6 @@ const t = useTranslations(lang);
     }
     .price-field {
         font-family: 'MADE Tommy Soft Regular', sans-serif;
-        font-weight: 400;
     }
     .price-value {
         margin-left: 0.5rem;
@@ -157,7 +155,6 @@ const t = useTranslations(lang);
         align-items: center;
     }
     .menu-tags img {
-        /* margin-left: 0.75rem; */
         margin-right: 0.5rem;
     }
     .menu-tags span {
