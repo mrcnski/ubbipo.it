@@ -20,7 +20,7 @@ const translatePath = useTranslatedPath(lang);
     <div class="navbar-container">
         <nav id="navbar">
             <a class="nav-link" href={translatePath("/index.html")}>
-                <div class="navbox">
+                <div class="navbox nav-logo">
                     <Image src={logoGreen} alt="Ubbìpò" width="32" />
                     Ubbìpò
                 </div>
@@ -76,7 +76,7 @@ const translatePath = useTranslatedPath(lang);
         }
 	}
 	
-	:global(.nav-link) {
+	.nav-link {
         display: table-cell;
 		text-align: center;
         vertical-align: middle;
@@ -88,7 +88,6 @@ const translatePath = useTranslatedPath(lang);
         
 		color: var(--brown);
         font-family: 'MADE Tommy Soft Regular', sans-serif;
-        font-weight: 400;
         font-size: 22px;
 
         transition: background-color 0.3s; /* Transition effect on hover */
@@ -97,7 +96,7 @@ const translatePath = useTranslatedPath(lang);
 			font-size: 14px;
 		}
 	}
-	:global(.nav-link):hover {
+	.nav-link:hover {
 		background-color: var(--gray-bg);
 		color: black;
 	}
@@ -105,6 +104,15 @@ const translatePath = useTranslatedPath(lang);
     .nav-link-active {
         /* border-bottom: 2px solid var(--brown); */
         background-color: var(--gray-light-bg);
+    }
+
+    .nav-logo {
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+        font-size: 26px;
+
+        @media (max-width: 600px) {
+            font-size: 18px;
+        }
     }
 
     .navbox {
