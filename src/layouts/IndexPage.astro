@@ -1,5 +1,9 @@
 ---
+import ShootingMain from "../assets/images/shooting-main.jpg";
+import LogoFullWhite from "../assets/images/logo-full-white.svg";
 import Layout from "./Layout.astro";
+
+import { Image } from "astro:assets";
 
 const title = "Ubbìpò Osteria";
 
@@ -9,4 +13,42 @@ const t = useTranslations(lang);
 ---
 
 <Layout title={title} description={t("index.description")}>
+    <Image class="index-img-main" src={ShootingMain} alt={title} />
+    <Image class="index-img-logo" src={LogoFullWhite} alt={title} />
 </Layout>
+
+<style>
+    .index-img-main {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .index-img-logo {
+        position: absolute;
+        
+        /* Start the logo with no opacity. We animate it with JS. We also need to position it over the main image. */
+        opacity: 0;
+        transition: opacity 2s;
+    }
+</style>
+
+<script is:inline>
+    // Put the logo in the middle of the main image.
+    const mainImg = document.querySelector('.index-img-main');
+    const logo = document.querySelector('.index-img-logo');
+    const mainImgWidth = mainImg.width;
+    const mainImgHeight = mainImg.height;
+
+    if (mainImgWidth < 900) {
+        logo.style.width = `${mainImgWidth * 0.5}px`;
+    }
+
+    const logoWidth = logo.width;
+    const logoHeight = logo.height;
+    const logoX = mainImgWidth / 2 - logoWidth / 2;
+    const logoY = mainImgHeight / 2 - logoHeight / 2 + 32;
+    logo.style.left = `${logoX}px`;
+    logo.style.top = `${logoY}px`;
+    logo.style.opacity = 0.89;
+</script>
