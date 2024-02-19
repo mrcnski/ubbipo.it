@@ -126,14 +126,16 @@ const translatePath = useTranslatedPath(lang);
 </style>
 
 <script>
-    // Set the current page in the navbar to active.
-    // Trim any trailing slashes from the current page.
-    const currentPage = window.location.pathname.replace(/\/$/, '');
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            // Add the nav-link-active class.
-            link.classList.add('nav-link-active');
-        }
+    document.addEventListener('astro:page-load', () => {
+        // Set the current page in the navbar to active.
+        // Trim any trailing slashes from the current page.
+        const currentPage = window.location.pathname.replace(/\/$/, '');
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                // Add the nav-link-active class.
+                link.classList.add('nav-link-active');
+            }
+        });
     });
 </script>

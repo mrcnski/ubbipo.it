@@ -56,31 +56,35 @@
 </style>
 
 <script>
-	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-	var prevScrollpos = window.scrollY;
-	window.onscroll = function() {
-		var currentScrollPos = window.scrollY;
-		if (prevScrollpos > currentScrollPos) {
-			document.getElementById("menu-navbar")!.style.bottom = "0";
-		} else {
-			document.getElementById("menu-navbar")!.style.bottom = "-4rem";
+	document.addEventListener('astro:page-load', () => {
+		/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+		var prevScrollpos = window.scrollY;
+		window.onscroll = function() {
+			var currentScrollPos = window.scrollY;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("menu-navbar")!.style.bottom = "0";
+			} else {
+				document.getElementById("menu-navbar")!.style.bottom = "-4rem";
+			}
+			prevScrollpos = currentScrollPos;
 		}
-		prevScrollpos = currentScrollPos;
-	} 
+	});
 </script>
 
 <script>
-	// Add all h2 ID's to the navbar.
-	const h2s = document.querySelectorAll('h2');
-	const navbar = document.querySelector('#menu-navbar')!;
-	h2s.forEach(h2 => {
-		const id = h2.id;
-		const text = h2.textContent;
-		const a = document.createElement('a');
+	document.addEventListener('astro:page-load', () => {
+		// Add all h2 ID's to the navbar.
+		const h2s = document.querySelectorAll('h2');
+		const navbar = document.querySelector('#menu-navbar')!;
+		h2s.forEach(h2 => {
+			const id = h2.id;
+			const text = h2.textContent;
+			const a = document.createElement('a');
 
-        a.classList.add('menu-nav-link');
-		a.href = `#${id}`;
-		a.textContent = text;
-		navbar.appendChild(a);
+			a.classList.add('menu-nav-link');
+			a.href = `#${id}`;
+			a.textContent = text;
+			navbar.appendChild(a);
+		});
 	});
 </script>

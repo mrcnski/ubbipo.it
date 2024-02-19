@@ -2,6 +2,7 @@
 import "../assets/styles/reset.css";
 import "../assets/styles/global.css";
 
+import { ViewTransitions, fade } from "astro:transitions";
 import MainNav from "../components/MainNav.astro";
 import Footer from "../components/Footer.astro";
 
@@ -25,10 +26,15 @@ const lang = getLangFromUrl(Astro.url);
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
-	<body>
-		<MainNav />
-		<slot />
+	<body transition:animate="fade">
+		<header>
+			<MainNav />
+		</header>
+		<main>
+			<slot />
+		</main>
 		<Footer />
 	</body>
 </html>
