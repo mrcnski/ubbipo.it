@@ -11,18 +11,18 @@ const t = useTranslations(lang);
 const d = useDataTranslations(lang);
 ---
 
-<MenuLayout title={t("menu.drinks-menu")}>
+<MenuLayout title={t("menu.drinks-menu")} description={t("menu.drinks-description")}>
     <MenuSection sectionTitle={t("menu.beer")}>
         {beers.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)} 
                 description={d(drink.description)}
-                producer={drink.producer}
-                location={drink.location}
-                tags={drink.tags}
-                glass={drink.glass}
-                bottle={drink.bottle}
-                price={drink.price}
+                producer={d(drink.producer)}
+                location={d(drink.location)}
+                tags={d(drink.tags)}
+                glass={d(drink.glass)}
+                bottle={d(drink.bottle)}
+                price={d(drink.price)}
             />
         ))}
     </MenuSection>
@@ -32,12 +32,12 @@ const d = useDataTranslations(lang);
             <MenuItem 
                 name={d(drink.name)}
                 description={d(drink.description)}
-                producer={drink.producer}
-                location={drink.location}
-                tags={drink.tags}
-                glass={drink.glass}
-                bottle={drink.bottle}
-                price={drink.price}
+                producer={d(drink.producer)}
+                location={d(drink.location)}
+                tags={d(drink.tags)}
+                glass={d(drink.glass)}
+                bottle={d(drink.bottle)}
+                price={d(drink.price)}
             />
         ))}
     </MenuSection>

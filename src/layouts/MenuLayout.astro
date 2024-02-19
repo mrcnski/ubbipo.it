@@ -7,21 +7,22 @@ import logoFull from "../assets/images/logo-full.svg";
 
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
 	<div class="menu-header">
 		<Image src={logoFull} alt="Logo" width="300" />
 	</div>
 	<div class="menu-container">
 		<slot />
 	</div>
-</Layout>
 
-<MenuNav />
+	<MenuNav />
+</Layout>
 
 <style>
 	.menu-header {

@@ -2,7 +2,11 @@
 import Layout from "./Layout.astro";
 
 const title = "Ubbìpò Osteria";
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Layout title={title}>
+<Layout title={title} description={t("index.description")}>
 </Layout>

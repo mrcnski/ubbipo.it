@@ -5,22 +5,23 @@ import MenuSection from "../components/MenuSection.astro";
 
 import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../../oreste/wine.js";
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const d = useDataTranslations(lang);
 ---
 
-<MenuLayout title={t("menu.wine-menu")}>
+<MenuLayout title={t("menu.wine-menu")} description={t("menu.wine-description")}>
     <MenuSection sectionTitle={t("menu.vini-rossi")}>
         {viniRossi.map((vino) => (
             <MenuItem 
-                name={vino.name} 
-                description={vino.description}
-                producer={vino.producer}
-                location={vino.location}
-                tags={vino.tags}
-                glass={vino.glass}
-                bottle={vino.bottle}
+                name={d(vino.name)}
+                description={d(vino.description)}
+                producer={d(vino.producer)}
+                location={d(vino.location)}
+                tags={d(vino.tags)}
+                glass={d(vino.glass)}
+                bottle={d(vino.bottle)}
             />
         ))}
     </MenuSection>
@@ -28,13 +29,13 @@ const t = useTranslations(lang);
     <MenuSection sectionTitle={t("menu.vini-bianchi")}>
         {viniBianci.map((vino) => (
             <MenuItem 
-                name={vino.name} 
-                description={vino.description}
-                producer={vino.producer}
-                location={vino.location}
-                tags={vino.tags}
-                glass={vino.glass}
-                bottle={vino.bottle}
+                name={d(vino.name)}
+                description={d(vino.description)}
+                producer={d(vino.producer)}
+                location={d(vino.location)}
+                tags={d(vino.tags)}
+                glass={d(vino.glass)}
+                bottle={d(vino.bottle)}
             />
         ))}
     </MenuSection>
@@ -42,13 +43,13 @@ const t = useTranslations(lang);
     <MenuSection sectionTitle={t("menu.vini-rosati")}>
         {viniRosati.map((vino) => (
             <MenuItem 
-                name={vino.name} 
-                description={vino.description}
-                producer={vino.producer}
-                location={vino.location}
-                tags={vino.tags}
-                glass={vino.glass}
-                bottle={vino.bottle}
+                name={d(vino.name)}
+                description={d(vino.description)}
+                producer={d(vino.producer)}
+                location={d(vino.location)}
+                tags={d(vino.tags)}
+                glass={d(vino.glass)}
+                bottle={d(vino.bottle)}
             />
         ))}
     </MenuSection>
@@ -56,13 +57,13 @@ const t = useTranslations(lang);
     <MenuSection sectionTitle={t("menu.vini-vivaci")}>
         {viniVivaci.map((vino) => (
             <MenuItem 
-                name={vino.name} 
-                description={vino.description}
-                producer={vino.producer}
-                location={vino.location}
-                tags={vino.tags}
-                glass={vino.glass}
-                bottle={vino.bottle}
+                name={d(vino.name)}
+                description={d(vino.description)}
+                producer={d(vino.producer)}
+                location={d(vino.location)}
+                tags={d(vino.tags)}
+                glass={d(vino.glass)}
+                bottle={d(vino.bottle)}
             />
         ))}
     </MenuSection>
@@ -70,13 +71,13 @@ const t = useTranslations(lang);
     <MenuSection sectionTitle={t("menu.vini-spumanti")}>
         {viniSpumanti.map((vino) => (
             <MenuItem 
-                name={vino.name} 
-                description={vino.description}
-                producer={vino.producer}
-                location={vino.location}
-                tags={vino.tags}
-                glass={vino.glass}
-                bottle={vino.bottle}
+                name={d(vino.name)}
+                description={d(vino.description)}
+                producer={d(vino.producer)}
+                location={d(vino.location)}
+                tags={d(vino.tags)}
+                glass={d(vino.glass)}
+                bottle={d(vino.bottle)}
             />
         ))}
     </MenuSection>
