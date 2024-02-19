@@ -62,7 +62,7 @@ const translatePath = useTranslatedPath(lang);
         padding-right: 0.5rem;
         border-bottom: 2px solid #ddd;
 
-        background-color: white;
+        background: var(--white-bg);
     }
     
 	#navbar {
@@ -70,7 +70,7 @@ const translatePath = useTranslatedPath(lang);
         table-layout: fixed;
         
         width: 100%;
-
+        
         @media (max-width: 700px) {
             table-layout: auto;
         }
@@ -85,6 +85,9 @@ const translatePath = useTranslatedPath(lang);
         
         padding-left: 0.75rem;
         padding-right: 0.75rem;
+        /* Prevents the border from moving the text when it appears */
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
         
 		color: var(--brown);
         font-family: 'MADE Tommy Soft Regular', sans-serif;
@@ -102,8 +105,7 @@ const translatePath = useTranslatedPath(lang);
 	}
 
     .nav-link-active {
-        /* border-bottom: 2px solid var(--brown); */
-        background-color: var(--gray-light-bg);
+        border-bottom: 2px solid var(--brown);
     }
 
     .nav-logo {
