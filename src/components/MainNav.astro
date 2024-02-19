@@ -87,9 +87,6 @@ const translatePath = useTranslatedPath(lang);
         
         padding-left: 0.75rem;
         padding-right: 0.75rem;
-        /* Prevents the border from moving the text when it appears */
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
         
 		color: var(--brown);
         font-family: 'MADE Tommy Soft Regular', sans-serif;
@@ -106,10 +103,6 @@ const translatePath = useTranslatedPath(lang);
 		color: black;
 	}
 
-    .nav-link-active {
-        border-bottom: 2px solid var(--brown);
-    }
-
     .nav-logo {
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-size: 26px;
@@ -123,6 +116,21 @@ const translatePath = useTranslatedPath(lang);
         display: flex;
         align-items: center;
         justify-content: center;
+
+        width: 40%;
+        margin: auto;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+
+        /* Prevents the border from moving the text when it appears */
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+    }
+    .nav-link-active .navbox {
+        border-bottom: 2px solid var(--green);
     }
     .navbox img {
         margin-right: 0.5rem;
