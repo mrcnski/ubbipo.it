@@ -30,25 +30,31 @@ const t = useTranslations(lang);
         /* Start the logo with no opacity. We animate it with JS. We also need to position it over the main image. */
         opacity: 0;
         transition: opacity 2s;
+
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
     }
 </style>
 
-<script is:inline>
-    // Put the logo in the middle of the main image.
-    const mainImg = document.querySelector('.index-img-main');
-    const logo = document.querySelector('.index-img-logo');
-    const mainImgWidth = mainImg.width;
-    const mainImgHeight = mainImg.height;
+<script>
+    document.addEventListener('astro:page-load', () => {
+        // Put the logo in the middle of the main image.
+        const mainImg = document.querySelector('.index-img-main') as HTMLImageElement;
+        const logo = document.querySelector('.index-img-logo') as HTMLImageElement;
+        if (!mainImg || !logo) return;
 
-    if (mainImgWidth < 900) {
-        logo.style.width = `${mainImgWidth * 0.5}px`;
-    }
+        const mainImgWidth = mainImg.width;
+        const mainImgHeight = mainImg.height;
 
-    const logoWidth = logo.width;
-    const logoHeight = logo.height;
-    const logoX = mainImgWidth / 2 - logoWidth / 2;
-    const logoY = mainImgHeight / 2 - logoHeight / 2 + 32;
-    logo.style.left = `${logoX}px`;
-    logo.style.top = `${logoY}px`;
-    logo.style.opacity = 0.89;
+        if (mainImgWidth < 900) {
+            logo.style.width = `${mainImgWidth * 0.5}px`;
+        }
+
+        const logoWidth = logo.width;
+        const logoHeight = logo.height;
+        const logoX = mainImgWidth / 2 - logoWidth / 2;
+        const logoY = mainImgHeight / 2 - logoHeight / 2 + 32;
+        logo.style.left = `${logoX}px`;
+        logo.style.top = `${logoY}px`;
+        logo.style.opacity = "0.89";
+    });
 </script>

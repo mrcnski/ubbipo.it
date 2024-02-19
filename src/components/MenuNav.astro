@@ -74,21 +74,29 @@
 			a.textContent = text;
 			navbar.appendChild(a);
 		});
-
-		// Get height of menu-nav-link
-		// const height = menuNavLink.style.height;
 		
 		/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 		var prevScrollpos = window.scrollY;
 		window.onscroll = function() {
 			var currentScrollPos = window.scrollY;
-			const menuNavLink = document.getElementById("menu-navbar")!;
+			const menuNavLink = document.getElementById("menu-navbar");
+			if (!menuNavLink) return;
+
+			const menuNavLinkHeight = menuNavLink.clientHeight;
+			var menuNavLinkBottom;
 			if (prevScrollpos > currentScrollPos) {
-				menuNavLink.style.bottom = "0";
+				menuNavLinkBottom = 0;
 			} else {
-				menuNavLink.style.bottom = `-${menuNavLink.clientHeight}px`;
+				menuNavLinkBottom = -menuNavLinkHeight;
 			}
+			menuNavLink.style.bottom = `${menuNavLinkBottom}px`;
 			prevScrollpos = currentScrollPos;
+
+			// Update WhatsApp button position.
+			if (document.documentElement.clientWidth  < 768) {
+				const whatsappButton = document.getElementById("img-whatsapp")!;
+				// whatsappButton.style.bottom = `${menuNavLinkBottom + menuNavLinkHeight + 16}px`;
+			}
 		}
 	});
 </script>

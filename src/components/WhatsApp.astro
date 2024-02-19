@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+
+import WhatsAppIcon from "../assets/images/icon-whatsapp.svg";
+---
+
+<a href="https://wa.me/393888699623">
+    <Image id="img-whatsapp" src={WhatsAppIcon} alt="WhatsApp" />
+</a>
+
+<style>
+    #img-whatsapp {
+        width: 48px;
+        height: 48px;
+        
+        position: fixed;
+        /* In MenuNav we add to the bottom to match the nav */
+        bottom: 5rem;
+        right: 1rem;
+        z-index: 1000;
+
+        transition: bottom 0.3s;
+        
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+        
+        @media (max-width: 600px) {
+            width: 40px;
+            height: 40px;
+            
+            bottom: 3.75rem;
+        }
+    }
+    #img-whatsapp:hover {
+        transform: scale(1.1);
+    }
+</style>

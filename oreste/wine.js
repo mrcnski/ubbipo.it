@@ -1,6 +1,10 @@
 export const viniRossi = [
     {
-        name: "Cellaia Rosso",
+        // Here it's not needed, but this is how you can have different text for en/it.
+        name: {
+            it: "Cellaia Rosso",
+            en: "Cellaia Rosso",
+        },
         description: "Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020",
         producer: "Azienda Agricola Marino",
         location: "Agropoli",
