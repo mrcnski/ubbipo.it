@@ -29,9 +29,7 @@ const t = useTranslations(lang);
     <div class={headingName}>
         <h3>{name}</h3>
         {(splitTags.includes("bio")) 
-            ? <Image src={iconBio} alt="Bio." width="24" 
-            class="icon-bio" 
-            />
+            ? <Image src={iconBio} alt="Bio." width="24" class="icon-bio" />
             : ""
         }
         {(price) ? <span class="price" style="margin-bottom: 0"><span class="price-field">{t("menu.price")}</span><span class="price-value">{price}</span></span> : ""}
@@ -52,18 +50,15 @@ const t = useTranslations(lang);
     <div class="menu-tags">
         {(location) ? <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span>{location}</span> : ""}
 
-        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt={t("menu.vegan")} width="14" /> <span>{t("menu.vegan")}</span> : ""}
+        {(splitTags.includes("vegan")) ? <Image src={iconVegan} alt={t("menu.vegan")} width="16" /> <span class="menu-tag-vegan">{t("menu.vegan")}</span> : ""}
 
-        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt={t("menu.no-sulfites")} width="14" /> <span>{t("menu.no-sulfites")}</span> : ""}
+        {(splitTags.includes("no-sulfites")) ? <Image src={iconNoSulfites} alt={t("menu.no-sulfites")} width="14" /> <span class="menu-tag-no-sulfites">{t("menu.no-sulfites")}</span> : ""}
     </div>
     : ""}
 </div>
 
 <style>
     .menu-item {
-        /* margin-top: 1rem; */
-        /* padding-left: 1rem;
-        padding-right: 1rem; */
     }
 
     .menu-heading {
@@ -156,11 +151,18 @@ const t = useTranslations(lang);
     }
     .menu-tags img {
         margin-right: 0.5rem;
+        color: var(--green);
     }
     .menu-tags span {
         font-size: 14px;
         margin-bottom: 0;
         margin-left: 0.25rem;
         margin-right: 1.75rem;
+    }
+    .menu-tag-vegan {
+        color: var(--green);
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+    }
+    .menu-tag-no-sulfites {
     }
 </style>
