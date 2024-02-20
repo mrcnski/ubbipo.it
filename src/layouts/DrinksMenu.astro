@@ -1,7 +1,7 @@
 ---
 import MenuLayout from "./MenuLayout.astro";
 import MenuItem from "../components/MenuItem.astro";
-import MenuSection from "../components/MenuSection.astro";
+import PageSection from "../components/PageSection.astro";
 
 import { beers, drinks } from "../../oreste/drinks.js";
 
@@ -12,7 +12,7 @@ const d = useDataTranslations(lang);
 ---
 
 <MenuLayout title={t("menu.drinks-menu")} description={t("menu.drinks-description")}>
-    <MenuSection sectionTitle={t("menu.beer")}>
+    <PageSection sectionTitle={t("menu.beer")}>
         {beers.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)} 
@@ -25,9 +25,9 @@ const d = useDataTranslations(lang);
                 price={d(drink.price)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 
-    <MenuSection sectionTitle={t("menu.drinks")}>
+    <PageSection sectionTitle={t("menu.drinks")}>
         {drinks.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)}
@@ -40,5 +40,5 @@ const d = useDataTranslations(lang);
                 price={d(drink.price)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 </MenuLayout>

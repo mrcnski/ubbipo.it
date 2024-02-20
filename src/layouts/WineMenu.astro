@@ -1,7 +1,7 @@
 ---
 import MenuLayout from "./MenuLayout.astro";
 import MenuItem from "../components/MenuItem.astro";
-import MenuSection from "../components/MenuSection.astro";
+import PageSection from "../components/PageSection.astro";
 
 import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../../oreste/wine.js";
 
@@ -12,7 +12,7 @@ const d = useDataTranslations(lang);
 ---
 
 <MenuLayout title={t("menu.wine-menu")} description={t("menu.wine-description")}>
-    <MenuSection sectionTitle={t("menu.vini-rossi")}>
+    <PageSection sectionTitle={t("menu.vini-rossi")}>
         {viniRossi.map((vino) => (
             <MenuItem 
                 name={d(vino.name)}
@@ -24,9 +24,9 @@ const d = useDataTranslations(lang);
                 bottle={d(vino.bottle)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 
-    <MenuSection sectionTitle={t("menu.vini-bianchi")}>
+    <PageSection sectionTitle={t("menu.vini-bianchi")}>
         {viniBianci.map((vino) => (
             <MenuItem 
                 name={d(vino.name)}
@@ -38,9 +38,9 @@ const d = useDataTranslations(lang);
                 bottle={d(vino.bottle)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 
-    <MenuSection sectionTitle={t("menu.vini-rosati")}>
+    <PageSection sectionTitle={t("menu.vini-rosati")}>
         {viniRosati.map((vino) => (
             <MenuItem 
                 name={d(vino.name)}
@@ -52,9 +52,9 @@ const d = useDataTranslations(lang);
                 bottle={d(vino.bottle)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 
-    <MenuSection sectionTitle={t("menu.vini-vivaci")}>
+    <PageSection sectionTitle={t("menu.vini-vivaci")}>
         {viniVivaci.map((vino) => (
             <MenuItem 
                 name={d(vino.name)}
@@ -66,9 +66,9 @@ const d = useDataTranslations(lang);
                 bottle={d(vino.bottle)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 
-    <MenuSection sectionTitle={t("menu.vini-spumanti")}>
+    <PageSection sectionTitle={t("menu.vini-spumanti")}>
         {viniSpumanti.map((vino) => (
             <MenuItem 
                 name={d(vino.name)}
@@ -80,5 +80,5 @@ const d = useDataTranslations(lang);
                 bottle={d(vino.bottle)}
             />
         ))}
-    </MenuSection>
+    </PageSection>
 </MenuLayout>

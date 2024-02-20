@@ -2,6 +2,8 @@
 import ShootingMain from "../assets/images/shooting-main.jpg";
 import LogoFullWhite from "../assets/images/logo-full-white.svg";
 import Layout from "./Layout.astro";
+import PageContainer from "../components/PageContainer.astro";
+import PageSection from "../components/PageSection.astro";
 
 import { Image } from "astro:assets";
 
@@ -16,7 +18,11 @@ const t = useTranslations(lang);
     <Image class="index-img-main" src={ShootingMain} alt={title} />
     <Image class="index-img-logo" src={LogoFullWhite} alt={title} />
 
-    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/df52b61460185416a0f0995f9c907212.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <PageContainer>
+        <PageSection sectionTitle="Instagram">
+            <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/df52b61460185416a0f0995f9c907212.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </PageSection>
+    </PageContainer>
 </Layout>
 
 <style>

@@ -1,0 +1,28 @@
+---
+---
+
+<div class="menu-container">
+	<slot />
+</div>
+
+<style>
+	.menu-header {
+		margin-top: 7rem;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.menu-container {
+		width: 60%;
+		max-width: 900px;
+		margin: 0 auto;
+		
+		@media (max-width: 800px) {
+			width: 80%;
+		}
+		
+		@media (max-width: 600px) {
+			width: 95%;
+		}
+	}
+</style>
