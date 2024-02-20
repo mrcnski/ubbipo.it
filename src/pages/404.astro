@@ -1,0 +1,28 @@
+---
+import ShootingMain from "../assets/images/shooting-main.jpg";
+import LogoFullWhite from "../assets/images/logo-full-white.svg";
+import Layout from "../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+
+const title = "404";
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={title} description="404 non trovato">
+    <div class="center-404">
+        <h1>404</h1>
+        <br />
+        <p>Non trovato</p>
+        <p>Not found</p>
+    </div>
+</Layout>
+
+<style>
+    .center-404 * {
+        text-align: center;
+    }
+</style>
