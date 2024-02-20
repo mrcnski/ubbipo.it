@@ -5,7 +5,7 @@ export const viniRossi = [
             it: "Cellaia Rosso",
             en: "Cellaia Rosso",
         },
-        description: "Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020",
+        description: Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020",
         producer: "Azienda Agricola Marino",
         location: "Agropoli",
         tags: "vegan, bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
