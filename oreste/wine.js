@@ -10,7 +10,7 @@ export const viniRossi = [
         location: "Agropoli",
         tags: "vegan, bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         glass: "7",         // For no glass: ""
-        bottle: "20",
+        bottle: "23",
     },
     {
         name: "Caos",
