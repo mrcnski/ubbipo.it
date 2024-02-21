@@ -1,13 +1,17 @@
 ---
+import PageContainer from "../components/PageContainer.astro";
 ---
 
-<div class="footer">
-    <p>© Ubbipo - Via De Filippo, 13 - Agropoli (SA)</p>
-</div>
+<PageContainer>
+    <div class="footer">
+        <p>© Ubbipo - Via De Filippo, 13 - Agropoli (SA)</p>
+    </div>
+</PageContainer>
 
 <style>
     .footer {
         margin-top: 4rem;
+        border-top: 1px solid var(--gray-bg);
 
         bottom: 0;
         width: 100%;
