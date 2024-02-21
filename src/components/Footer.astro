@@ -5,6 +5,8 @@ import PageContainer from "../components/PageContainer.astro";
 <PageContainer>
     <div class="footer">
         <p>© Ubbipo - Via De Filippo, 13 - Agropoli (SA)</p>
+        <br />
+        <p>Site made with <span class="heart">♡</span> by <a href="mailto:marcin@realemail.net ">Marcin S.</a></p>
     </div>
 </PageContainer>
 
@@ -16,9 +18,14 @@ import PageContainer from "../components/PageContainer.astro";
         bottom: 0;
         width: 100%;
         text-align: center;
-        padding: 10px;
+        padding: 2rem;
     }
-    .footer p {
-        margin: 1rem;
+    .footer p, a {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .heart {
+        color: red;
     }
 </style>

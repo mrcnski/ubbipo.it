@@ -1,6 +1,7 @@
 :root {
-  --green:#6B8F00;
-  --brown:#704F45;
+  --green: #6B8F00;
+  --brown: #704F45;
+  --gray: #c2c2c2;
 
   --white-bg: rgba(255, 255, 255, 0.94);
   --gray-bg: rgba(221, 221, 221, 0.9);
@@ -55,6 +56,10 @@ h3 {
   font-size: 22px;
 }
 
-span, p {
+span, p, a {
   font-size: 18px;
+}
+
+a {
+  color: var(--green);
 }
