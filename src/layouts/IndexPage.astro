@@ -17,7 +17,7 @@ const t = useTranslations(lang);
     <Image class="index-img-logo" src={LogoFullWhite} alt={t("site.name")} />
 
     <PageContainer>
-        <PageSection sectionTitle="Instagram">
+        <PageSection sectionTitle="">
             <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/df52b61460185416a0f0995f9c907212.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
         </PageSection>
     </PageContainer>
@@ -42,7 +42,7 @@ const t = useTranslations(lang);
 </style>
 
 <script>
-    document.addEventListener('astro:page-load', () => {
+    function setLogoPosition() {
         // Put the logo in the middle of the main image.
         const mainImg = document.querySelector('.index-img-main') as HTMLImageElement;
         const logo = document.querySelector('.index-img-logo') as HTMLImageElement;
@@ -62,5 +62,13 @@ const t = useTranslations(lang);
         logo.style.left = `${logoX}px`;
         logo.style.top = `${logoY}px`;
         logo.style.opacity = "0.89";
+    }
+    // Set the logo position when the page loads.
+    document.addEventListener('astro:page-load', () => {
+        setLogoPosition();
+    });
+    // Set the logo position when the window resizes.
+    window.addEventListener('resize', () => {
+        setLogoPosition();
     });
 </script>
