@@ -19,20 +19,20 @@ const translatePath = useTranslatedPath(lang);
 <div class="navbar-container-container">
     <div class="navbar-container">
         <nav id="navbar">
-            <a class="nav-link" href={translatePath("/index.html")}>
+            <a class="nav-link" href={translatePath("")}>
                 <div class="navbox nav-logo">
                     <Image src={logoGreen} alt="Ubbìpò" width="32" />
                     Ubbìpò
                 </div>
             </a>
             <div></div>
-            <a class="nav-link" href={translatePath("/menus/wine")}>
+            <a class="nav-link" href={translatePath("menu/vini")}>
                 <div class="navbox">
                     <Image src={iconWine} alt={t('nav.wine')} width="16" />
                     {t('nav.wine')}
                 </div>
             </a>
-            <a class="nav-link" href={translatePath("/menus/drinks")}>
+            <a class="nav-link" href={translatePath("menu/bevande")}>
                 <div class="navbox">
                     <Image src={iconBeer} alt={t('nav.drinks')} width="16" />
                     {t('nav.drinks')}

@@ -13,7 +13,7 @@ const pageLang = getLangFromUrl(Astro.url);
     <div class="picker-container">
         {Object.entries(languages).map(([lang, label]) => (
             <a class={"lang-link" + ((pageLang === lang) ? " lang-link-active" : "")}
-               href={urlToLang(Astro.url, lang)}
+               href={urlToLang(Astro.url, lang as keyof typeof languages)}
                title={label}
                >
                {lang}

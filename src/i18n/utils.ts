@@ -1,4 +1,4 @@
-import { ui, defaultLang, showDefaultLang } from './ui';
+import { ui, paths, defaultLang } from './ui';
 
 export function getLangFromUrl(url: URL) {
     const [, lang] = url.pathname.split('/');
@@ -6,20 +6,15 @@ export function getLangFromUrl(url: URL) {
     return defaultLang;
 }
 
-export function urlToLang(oldUrl: URL, newLang: string) {
-    const urlParts = oldUrl.pathname.split('/');
-    
-    if (urlParts[1] in ui) urlParts.splice(1, 1);
-    if (newLang !== defaultLang || showDefaultLang) urlParts.splice(1, 0, newLang);
-    return urlParts.join('/');
-}
-
+/// Returns a function that translates from the given `ui` key to the given language.
 export function useTranslations(lang: keyof typeof ui) {
     return function t(key: keyof typeof ui[typeof defaultLang]) {
         return ui[lang][key] || ui[defaultLang][key];
     }
 }
 
+/// Returns a function that translates the given data to the given language. The data could be a
+/// string in which case it is returned as is, or an object containing translations.
 export function useDataTranslations(lang: keyof typeof ui) {
     return function d(record: string | Record<string, string> | undefined) {
         if (!record) return '';
@@ -29,8 +24,33 @@ export function useDataTranslations(lang: keyof typeof ui) {
     
 }
 
+/// Returns a function that translates the given base path to the given language.
+/// Sets the `lang` part correctly and translates any translate-able path components.
 export function useTranslatedPath(lang: keyof typeof ui) {
-    return function translatePath(path: string, l: string = lang) {
-        return !showDefaultLang && l === defaultLang ? path : `/${l}${path}`
+    return function translatePath(path: string): string {
+        for (const nameToLang of Object.entries(paths)) {
+            for (const langToPath of Object.entries(nameToLang[1])) {
+                if (langToPath[1] === path) {
+                    return "/" + nameToLang[1][lang];
+                }
+            }
+        }
+        return path;
     }
+}
+
+/// Detects the current language in a URL and returns the URL for a new language.
+/// Sets the `lang` part correctly and translates any translate-able path components.
+export function urlToLang(url: URL, newLang: keyof typeof ui) {
+    const i = url.pathname.indexOf('/');
+    var path = url.pathname.slice(i+1);
+    // Remove any trailing slashes.
+    path = path.endsWith('/') ? path.slice(0, -1) : path;
+    // Remove .html if present.
+    path = path.endsWith('.html') ? path.slice(0, -5) : path;
+    
+    const newPath = useTranslatedPath(newLang)(path);
+    
+    url.pathname = newPath;
+    return url;
 }

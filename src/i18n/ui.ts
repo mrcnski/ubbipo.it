@@ -6,18 +6,40 @@ export const languages = {
 export const defaultLang = 'it';
 export const showDefaultLang = false;
 
+/// Data for translating a path to a given language. 
+///
+/// The trailing slashes are not included - the caller is expected to remove them if present.
+export const paths = {
+    index: {
+        it: '',
+        en: 'en',
+    },
+    wine: {
+        it: 'menu/vini',
+        en: 'en/menu/wine',
+    },
+    drinks: {
+        it: 'menu/bevande',
+        en: 'en/menu/drinks',
+    }
+};
+
+/// Data for translating a string to a given language.
 export const ui = {
     en: {
+        'site.name': 'Ubbìpò Osteria Restaurant',
+        
         'nav.wine': 'Wine',
         'nav.drinks': 'Drinks',
         'nav.languages': 'Languages',
 
-        'index.description': "Ubbìpò Osteria is a family restaurant in Cilento. We provide homemade, traditional Italian food for a unique culinary and cultural experience.",
+        'index.title': "Home",
+        'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
         
-        'menu.wine-menu': 'Wine Menu',
-        'menu.wine-description': 'Our wine list is carefully selected to offer a wide range of wines from different regions of Italy. We have a variety of red, white, rosé, lively, and sparkling wines. We also offer vegan and no-sulfites-added wines.',
-        'menu.drinks-menu': 'Beer and Drinks Menu',
-        'menu.drinks-description': 'Our beer and drinks menu offers a variety of beers and non-alcoholic drinks.',
+        'menu.wine-title': 'Wine Menu',
+        'menu.wine-description': 'A list of wines curated from different regions of Italy. We have a wide variety including red, white, rosé, and vegan wines.',
+        'menu.drinks-title': 'Beer and Drinks Menu',
+        'menu.drinks-description': 'A menu offering a variety of popular beers and non-alcoholic drinks.',
         
         'menu.vini-rossi': 'Red',
         'menu.vini-bianchi': 'White',
@@ -36,16 +58,19 @@ export const ui = {
         'menu.no-sulfites': 'no sulfites added',
     },
     it: {
+        'site.name': 'Ubbìpò Osteria',
+        
         'nav.wine': 'Vini',
         'nav.drinks': 'Bevande',
         'nav.languages': 'Lingue',
 
-        'index.description': "Ubbìpò Osteria è un ristorante a conduzione familiare nel Cilento. Forniamo cibo italiano tradizionale fatto in casa per un'esperienza culinaria e culturale unica.",
+        'index.title': "Home",
+        'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",
         
-        'menu.wine-menu': 'Carta dei Vini',
-        'menu.wine-description': "La nostra carta dei vini è accuratamente selezionata per offrire una vasta gamma di vini provenienti da diverse regioni d'Italia. Disponiamo di una varietà di vini rossi, bianchi, rosati, vivaci e spumanti. Offriamo anche vini vegani e senza solfiti aggiunti.",
-        'menu.drinks-menu': 'Menù Birre e Bevande',
-        'menu.drinks-description': 'Il nostro menu di birre e bevande offre una varietà di birre e bevande analcoliche.',
+        'menu.wine-title': 'Carta dei Vini',
+        'menu.wine-description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",
+        'menu.drinks-title': 'Menù Birre e Bevande',
+        'menu.drinks-description': 'Un menu che offre una varietà di birre popolari e bevande analcoliche.',
         
         'menu.vini-rossi': 'Rossi',
         'menu.vini-bianchi': 'Bianchi',

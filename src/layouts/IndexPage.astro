@@ -7,16 +7,14 @@ import PageSection from "../components/PageSection.astro";
 
 import { Image } from "astro:assets";
 
-const title = "Ubbìpò Osteria";
-
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout title={title} description={t("index.description")}>
-    <Image class="index-img-main" src={ShootingMain} alt={title} />
-    <Image class="index-img-logo" src={LogoFullWhite} alt={title} />
+<Layout title={t("index.title")} description={t("index.description")}>
+    <Image class="index-img-main" src={ShootingMain} alt={t("site.name")} />
+    <Image class="index-img-logo" src={LogoFullWhite} alt={t("site.name")} />
 
     <PageContainer>
         <PageSection sectionTitle="Instagram">
