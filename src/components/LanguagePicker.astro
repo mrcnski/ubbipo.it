@@ -3,7 +3,7 @@
 // import iconLanguage from "../assets/images/icon-language.svg";
 
 import { languages } from '../i18n/ui';
-import { getLangFromUrl, urlToLang } from '../i18n/utils';
+import { getLangFromUrl, urlToLangPath } from '../i18n/utils';
 const pageLang = getLangFromUrl(Astro.url);
 ---
 
@@ -13,7 +13,7 @@ const pageLang = getLangFromUrl(Astro.url);
     <div class="picker-container">
         {Object.entries(languages).map(([lang, label]) => (
             <a class={"lang-link" + ((pageLang === lang) ? " lang-link-active" : "")}
-               href={urlToLang(Astro.url, lang as keyof typeof languages)}
+               href={urlToLangPath(Astro.url, lang as keyof typeof languages)}
                title={label}
                >
                {lang}

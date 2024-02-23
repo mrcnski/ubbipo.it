@@ -39,9 +39,9 @@ export function useTranslatedPath(lang: keyof typeof ui) {
     }
 }
 
-/// Detects the current language in a URL and returns the URL for a new language.
+/// Detects the current language in a URL and returns the path for a new language.
 /// Sets the `lang` part correctly and translates any translate-able path components.
-export function urlToLang(currentUrl: URL, newLang: keyof typeof ui) {
+export function urlToLangPath(currentUrl: URL, newLang: keyof typeof ui) {
     const i = currentUrl.pathname.indexOf('/');
     var path = currentUrl.pathname.slice(i+1);
     // Remove any trailing slashes.
@@ -49,9 +49,5 @@ export function urlToLang(currentUrl: URL, newLang: keyof typeof ui) {
     // Remove .html if present.
     path = path.endsWith('.html') ? path.slice(0, -5) : path;
     
-    const newPath = useTranslatedPath(newLang)(path);
-    
-    const newUrl = new URL(currentUrl.href);
-    newUrl.pathname = newPath;
-    return newUrl;
+    return useTranslatedPath(newLang)(path);
 }
