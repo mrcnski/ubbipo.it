@@ -14,8 +14,8 @@ const d = useDataTranslations(lang);
 <MenuLayout title={t("menu.wine-title")} description={t("menu.wine-description")}>
     <PageSection sectionTitle={t("menu.vini-rossi")}>
         {viniRossi.map((vino) => (
-            <MenuItem 
-                name={d(vino.name)}
+            <MenuItem
+                name={d(vino.name)!}
                 description={d(vino.description)}
                 producer={d(vino.producer)}
                 location={d(vino.location)}
@@ -28,8 +28,8 @@ const d = useDataTranslations(lang);
 
     <PageSection sectionTitle={t("menu.vini-bianchi")}>
         {viniBianci.map((vino) => (
-            <MenuItem 
-                name={d(vino.name)}
+            <MenuItem
+                name={d(vino.name)!}
                 description={d(vino.description)}
                 producer={d(vino.producer)}
                 location={d(vino.location)}
@@ -42,8 +42,8 @@ const d = useDataTranslations(lang);
 
     <PageSection sectionTitle={t("menu.vini-rosati")}>
         {viniRosati.map((vino) => (
-            <MenuItem 
-                name={d(vino.name)}
+            <MenuItem
+                name={d(vino.name)!}
                 description={d(vino.description)}
                 producer={d(vino.producer)}
                 location={d(vino.location)}
@@ -56,8 +56,8 @@ const d = useDataTranslations(lang);
 
     <PageSection sectionTitle={t("menu.vini-vivaci")}>
         {viniVivaci.map((vino) => (
-            <MenuItem 
-                name={d(vino.name)}
+            <MenuItem
+                name={d(vino.name)!}
                 description={d(vino.description)}
                 producer={d(vino.producer)}
                 location={d(vino.location)}
@@ -70,8 +70,8 @@ const d = useDataTranslations(lang);
 
     <PageSection sectionTitle={t("menu.vini-spumanti")}>
         {viniSpumanti.map((vino) => (
-            <MenuItem 
-                name={d(vino.name)}
+            <MenuItem
+                name={d(vino.name)!}
                 description={d(vino.description)}
                 producer={d(vino.producer)}
                 location={d(vino.location)}

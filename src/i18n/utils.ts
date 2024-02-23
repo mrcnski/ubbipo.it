@@ -17,9 +17,9 @@ export function useTranslations(lang: keyof typeof ui) {
 /// string in which case it is returned as is, or an object containing translations.
 export function useDataTranslations(lang: keyof typeof ui) {
     return function d(record: string | Record<string, string> | undefined) {
-        if (!record) return '';
+        if (!record) return undefined;
         if (typeof record === 'string') return record;
-        return record[lang] || record[defaultLang] || '';
+        return record[lang] || record[defaultLang] || undefined;
     }
     
 }
@@ -41,9 +41,9 @@ export function useTranslatedPath(lang: keyof typeof ui) {
 
 /// Detects the current language in a URL and returns the URL for a new language.
 /// Sets the `lang` part correctly and translates any translate-able path components.
-export function urlToLang(url: URL, newLang: keyof typeof ui) {
-    const i = url.pathname.indexOf('/');
-    var path = url.pathname.slice(i+1);
+export function urlToLang(currentUrl: URL, newLang: keyof typeof ui) {
+    const i = currentUrl.pathname.indexOf('/');
+    var path = currentUrl.pathname.slice(i+1);
     // Remove any trailing slashes.
     path = path.endsWith('/') ? path.slice(0, -1) : path;
     // Remove .html if present.
@@ -51,6 +51,7 @@ export function urlToLang(url: URL, newLang: keyof typeof ui) {
     
     const newPath = useTranslatedPath(newLang)(path);
     
-    url.pathname = newPath;
-    return url;
+    const newUrl = new URL(currentUrl.href);
+    newUrl.pathname = newPath;
+    return newUrl;
 }
