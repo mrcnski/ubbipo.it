@@ -75,7 +75,8 @@
 	document.addEventListener('astro:page-load', () => {
 		// Add all h2 ID's to the navbar.
 		const h2s = document.querySelectorAll('h2');
-		const navbar = document.querySelector('#menu-navbar')!;
+		const menuNavbar = document.getElementById("menu-navbar");
+		if (!menuNavbar) return;
 		h2s.forEach(h2 => {
 			const id = h2.id;
 			const text = h2.textContent;
@@ -84,32 +85,31 @@
 			a.classList.add('menu-nav-link');
 			a.href = `#${id}`;
 			a.textContent = text;
-			navbar.appendChild(a);
+			menuNavbar.appendChild(a);
 		});
 		
 		// Hide the navbar when it's below the footer.
-		const menuNavLink = document.getElementById("menu-navbar");
 		const footer = document.querySelector('.footer')!;
 		var menuNavHidden = false;
 		window.onscroll = function() {
-			if (!menuNavLink) return;
-			const menuNavLinkHeight = menuNavLink.clientHeight;
+			if (!menuNavbar) return;
+			const menuNavbarHeight = menuNavbar.clientHeight;
 
-			var menuNavLinkBottom;
+			var menuNavbarBottom;
 			if (!menuNavHidden && isVisible(footer)) {
-				menuNavLinkBottom = -menuNavLinkHeight;
-				menuNavLink.style.bottom = `${menuNavLinkBottom}px`;
+				menuNavbarBottom = -menuNavbarHeight;
+				menuNavbar.style.bottom = `${menuNavbarBottom}px`;
 				menuNavHidden = true;
 			} else if (menuNavHidden && !isVisible(footer)) {
-				menuNavLinkBottom = 0;
-				menuNavLink.style.bottom = `${menuNavLinkBottom}px`;
+				menuNavbarBottom = 0;
+				menuNavbar.style.bottom = `${menuNavbarBottom}px`;
 				menuNavHidden = false;
 			}
 			
 			// // Update WhatsApp button position.
 			// if (document.documentElement.clientWidth  < 768) {
 			// 	const whatsappButton = document.getElementById("img-whatsapp")!;
-			// 	whatsappButton.style.bottom = `${menuNavLinkBottom + menuNavLinkHeight + 16}px`;
+			// 	whatsappButton.style.bottom = `${menuNavbarBottom + menuNavbarHeight + 16}px`;
 			// }
 		}
 	});
