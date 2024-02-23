@@ -14,6 +14,10 @@ export const paths = {
         it: '',
         en: 'en',
     },
+    food: {
+        it: 'menu/cibo',
+        en: 'en/menu/food',
+    },
     wine: {
         it: 'menu/vini',
         en: 'en/menu/wine',
@@ -35,19 +39,23 @@ export const ui = {
 
         'index.title': "Home",
         'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
+
+        'menu.food.title': 'Food Menu',
+        'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
+        'menu.food.dishes': 'Dishes',
         
-        'menu.wine-title': 'Wine Menu',
-        'menu.wine-description': 'A list of wines curated from different regions of Italy. We have a wide variety including red, white, rosé, and vegan wines.',
-        'menu.drinks-title': 'Beer and Drinks Menu',
-        'menu.drinks-description': 'A menu offering a variety of popular beers and non-alcoholic drinks.',
-        
-        'menu.vini-rossi': 'Red',
-        'menu.vini-bianchi': 'White',
-        'menu.vini-rosati': 'Rosé',
-        'menu.vini-vivaci': 'Lively',
-        'menu.vini-spumanti': 'Sparkling',
-        'menu.beer': 'Beer',
-        'menu.drinks': 'Drinks',
+        'menu.wine.title': 'Wine Menu',
+        'menu.wine.description': 'A list of wines curated from different regions of Italy. We have a wide variety including red, white, rosé, and vegan wines.',
+        'menu.wine.vini-rossi': 'Red',
+        'menu.wine.vini-bianchi': 'White',
+        'menu.wine.vini-rosati': 'Rosé',
+        'menu.wine.vini-vivaci': 'Lively',
+        'menu.wine.vini-spumanti': 'Sparkling',
+
+        'menu.drinks.title': 'Beer and Drinks Menu',
+        'menu.drinks.description': 'A menu offering a variety of popular beers and non-alcoholic drinks.',
+        'menu.drinks.beer': 'Beer',
+        'menu.drinks.drinks': 'Drinks',
         
         'menu.glass': 'glass',
         'menu.bottle': 'bottle',
@@ -66,19 +74,23 @@ export const ui = {
 
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",
+
+        'menu.food.title': 'Menù Cibo',
+        'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
+        'menu.food.dishes': 'Piatti',
         
-        'menu.wine-title': 'Carta dei Vini',
-        'menu.wine-description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",
-        'menu.drinks-title': 'Menù Birre e Bevande',
-        'menu.drinks-description': 'Un menu che offre una varietà di birre popolari e bevande analcoliche.',
-        
-        'menu.vini-rossi': 'Rossi',
-        'menu.vini-bianchi': 'Bianchi',
-        'menu.vini-rosati': 'Rosati',
-        'menu.vini-vivaci': 'Vivaci',
-        'menu.vini-spumanti': 'Spumanti',
-        'menu.beer': 'Birre',
-        'menu.drinks': 'Bevande',
+        'menu.wine.title': 'Carta dei Vini',
+        'menu.wine.description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",
+        'menu.wine.vini-rossi': 'Rossi',
+        'menu.wine.vini-bianchi': 'Bianchi',
+        'menu.wine.vini-rosati': 'Rosati',
+        'menu.wine.vini-vivaci': 'Vivaci',
+        'menu.wine.vini-spumanti': 'Spumanti',
+
+        'menu.drinks.title': 'Menù Birre e Bevande',
+        'menu.drinks.description': 'Un menu che offre una varietà di birre popolari e bevande analcoliche.',
+        'menu.drinks.beer': 'Birre',
+        'menu.drinks.drinks': 'Bevande',
         
         'menu.glass': 'calice',
         'menu.bottle': 'bottiglia',

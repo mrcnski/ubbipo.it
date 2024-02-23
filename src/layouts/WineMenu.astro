@@ -11,8 +11,8 @@ const t = useTranslations(lang);
 const d = useDataTranslations(lang);
 ---
 
-<MenuLayout title={t("menu.wine-title")} description={t("menu.wine-description")}>
-    <PageSection sectionTitle={t("menu.vini-rossi")}>
+<MenuLayout title={t("menu.wine.title")} description={t("menu.wine.description")}>
+    <PageSection sectionTitle={t("menu.wine.vini-rossi")}>
         {viniRossi.map((vino) => (
             <MenuItem
                 name={d(vino.name)!}
@@ -27,7 +27,7 @@ const d = useDataTranslations(lang);
         ))}
     </PageSection>
 
-    <PageSection sectionTitle={t("menu.vini-bianchi")}>
+    <PageSection sectionTitle={t("menu.wine.vini-bianchi")}>
         {viniBianci.map((vino) => (
             <MenuItem
                 name={d(vino.name)!}
@@ -42,7 +42,7 @@ const d = useDataTranslations(lang);
         ))}
     </PageSection>
 
-    <PageSection sectionTitle={t("menu.vini-rosati")}>
+    <PageSection sectionTitle={t("menu.wine.vini-rosati")}>
         {viniRosati.map((vino) => (
             <MenuItem
                 name={d(vino.name)!}
@@ -57,7 +57,7 @@ const d = useDataTranslations(lang);
         ))}
     </PageSection>
 
-    <PageSection sectionTitle={t("menu.vini-vivaci")}>
+    <PageSection sectionTitle={t("menu.wine.vini-vivaci")}>
         {viniVivaci.map((vino) => (
             <MenuItem
                 name={d(vino.name)!}
@@ -72,7 +72,7 @@ const d = useDataTranslations(lang);
         ))}
     </PageSection>
 
-    <PageSection sectionTitle={t("menu.vini-spumanti")}>
+    <PageSection sectionTitle={t("menu.wine.vini-spumanti")}>
         {viniSpumanti.map((vino) => (
             <MenuItem
                 name={d(vino.name)!}
