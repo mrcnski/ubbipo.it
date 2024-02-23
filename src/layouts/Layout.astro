@@ -20,6 +20,8 @@ import { getLangFromUrl, useTranslations, urlToLangPath } from '../i18n/utils';
 import { languages } from '../i18n/ui';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const baseurl = t("site.baseurl");
 ---
 
 <!doctype html>
@@ -30,12 +32,20 @@ const t = useTranslations(lang);
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		{
 			Object.keys(languages).map((language) =>
-				<link rel="alternate" hreflang={language} href={`${t("site.baseurl")}${urlToLangPath(Astro.url, language as "it" | "en")}`} />
+				<link rel="alternate" hreflang={language} href={`${baseurl}${urlToLangPath(Astro.url, language as "it" | "en")}`} />
 			)
 		}
+
+		<meta property="og:title" content={title /* raw title (no branding) */} />
+		<meta property="og:url" content={`${baseurl}${urlToLangPath(Astro.url, lang)}`} />
+		<meta property="og:image" content={`${baseurl}/assets/images/logo-full.png`} />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content={description} />
+
 		<ViewTransitions />
 	</head>
 	<body transition:animate="fade">
