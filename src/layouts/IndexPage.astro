@@ -18,7 +18,14 @@ const t = useTranslations(lang);
 
     <PageContainer>
         <PageSection sectionTitle="">
-            <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/df52b61460185416a0f0995f9c907212.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            {
+                {
+                    "it":
+                    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/df52b61460185416a0f0995f9c907212.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>,
+                    "en":
+                    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/3c6a4b567f2f513e83dbad25217280cc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>,
+                }[lang]
+            }
         </PageSection>
     </PageContainer>
 </Layout>
