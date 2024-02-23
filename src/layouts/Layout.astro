@@ -40,6 +40,6 @@ const t = useTranslations(lang);
 			<slot />
 			<WhatsApp />
 		</main>
-		<Footer />
+		<Footer><slot name="footer" slot="footer" /></Footer>
 	</body>
 </html>

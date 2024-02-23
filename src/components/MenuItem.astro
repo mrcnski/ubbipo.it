@@ -1,6 +1,7 @@
 ---
 interface Props {
     name: string;
+    ingredients?: string;
     description?: string;
     producer?: string;
     location?: string;
@@ -17,7 +18,9 @@ import iconLocation from "../assets/images/icon-location.svg";
 import iconVegan from "../assets/images/icon-vegan.svg";
 import iconNoSulfites from "../assets/images/icon-no-sulfites.svg";
 
-const { name, description, producer, location, tags, glass, bottle, price, available } = Astro.props;
+import MenuIngredients from "./MenuIngredients.astro";
+
+const { name, ingredients, description, producer, location, tags, glass, bottle, price, available } = Astro.props;
 const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
 const headingName = (price) ? "menu-heading-price" : "menu-heading";
 const unavailable = (available != "yes") ? "unavailable" : "";
@@ -30,19 +33,22 @@ const t = useTranslations(lang);
 <div class="menu-item">
     <div class:list={[headingName, unavailable]}>
         <h3>{name}</h3>
-        {(splitTags.includes("bio")) && <Image src={iconBio} alt="Bio." width="24" class="icon-bio" />}
+        {(splitTags.includes("bio")) && 
+            <Image src={iconBio} alt="Bio." width="24" class="icon-bio" />}
     </div>
 
     <div class="menu-item-content">
         <div class="menu-item-column">
-            {(description) && <span class="menu-item-description"></i>{description}</i></span>}
+            {(ingredients) && <span class="menu-item-ingredients"><MenuIngredients ingredients={ingredients} /></span>}
+            {(description) && <span class="menu-item-description">{description}</span>}
             {(producer) && <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>{producer}</span>}
         </div>
+
         <div class:list={["menu-item-row", unavailable]}>
             {(price) && <span class="price"><span class="price-field">{t("menu.price")}</span><span class="price-value">{price}</span></span>}
             {(glass) && <span class="price"><span class="price-field">{t("menu.glass")}</span><span class="price-value">{glass} / </span></span>}
             {(bottle) && <span class="price"><span class="price-field">{t("menu.bottle")}</span><span class="price-value">{bottle}</span></span>}
-            </div>
+        </div>
     </div>
 
     {
@@ -93,8 +99,10 @@ const t = useTranslations(lang);
             justify-content: space-between;
         }
     }
+    .menu-item-ingredients {
+        font-size: 16px;
+    }
     .menu-item-description {
-        margin-bottom: 0.5rem;
     }
     
     .menu-item-row {
@@ -123,11 +131,11 @@ const t = useTranslations(lang);
     }
     
     .producer {
+        margin-top: 0.5rem;
         font-size: 16px;
     }
     .producer-field {
         margin-right: 0.5rem;
-        /* font-family: 'MADE Tommy Soft Regular', sans-serif; */
         font-size: 16px;
     }
 

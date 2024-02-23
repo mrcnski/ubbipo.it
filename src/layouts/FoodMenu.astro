@@ -1,0 +1,29 @@
+---
+import MenuLayout from "./MenuLayout.astro";
+import MenuItem from "../components/MenuItem.astro";
+import PageSection from "../components/PageSection.astro";
+
+import { dishes } from "../../oreste/food.js";
+
+import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const d = useDataTranslations(lang);
+---
+
+<MenuLayout title={t("menu.food.title")} description={t("menu.food.description")}>
+    <PageSection sectionTitle={t("menu.food.dishes")}>
+        {dishes.map((dish: any) => (
+            <MenuItem 
+                name={d(dish.name)!}
+                ingredients={d(dish.ingredients)}
+                description={d(dish.description)}
+                producer={d(dish.producer)}
+                location={d(dish.location)}
+                tags={d(dish.tags)}
+                price={d(dish.price)}
+                available={d(dish.available)!}
+            />
+        ))}
+    </PageSection>
+</MenuLayout>
