@@ -25,6 +25,7 @@
 		transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
         
         display: table;
+		table-layout: fixed;
 
 		@media (max-width: 600px) {
 			height: 2.75rem;
@@ -32,6 +33,8 @@
 	}
 	
 	:global(.menu-nav-link) {
+		position: relative;
+
 		display: table-cell;
 		text-align: center;
         vertical-align: middle;
@@ -49,8 +52,15 @@
 			font-size: 14px;
 		}
 	}
-	:global(.menu-nav-link + .menu-nav-link) {
-		/* border-left: 1px solid #ddd; */
+	:global(.menu-nav-link:not(:last-child)::after) {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 30%;
+		width: 1px;
+		height: 40%;
+
+		border-right: 1px solid var(--gray-bg);
 	}
 	
 	:global(.menu-nav-link:hover) {
@@ -60,6 +70,12 @@
 </style>
 
 <script>
+	function isVisible(elm: Element) {
+		var rect = elm.getBoundingClientRect();
+		var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+		return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+	}
+
 	document.addEventListener('astro:page-load', () => {
 		// Add all h2 ID's to the navbar.
 		const h2s = document.querySelectorAll('h2');
@@ -75,23 +91,25 @@
 			navbar.appendChild(a);
 		});
 		
-		/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-		var prevScrollpos = window.scrollY;
+		// Hide the navbar when it's below the footer.
+		const menuNavLink = document.getElementById("menu-navbar");
+		const footer = document.querySelector('.footer')!;
+		var menuNavHidden = false;
 		window.onscroll = function() {
-			var currentScrollPos = window.scrollY;
-			const menuNavLink = document.getElementById("menu-navbar");
 			if (!menuNavLink) return;
-
 			const menuNavLinkHeight = menuNavLink.clientHeight;
-			var menuNavLinkBottom;
-			if (prevScrollpos > currentScrollPos) {
-				menuNavLinkBottom = 0;
-			} else {
-				menuNavLinkBottom = -menuNavLinkHeight;
-			}
-			menuNavLink.style.bottom = `${menuNavLinkBottom}px`;
-			prevScrollpos = currentScrollPos;
 
+			var menuNavLinkBottom;
+			if (!menuNavHidden && isVisible(footer)) {
+				menuNavLinkBottom = -menuNavLinkHeight;
+				menuNavLink.style.bottom = `${menuNavLinkBottom}px`;
+				menuNavHidden = true;
+			} else if (menuNavHidden && !isVisible(footer)) {
+				menuNavLinkBottom = 0;
+				menuNavLink.style.bottom = `${menuNavLinkBottom}px`;
+				menuNavHidden = false;
+			}
+			
 			// // Update WhatsApp button position.
 			// if (document.documentElement.clientWidth  < 768) {
 			// 	const whatsappButton = document.getElementById("img-whatsapp")!;
