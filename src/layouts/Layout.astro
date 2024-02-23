@@ -16,7 +16,8 @@ interface Props {
 
 const { title, description } = Astro.props;
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, urlToLangPath } from '../i18n/utils';
+import { languages } from '../i18n/ui';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -30,6 +31,11 @@ const t = useTranslations(lang);
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		{
+			Object.keys(languages).map((language) =>
+				<link rel="alternate" hreflang={language} href={`${t("site.baseurl")}${urlToLangPath(Astro.url, language as "it" | "en")}`} />
+			)
+		}
 		<ViewTransitions />
 	</head>
 	<body transition:animate="fade">

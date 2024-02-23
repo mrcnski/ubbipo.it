@@ -31,6 +31,7 @@ export const paths = {
 /// Data for translating a string to a given language.
 export const ui = {
     en: {
+        'site.baseurl': "https://ubbipo.it",
         'site.name': 'Ubbìpò Osteria Restaurant',
         
         'nav.wine': 'Wine',
@@ -66,6 +67,7 @@ export const ui = {
         'menu.no-sulfites': 'no sulfites added',
     },
     it: {
+        'site.baseurl': "https://ubbipo.it",
         'site.name': 'Ubbìpò Osteria',
         
         'nav.wine': 'Vini',
