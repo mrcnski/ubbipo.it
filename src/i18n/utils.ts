@@ -16,12 +16,18 @@ export function useTranslations(lang: keyof typeof ui) {
 /// Returns a function that translates the given data to the given language. The data could be a
 /// string in which case it is returned as is, or an object containing translations.
 export function useDataTranslations(lang: keyof typeof ui) {
-    return function d(record: string | Record<string, string> | undefined) {
-        if (!record) return undefined;
+    function d(record: string | Record<string, string>) {
         if (typeof record === 'string') return record;
         return record[lang] || record[defaultLang] || undefined;
     }
-    
+    function dArray(record: string[] | Record<string, string[]>) {
+        if (Array.isArray(record)) return record;
+        return record[lang] || record[defaultLang] || undefined;
+    }
+    return { 
+        d,
+        dArray,
+    }
 }
 
 /// Returns a function that translates the given base path to the given language.

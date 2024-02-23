@@ -8,7 +8,7 @@ import { dishes } from "../../oreste/food.js";
 import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const d = useDataTranslations(lang);
+const { d, dArray } = useDataTranslations(lang);
 ---
 
 <MenuLayout title={t("menu.food.title")} description={t("menu.food.description")}>
@@ -16,7 +16,7 @@ const d = useDataTranslations(lang);
         {dishes.map((dish: any) => (
             <MenuItem 
                 name={d(dish.name)!}
-                ingredients={d(dish.ingredients)}
+                ingredients={dArray(dish.ingredients)}
                 description={d(dish.description)}
                 producer={d(dish.producer)}
                 location={d(dish.location)}

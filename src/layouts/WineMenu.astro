@@ -8,7 +8,7 @@ import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../
 import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const d = useDataTranslations(lang);
+const { d } = useDataTranslations(lang);
 ---
 
 <MenuLayout title={t("menu.wine.title")} description={t("menu.wine.description")}>

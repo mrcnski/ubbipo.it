@@ -1,9 +1,8 @@
 ---
 interface Props {
-    ingredients: string;
+    ingredients: Array<string>;
 }
 
-import { Image } from 'astro:assets';
 import iconSlowFood from "../assets/images/icon-slow-food.svg";
 
 const { ingredients } = Astro.props;
@@ -14,7 +13,7 @@ const regexSlow = /{slow}/g;
 ---
 
 <ul>
-    {ingredients.split(";").map((ingredient) => 
+    {ingredients.map((ingredient) => 
         <li>
             <Fragment set:html={
                 ingredient
