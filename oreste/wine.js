@@ -11,6 +11,7 @@ export const viniRossi = [
         tags: "vegan, bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         glass: "7",         // For no glass: ""
         bottle: "20",
+        available: "yes",   // For no: "no"
     },
     {
         name: "Caos",
@@ -20,6 +21,7 @@ export const viniRossi = [
         tags: "no-sulfites",
         glass: "7",
         bottle: "20",
+        available: "yes",
     },
     {
         name: "Colle Arenario",
@@ -29,6 +31,7 @@ export const viniRossi = [
         tags: "",
         glass: "7",
         bottle: "22",
+        available: "yes",
     },
     {
         name: "Donnaluna Rosso",
@@ -38,6 +41,7 @@ export const viniRossi = [
         tags: "bio",
         glass: "10",
         bottle: "26",
+        available: "yes",
     },
     {
         name: "Rosso Campania",
@@ -47,6 +51,7 @@ export const viniRossi = [
         tags: "",
         glass: "9",
         bottle: "30",
+        available: "yes",
     },
     {
         name: "Malabrocca",
@@ -56,6 +61,7 @@ export const viniRossi = [
         tags: "no-sulfites",
         glass: "10",
         bottle: "31",
+        available: "yes",
     },
     {
         name: "Patrinus",
@@ -65,6 +71,7 @@ export const viniRossi = [
         tags: "bio",
         glass: "10",
         bottle: "32",
+        available: "yes",
     },
     {
         name: "Klèos",
@@ -74,6 +81,7 @@ export const viniRossi = [
         tags: "",
         glass: "10",
         bottle: "34",
+        available: "yes",
     },
     {
         name: "Rosso Del Ciglio",
@@ -83,6 +91,7 @@ export const viniRossi = [
         tags: "no-sulfites, bio",
         glass: "12",
         bottle: "34",
+        available: "yes",
     },
     {
         name: "Rosso Paestum",
@@ -92,6 +101,7 @@ export const viniRossi = [
         tags: "",
         glass: "",
         bottle: "38",
+        available: "yes",
     },
     {
         name: "Proclamo Riserva",
@@ -101,6 +111,7 @@ export const viniRossi = [
         tags: "",
         glass: "",
         bottle: "48",
+        available: "yes",
     },
     {
         name: "Primalaterra 2012",
@@ -110,6 +121,7 @@ export const viniRossi = [
         tags: "",
         glass: "",
         bottle: "75",
+        available: "yes",
     },
 ];
 
@@ -122,6 +134,7 @@ export const viniBianci = [
         tags: "vegan, bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         glass: "7",         // For no glass: ""
         bottle: "20",
+        available: "yes",   // For no: "no"
     },
     {
         name: "Colli Monticoricesi",
@@ -131,6 +144,7 @@ export const viniBianci = [
         tags: "",
         glass: "7",
         bottle: "20",
+        available: "yes",
     },
     {
         name: "Etèl",
@@ -140,6 +154,7 @@ export const viniBianci = [
         tags: "",
         glass: "7",
         bottle: "21",
+        available: "yes",
     },
     {
         name: "Ogliastro Marina",
@@ -149,6 +164,7 @@ export const viniBianci = [
         tags: "",
         glass: "7",
         bottle: "22",
+        available: "yes",
     },
     {
         name: "Valmezzana",
@@ -158,6 +174,7 @@ export const viniBianci = [
         tags: "",
         glass: "8",
         bottle: "24",
+        available: "yes",
     },
     {
         name: "Proclamo",
@@ -167,6 +184,7 @@ export const viniBianci = [
         tags: "vegan, bio",
         glass: "8",
         bottle: "24",
+        available: "yes",
     },
     {
         name: "Vincenzì",
@@ -176,6 +194,7 @@ export const viniBianci = [
         tags: "",
         glass: "8",
         bottle: "25",
+        available: "yes",
     },
     {
         name: "Donnaluna Bianco",
@@ -185,6 +204,7 @@ export const viniBianci = [
         tags: "bio",
         glass: "8",
         bottle: "26",
+        available: "yes",
     },
     {
         name: "Corsole",
@@ -194,6 +214,7 @@ export const viniBianci = [
         tags: "",
         glass: "10",
         bottle: "27",
+        available: "yes",
     },
     {
         name: "Licosa",
@@ -203,6 +224,7 @@ export const viniBianci = [
         tags: "bio",
         glass: "10",
         bottle: "32",
+        available: "yes",
     },
     {
         name: "Kràtos",
@@ -212,6 +234,7 @@ export const viniBianci = [
         tags: "",
         glass: "10",
         bottle: "34",
+        available: "yes",
     },
     {
         name: "Vesole",
@@ -221,6 +244,7 @@ export const viniBianci = [
         tags: "",
         glass: "",
         bottle: "38",
+        available: "yes",
     },
 ];
 
@@ -233,6 +257,7 @@ export const viniRosati = [
         tags: "",    // Example: "vegan, no-sulfites, bio"    For no tags: ""
         glass: "7",  // For no glass: ""
         bottle: "22",
+        available: "yes", // For no: "no"
     },
     {
         name: "Anna",
@@ -242,6 +267,7 @@ export const viniRosati = [
         tags: "",
         glass: "10",
         bottle: "27",
+        available: "yes",
     },
     {
         name: "Primmavera",
@@ -251,6 +277,7 @@ export const viniRosati = [
         tags: "",
         glass: "10",
         bottle: "31",
+        available: "yes",
     },
 ];
 
@@ -263,6 +290,7 @@ export const viniVivaci = [
         tags: "",   // Example: "vegan, no-sulfites, bio"    For no tags: ""
         glass: "",  // For no glass: ""
         bottle: "22",
+        available: "yes", // For no: "no"
     },
     {
         name: "Pashkà",
@@ -272,6 +300,7 @@ export const viniVivaci = [
         tags: "bio",
         glass: "",
         bottle: "24",
+        available: "yes",
     },
     {
         name: "Desiderio Bianco",
@@ -281,6 +310,7 @@ export const viniVivaci = [
         tags: "",
         glass: "",
         bottle: "24",
+        available: "yes",
     },
     {
         name: "Desiderio Rosato",
@@ -290,6 +320,7 @@ export const viniVivaci = [
         tags: "",
         glass: "",
         bottle: "26",
+        available: "yes",
     },
 ];
 
@@ -302,6 +333,7 @@ export const viniSpumanti = [
         tags: "",   // Example: "vegan, no-sulfites, bio"    For no tags: ""
         glass: "9", // For no glass: ""
         bottle: "25",
+        available: "yes", // For no: "no"
     },
     {
         name: "Tredaniele Spumante",
@@ -311,5 +343,6 @@ export const viniSpumanti = [
         tags: "",
         glass: "",
         bottle: "37",
+        available: "yes",
     },
 ];

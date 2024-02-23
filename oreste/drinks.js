@@ -5,6 +5,7 @@ export const beers = [
         producer: "Birrificio Fieij",
         location: "Castelnuovo Cilento",
         price: "5",
+        available: "yes", // for no: "no"
     },
     {
         name: "Unafresca",
@@ -12,6 +13,7 @@ export const beers = [
         producer: "Birrificio Fieij",
         location: "Castelnuovo Cilento",
         price: "5",
+        available: "yes",
     },
     {
         name: "Unambrata",
@@ -19,6 +21,7 @@ export const beers = [
         producer: "Birrificio Fieij",
         location: "Castelnuovo Cilento",
         price: "5",
+        available: "yes",
     },
     {
         name: "Unaspecial",
@@ -26,6 +29,7 @@ export const beers = [
         producer: "Birrificio Fieij",
         location: "Castelnuovo Cilento",
         price: "5",
+        available: "yes",
     },
     {
         name: "Unaforte",
@@ -33,6 +37,7 @@ export const beers = [
         producer: "Birrificio Fieij",
         location: "Castelnuovo Cilento",
         price: "5",
+        available: "yes",
     },
 ];
 
@@ -47,6 +52,7 @@ export const drinks = [
             en: "Culligan System, 75 cl",
         },
         price: "2",
+        available: "yes",
     },
     {
         name: "Cedrata Tassoni",
@@ -55,6 +61,7 @@ export const drinks = [
             en: "Historic Italian soda from 1956. Non-alcoholic sparkling drink, sweet but with a hint of sourness to it.",
         },
         price: "3",
+        available: "yes",
     },
     {
         name: "Mir-tonic",
@@ -63,6 +70,7 @@ export const drinks = [
             en: "A new take on Gin. 100% made in Cilento.",
         },
         price: "7",
+        available: "yes",
     },
     {
         name: "Spritz",
@@ -71,6 +79,7 @@ export const drinks = [
             en: "Classic Italian wine-based cocktail.",
         },
         price: "7",
+        available: "yes",
     },
     {
         name: {
@@ -82,6 +91,7 @@ export const drinks = [
             en: "Our selection of local handmade liqueurs. Ask us for what's available!",
         },
         price: "4",
+        available: "yes",
     },
     {
         name: "Amaro Di Sassano Penna",
@@ -90,5 +100,6 @@ export const drinks = [
             en: "Herbal and root bitter. 120-year-old producer located in the heart of Cilento.",
         },
         price: "3",
+        available: "yes",
     },
 ];
