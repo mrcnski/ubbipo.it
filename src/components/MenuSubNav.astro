@@ -5,7 +5,7 @@
 	<nav id="menu-navbar"></nav> 
 </div>
 
-<style>
+<style lang="less">
 	.menu-navbar-container {
 		display: flex;
 		justify-content: center;
@@ -43,19 +43,26 @@
 		color: var(--brown);
         font-size: 22px;
 
+		transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
 		@media (max-width: 600px) {
 			font-size: 14px;
 		}
-	}
-	:global(.menu-nav-link:not(:last-child)::after) {
-		position: absolute;
-		content: "";
-		right: 0;
-		top: 30%;
-		width: 1px;
-		height: 40%;
 
-		border-right: 1px solid var(--gray-bg);
+		&:hover {
+			background-color: var(--hover-bg);
+		}
+		
+		&.menu-nav-link:not(:last-child)::after {
+			position: absolute;
+			content: "";
+			right: 0;
+			top: 30%;
+			width: 1px;
+			height: 40%;
+
+			border-right: 1px solid var(--gray-bg);
+		}
 	}
 </style>
 

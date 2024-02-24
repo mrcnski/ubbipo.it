@@ -6,6 +6,8 @@
   --white-bg: rgba(255, 255, 255, 0.94);
   --gray-bg: rgba(221, 221, 221, 0.9);
   --gray-light-bg: rgba(242, 242, 242, 0.9);
+
+  --hover-bg: rgba(242, 242, 242, 0.9);
 }
 
 @font-face {
@@ -58,26 +60,6 @@ h3 {
 
 a {
   color: var(--green);
-}
-
-.clickable {
-  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.clickable * {
-  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.clickable:is(:hover, :focus-within) {
-  background-color: var(--gray-light-bg);
-}
-.clickable:is(:hover, :focus-within) * {
-  color: var(--brown);
-}
-
-.spreadable {
-  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.spreadable:is(:hover, :focus-within) {
-  letter-spacing: 0.05rem;
 }
 
 .filter-brown {

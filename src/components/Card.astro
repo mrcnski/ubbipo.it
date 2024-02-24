@@ -10,7 +10,7 @@ interface Props {
 const { href, title, body, img, icon } = Astro.props;
 ---
 
-<li class="link-card clickable spreadable">
+<div class="link-card">
 	<a href={href}>
 		<div class="heading">
 			{(icon) && <img src={icon} class="icon filter-brown" />}
@@ -23,26 +23,36 @@ const { href, title, body, img, icon } = Astro.props;
 			{body}
 		</p>
 	</a>
-</li>
+</div>
 
-<style>
+<style lang="less">
 	.link-card {
-		list-style: none;
 		display: flex;
 		margin-bottom: 1.5rem;
 		padding: 1px;
 
 		border: 1px solid var(--gray);
 		border-radius: 7px;
-	}
-	.link-card > a {
-		width: 100%;
-		padding: calc(1.5rem - 1px);
+
+        transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		
-		text-decoration: none;
-		color: var(--brown);
-		line-height: 1.4;
-		opacity: 0.8;
+		> a {
+			width: 100%;
+			padding: calc(1.5rem - 1px);
+			
+			text-decoration: none;
+			color: var(--brown);
+			line-height: 1.4;
+			opacity: 0.8;
+		}
+		
+		&:hover {
+			background-color: var(--hover-bg);
+			letter-spacing: 1px;
+		}
+		&:hover h2 {
+			color: var(--brown);
+		}
 	}
 
 	.heading {
@@ -58,6 +68,8 @@ const { href, title, body, img, icon } = Astro.props;
 	h2 {
 		margin: 0;
 		font-size: 1.25rem;
+		transition: letter-spacing 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+					color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 	p {
 		margin-top: 0.5rem;
