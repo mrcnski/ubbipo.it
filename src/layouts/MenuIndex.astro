@@ -1,0 +1,43 @@
+---
+import ShootingMain from "../assets/images/shooting-main.jpg";
+import LogoFullWhite from "../assets/images/logo-full-white.svg";
+import Layout from "./Layout.astro";
+import PageContainer from "../components/PageContainer.astro";
+import PageSection from "../components/PageSection.astro";
+
+import { Image } from "astro:assets";
+import iconBeer from "../assets/images/icon-beer.svg";
+import iconFood from "../assets/images/icon-food.svg";
+// import iconMenu from "../assets/images/icon-menu.svg";
+import iconWine from "../assets/images/icon-wine.svg";
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout title={t("menu.title")} description={t("menu.description")}>
+    <PageContainer>
+        <PageSection sectionTitle={t("menu.title")}>
+            <a class="nav-link" href={translatePath("menu/cibo")}>
+                <div class="navbox">
+                    <Image class="nav-icon" src={iconFood} alt={t('nav.food')} />
+                    {t('nav.food')}
+                </div>
+            </a>
+            <a class="nav-link" href={translatePath("menu/vini")}>
+                <div class="navbox">
+                    <Image class="nav-icon" src={iconWine} alt={t('nav.wine')} />
+                    {t('nav.wine')}
+                </div>
+            </a>
+            <a class="nav-link" href={translatePath("menu/bevande")}>
+                <div class="navbox">
+                    <Image class="nav-icon" src={iconBeer} alt={t('nav.drinks')} />
+                    {t('nav.drinks')}
+                </div>
+            </a>
+        </PageSection>
+    </PageContainer>
+</Layout>

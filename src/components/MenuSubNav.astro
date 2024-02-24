@@ -14,7 +14,7 @@
 	#menu-navbar {
 		background-color: var(--white-bg);
 		position: fixed;
-		bottom: 0;
+		bottom: -4rem;
 		width: 100%;
 		max-width: 1100px;
         height: 4rem;
@@ -66,13 +66,13 @@
 </style>
 
 <script>
-	function isVisible(elm: Element) {
-		var rect = elm.getBoundingClientRect();
-		var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-		return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-	}
-
 	document.addEventListener('astro:page-load', () => {
+		function isVisible(elm: Element) {
+			var rect = elm.getBoundingClientRect();
+			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+			return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+		}
+
 		// Add all h2 ID's to the navbar.
 		const h2s = document.querySelectorAll('h2');
 		const menuNavbar = document.getElementById("menu-navbar");
@@ -87,6 +87,9 @@
 			a.textContent = text;
 			menuNavbar.appendChild(a);
 		});
+
+		// Show the navbar on pageload, so it is not shown when JavaScript is disabled.
+		menuNavbar.style.bottom = `0px`;
 		
 		// Hide the navbar when it's below the footer.
 		const footer = document.querySelector('footer')!;

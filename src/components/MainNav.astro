@@ -30,7 +30,7 @@ The outer container is needed just to center the whole thing.
                 </div>
             </a>
             <div></div>
-            <a id="nav-button-menu" class="nav-link" style="cursor: pointer;">
+            <a id="nav-button-menu" class="nav-link" href={translatePath("menu")} style="cursor: pointer;">
                 <div class="navbox">
                     <Image class="nav-icon" src={iconMenu} alt="Menu" />
                     Menu
@@ -66,6 +66,7 @@ Appearing-and-disappearing navbar with menu links.
                 </div>
             </a>
         </nav>
+    </div>
 </div>
 
 <style>
@@ -235,6 +236,8 @@ Appearing-and-disappearing navbar with menu links.
         // Show the menu when the menu button is clicked.
         const menuButton = document.getElementById('nav-button-menu');
         if (menuButton) {
+            // Remove the href from the menu button so that it doesn't navigate to the menu page.
+            menuButton.removeAttribute('href');
             menuButton.addEventListener('click', () => {
                 toggleNavbarMenu();
             });

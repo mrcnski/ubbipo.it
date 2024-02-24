@@ -15,6 +15,9 @@ const t = useTranslations(lang);
 <Layout title={t("index.title")} description={t("index.description")}>
     <Image class="index-img-main" src={ShootingMain} alt={t("site.name")} />
     <Image class="index-img-logo" src={LogoFullWhite} alt={t("site.name")} />
+    <noscript>
+        <Image class="index-img-logo-noscript" src={LogoFullWhite} alt={t("site.name")} />
+    </noscript>
 
     <PageContainer>
         <PageSection sectionTitle="">
@@ -37,6 +40,17 @@ const t = useTranslations(lang);
         opacity: 0;
         transition: opacity 2s;
 
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
+    }
+    .index-img-logo-noscript {
+        position: absolute;
+
+        width: 40%;
+        height: auto;
+        left: 30%;
+        top: 12%;
+        /* transform: translateY(-50%); */
+        
         filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
     }
 </style>

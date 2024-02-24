@@ -16,6 +16,10 @@ export const paths = {
         it: '',
         en: 'en',
     },
+    menu: {
+        it: 'menu',
+        en: 'en/menu',
+    },
     food: {
         it: 'menu/cibo',
         en: 'en/menu/food',
@@ -43,6 +47,9 @@ export const ui = {
 
         'index.title': "Home",
         'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
+
+        'menu.title': 'Menu',
+        'menu.description': 'A selection of traditional Italian dishes and wines from the Cilento region of Italy.',
 
         'menu.food.title': 'Food Menu',
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
@@ -80,6 +87,9 @@ export const ui = {
 
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",
+
+        'menu.title': 'Menù',
+        'menu.description': 'Una selezione di piatti tradizionali italiani e vini della regione del Cilento in Italia.',
 
         'menu.food.title': 'Menù Cibo',
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
