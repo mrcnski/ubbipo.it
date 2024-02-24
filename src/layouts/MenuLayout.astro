@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from "./Layout.astro";
-import MenuNav from "../components/MenuNav.astro";
+import MenuSubNav from "../components/MenuSubNav.astro";
 import PageContainer from "../components/PageContainer.astro";
 
 import logoFull from "../assets/images/logo-full.svg";
@@ -23,7 +23,7 @@ const { title, description } = Astro.props;
 		<slot />
 	</PageContainer>
 
-	<MenuNav />
+	<MenuSubNav />
 	<slot name="footer" slot="footer" />
 </Layout>
 
