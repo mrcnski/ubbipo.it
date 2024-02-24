@@ -1,12 +1,14 @@
 ---
 import { Image } from 'astro:assets';
-import logoGreen from "../assets/images/logo-green.svg";
+import logoLong from "../assets/images/logo-long.svg";
+import logoFull from "../assets/images/logo-full.svg";
 import iconBeer from "../assets/images/icon-beer.svg";
 import iconFood from "../assets/images/icon-food.svg";
 import iconMenu from "../assets/images/icon-menu.svg";
 import iconWine from "../assets/images/icon-wine.svg";
 
 import LanguagePicker from '../components/LanguagePicker.astro';
+import NavCard from "../components/NavCard.astro";
 
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
@@ -15,88 +17,49 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 {/*
-The navbar is a table with fixed layout. The language picker should be next to it, with a
-smaller cell size.
-
 The outer container is needed just to center the whole thing.
 */}
-<div id="navbar-main" class="navbar-container-container">
+<div id="main-nav-main" class="navbar-container-outer">
     <div class="navbar-container">
+        <a class="nav-logo" href={translatePath("")}>
+            <img class="nav-logo-inner" src={logoLong.src} alt="Ubbìpò" />
+        </a>
+
+        {/* "Spacer". Empty div to push the menu button to the right. */}
+        <div style="width: 100%;"></div>
+
         <nav class="navbar">
-            <a class="nav-link clickable spreadable" href={translatePath("")}>
-                <div class="navbox nav-logo">
-                    <Image src={logoGreen} alt="Ubbìpò" width="32" />
-                    Ubbìpò
-                </div>
-            </a>
-            <div></div>
-            <a id="nav-button-menu" class="nav-link clickable spreadable" href={translatePath("menu")} style="cursor: pointer;">
-                <div class="navbox">
-                    <Image class="nav-icon filter-brown" src={iconMenu} alt={t("nav.menu")} />
-                    {t("nav.menu")}
-                </div>
-            </a>
+            <NavCard id="nav-button-menu" icon={iconMenu} text={t('nav.menu')} href={translatePath("menu")} />
         </nav>
+
         <LanguagePicker />
+        <div style="width: 1rem;"></div>
     </div>
 </div>
 
 {/*
 Appearing-and-disappearing navbar with menu links.
 */}
-<div id="navbar-menu" class="navbar-container-container">
+<div id="main-nav-menu" class="navbar-container-outer">
     <div class="navbar-container">
         <nav class="navbar">
-            <a class="nav-link clickable spreadable" href={translatePath("menu/cibo")}>
-                <div class="navbox">
-                    <Image class="nav-icon filter-brown" src={iconFood} alt={t('nav.food')} />
-                    {t('nav.food')}
-                </div>
-            </a>
-            <a class="nav-link clickable spreadable" href={translatePath("menu/vini")}>
-                <div class="navbox">
-                    <Image class="nav-icon filter-brown" src={iconWine} alt={t('nav.wine')} />
-                    {t('nav.wine')}
-                </div>
-            </a>
-            <a class="nav-link clickable spreadable" href={translatePath("menu/bevande")}>
-                <div class="navbox">
-                    <Image class="nav-icon filter-brown" src={iconBeer} alt={t('nav.drinks')} />
-                    {t('nav.drinks')}
-                </div>
-            </a>
+            <NavCard icon={iconFood} text={t("nav.food")} href={translatePath("menu/cibo")} />
+            <NavCard icon={iconWine} text={t("nav.wine")} href={translatePath("menu/vini")} />
+            <NavCard icon={iconBeer} text={t("nav.drinks")} href={translatePath("menu/bevande")} />
         </nav>
     </div>
 </div>
 
 <style>
-    #navbar-menu {
-        top: 5rem;
-        display: none;
-        opacity: 0;
-        transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-
-        @media (max-width: 700px) {
-            top: 4rem;
-        }
-    }
-    #navbar-menu .navbar-container {
-        max-width: 1050px;
-    }
-
-    #nav-button-menu {
-		/* color: var(--green); */
-    }
-    
-    .navbar-container-container {
+    .navbar-container-outer {
         position: fixed;
-        top: 0;
 		display: flex;
 		justify-content: center;
+        
+        top: 0;
         width: 100%;
-        z-index: 100;
-
         height: 5rem;
+        z-index: 100;
 
         background: var(--white-bg);
 
@@ -105,92 +68,92 @@ Appearing-and-disappearing navbar with menu links.
         }
     }
 
+	#main-nav-main {
+        .navbar-container {
+        }
+        
+        .navbar {
+            width: 600px;
+        }
+	}
+
+    #main-nav-menu {
+        top: 5rem;
+        display: none;
+        
+        opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        
+        @media (max-width: 700px) {
+            top: 4rem;
+        }
+        
+        .navbar-container {
+            max-width: 1050px;
+        }
+        
+        .navbar {
+            display: flex;
+            width: 100%;
+            
+            .nav-card {
+                position: relative;
+
+                &:not(:last-child)::after {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    top: 30%;
+                    width: 1px;
+                    height: 40%;
+
+                    border-right: 1px solid var(--gray-bg);
+                }
+            }
+        }
+    }
+
     .navbar-container {
+		display: flex;
+
         width: 100%;
         max-width: 1100px;
 
-		display: flex;
-		justify-content: center;
-
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
         border-bottom: 1px solid var(--gray);
     }
-    
-	.navbar {
-        display: table;
-        table-layout: fixed;
-        
-        width: 100%;
-	}
 	
-	.nav-link {
-        display: table-cell;
-		text-align: center;
-        vertical-align: middle;
-		text-decoration: none;
-        
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        
-		color: var(--brown);
-        font-size: 22px;
-        font-family: 'MADE Tommy Soft Regular', sans-serif;
-
-		@media (max-width: 600px) {
-			font-size: 16px;
-		}
-	}
 
     .nav-logo {
-        color: var(--brown);
-        font-family: 'MADE Tommy Soft Regular', sans-serif;
-        font-size: 26px;
-
-        @media (max-width: 600px) {
-            font-size: 18px;
-        }
-    }
-
-    .navbox {
         display: flex;
         align-items: center;
-        justify-content: center;
+        padding: 0 1rem;
+        height: 100%;
+        width: 420px;
 
-        width: 40%;
-        margin: auto;
-        padding-top: 0.15rem;
-        padding-bottom: 0.15rem;
         @media (max-width: 600px) {
-            width: 80%;
+            width: 600px;
         }
-
-        /* Prevents the border from moving the text when it appears */
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
-    }
-    .nav-link-active .navbox {
-        border-bottom: 2px solid var(--green);
-    }
-    .navbox img {
-        margin-right: 0.5rem;
-    }
-
-    .nav-icon {
-        width: 19px;
-
-        @media (max-width: 600px) {
-            width: 16px;
+        
+        transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        
+        &:hover {
+            background-color: var(--hover-bg);
+        }
+        
+        .nav-logo-inner {
+            display: flex;
+            align-items: center;
+            height: 60%;
         }
     }
 </style>
 
 <script>
     document.addEventListener('astro:page-load', () => {
-        // Set the navbar-menu to be below navbar-main.
+        // Set the menu navbar to be below main navbar.
         function setNavbarMenuPosition() {
-            const navbarMain = document.getElementById('navbar-main');
-            const navbarMenu = document.getElementById('navbar-menu');
+            const navbarMain = document.getElementById('main-nav-main');
+            const navbarMenu = document.getElementById('main-nav-menu');
             if (!navbarMain || !navbarMenu) {
                 return;
             }
@@ -202,8 +165,8 @@ Appearing-and-disappearing navbar with menu links.
 
         var navbarVisible = false;
         function toggleNavbarMenu() {
-            const navbarMain = document.getElementById('navbar-main');
-            const navbarMenu = document.getElementById('navbar-menu');
+            const navbarMain = document.getElementById('main-nav-main');
+            const navbarMenu = document.getElementById('main-nav-menu');
             if (!navbarMain || !navbarMenu) {
                 return;
             }
@@ -240,26 +203,6 @@ Appearing-and-disappearing navbar with menu links.
             menuButton.addEventListener('click', () => {
                 toggleNavbarMenu();
             });
-        }
-        
-        // Set the current page in the navbar to active.
-        const navLinks = document.querySelectorAll('.nav-link');
-        // Trim any trailing slashes from the current page.
-        var currentPage = window.location.pathname.replace(/\/$/, '');
-        // Ensure a leading slash.
-        if (!currentPage.startsWith('/')) {
-            currentPage = '/' + currentPage;
-        }
-        navLinks.forEach(link => {
-            const linkHref = link.getAttribute('href');
-
-            if (linkHref === currentPage) {
-                // Add the nav-link-active class.
-                link.classList.add('nav-link-active');
-            }
-        });
-        if (menuButton && currentPage.includes("menu")) {
-            menuButton.classList.add('nav-link-active');
         }
     });
 </script>

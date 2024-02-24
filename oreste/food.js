@@ -2,7 +2,7 @@ export const dishes = [
     {
         name: {
             it: "Tagliere Misto Cilentano",
-            en: "Cilent Mixed Platter",
+            en: "Cilento Mixed Platter",
         },
         ingredients: {
             // Use {slow} for slow food products.
