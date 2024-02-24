@@ -60,7 +60,7 @@
 	}
 	
 	:global(.menu-nav-link:hover) {
-		background-color: var(--gray-bg);
+		background-color: var(--gray-light-bg);
 		color: black;
 	}
 </style>
@@ -89,7 +89,7 @@
 		});
 		
 		// Hide the navbar when it's below the footer.
-		const footer = document.querySelector('.footer')!;
+		const footer = document.querySelector('footer')!;
 		var menuNavHidden = false;
 		window.onscroll = function() {
 			if (!menuNavbar) return;

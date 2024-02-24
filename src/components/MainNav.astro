@@ -2,6 +2,8 @@
 import { Image } from 'astro:assets';
 import logoGreen from "../assets/images/logo-green.svg";
 import iconBeer from "../assets/images/icon-beer.svg";
+import iconFood from "../assets/images/icon-food.svg";
+import iconMenu from "../assets/images/icon-menu.svg";
 import iconWine from "../assets/images/icon-wine.svg";
 
 import LanguagePicker from '../components/LanguagePicker.astro';
@@ -12,13 +14,15 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<!-- The navbar is a table with fixed layout. The language picker should be next to it, with a
-     smaller cell size.
-    
-     The outer container is needed just to center the whole thing. -->
-<div class="navbar-container-container">
+{/*
+The navbar is a table with fixed layout. The language picker should be next to it, with a
+smaller cell size.
+
+The outer container is needed just to center the whole thing.
+*/}
+<div id="navbar-main" class="navbar-container-container">
     <div class="navbar-container">
-        <nav id="navbar">
+        <nav class="navbar">
             <a class="nav-link" href={translatePath("")}>
                 <div class="navbox nav-logo">
                     <Image src={logoGreen} alt="Ubbìpò" width="32" />
@@ -26,16 +30,10 @@ const translatePath = useTranslatedPath(lang);
                 </div>
             </a>
             <div></div>
-            <a class="nav-link" href={translatePath("menu/vini")}>
+            <a id="nav-button-menu" class="nav-link" style="cursor: pointer;">
                 <div class="navbox">
-                    <Image src={iconWine} alt={t('nav.wine')} width="16" />
-                    {t('nav.wine')}
-                </div>
-            </a>
-            <a class="nav-link" href={translatePath("menu/bevande")}>
-                <div class="navbox">
-                    <Image src={iconBeer} alt={t('nav.drinks')} width="16" />
-                    {t('nav.drinks')}
+                    <Image class="nav-icon" src={iconMenu} alt="Menu" />
+                    Menu
                 </div>
             </a>
         </nav>
@@ -43,7 +41,48 @@ const translatePath = useTranslatedPath(lang);
     </div>
 </div>
 
+{/*
+Appearing-and-disappearing navbar with menu links.
+*/}
+<div id="navbar-menu" class="navbar-container-container">
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a class="nav-link" href={translatePath("menu/cibo")}>
+                <div class="navbox">
+                    <Image class="nav-icon" src={iconFood} alt={t('nav.food')} />
+                    {t('nav.food')}
+                </div>
+            </a>
+            <a class="nav-link" href={translatePath("menu/vini")}>
+                <div class="navbox">
+                    <Image class="nav-icon" src={iconWine} alt={t('nav.wine')} />
+                    {t('nav.wine')}
+                </div>
+            </a>
+            <a class="nav-link" href={translatePath("menu/bevande")}>
+                <div class="navbox">
+                    <Image class="nav-icon" src={iconBeer} alt={t('nav.drinks')} />
+                    {t('nav.drinks')}
+                </div>
+            </a>
+        </nav>
+</div>
+
 <style>
+    #navbar-menu {
+        top: 5rem;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+
+        @media (max-width: 700px) {
+            top: 4rem;
+        }
+    }
+    #navbar-menu .navbar-container {
+        max-width: 1050px;
+    }
+    
     .navbar-container-container {
         position: fixed;
         top: 0;
@@ -52,7 +91,13 @@ const translatePath = useTranslatedPath(lang);
         width: 100%;
         z-index: 100;
 
+        height: 5rem;
+
         background: var(--white-bg);
+
+        @media (max-width: 700px) {
+            height: 4rem;
+        }
     }
 
     .navbar-container {
@@ -67,15 +112,11 @@ const translatePath = useTranslatedPath(lang);
         border-bottom: 1px solid var(--gray);
     }
     
-	#navbar {
+	.navbar {
         display: table;
         table-layout: fixed;
         
         width: 100%;
-        
-        @media (max-width: 700px) {
-            table-layout: auto;
-        }
 	}
 	
 	.nav-link {
@@ -83,7 +124,6 @@ const translatePath = useTranslatedPath(lang);
 		text-align: center;
         vertical-align: middle;
 		text-decoration: none;
-        height: 4rem;
         
         padding-left: 0.75rem;
         padding-right: 0.75rem;
@@ -95,7 +135,7 @@ const translatePath = useTranslatedPath(lang);
         transition: background-color 0.3s; /* Transition effect on hover */
 
 		@media (max-width: 600px) {
-			font-size: 14px;
+			font-size: 16px;
 		}
 	}
 	.nav-link:hover {
@@ -135,10 +175,71 @@ const translatePath = useTranslatedPath(lang);
     .navbox img {
         margin-right: 0.5rem;
     }
+
+    .nav-icon {
+        width: 19px;
+
+        @media (max-width: 600px) {
+            width: 16px;
+        }
+    }
 </style>
 
 <script>
     document.addEventListener('astro:page-load', () => {
+        // Set the navbar-menu to be below navbar-main.
+        function setNavbarMenuPosition() {
+            const navbarMain = document.getElementById('navbar-main');
+            const navbarMenu = document.getElementById('navbar-menu');
+            if (!navbarMain || !navbarMenu) {
+                return;
+            }
+            
+            navbarMenu.style.top = navbarMain.offsetHeight + 'px';
+            // Set the height to be a bit less than the main navbar.
+            navbarMenu.style.height = navbarMain.offsetHeight - 12 + 'px';
+        }
+
+        var navbarVisible = false;
+        function toggleNavbarMenu() {
+            const navbarMain = document.getElementById('navbar-main');
+            const navbarMenu = document.getElementById('navbar-menu');
+            if (!navbarMain || !navbarMenu) {
+                return;
+            }
+            
+            function showNavbarMenu() {
+                navbarMenu!.style.opacity = "1";
+            }
+            function hideNavbarMenu() {
+                navbarMenu!.style.display = "none";
+            }
+            
+            if (!navbarVisible) {
+                navbarMenu!.style.display = "flex";
+                setTimeout(showNavbarMenu, 5);
+                navbarVisible = true;
+            } else {
+                navbarMenu.style.opacity = "0";
+                setTimeout(hideNavbarMenu, 300);
+                navbarVisible = false;
+            }
+        }
+
+        setNavbarMenuPosition();
+        // Set the logo position when the window resizes.
+        window.addEventListener('resize', () => {
+            setNavbarMenuPosition();
+        });
+
+        // Show the menu when the menu button is clicked.
+        const menuButton = document.getElementById('nav-button-menu');
+        if (menuButton) {
+            menuButton.addEventListener('click', () => {
+                toggleNavbarMenu();
+            });
+        }
+        
         // Set the current page in the navbar to active.
         // Trim any trailing slashes from the current page.
         const currentPage = window.location.pathname.replace(/\/$/, '');

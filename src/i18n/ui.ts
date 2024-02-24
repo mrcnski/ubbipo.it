@@ -9,6 +9,8 @@ export const showDefaultLang = false;
 /// Data for translating a path to a given language. 
 ///
 /// The trailing slashes are not included - the caller is expected to remove them if present.
+///
+/// TODO: This should be generated from the filesystem.
 export const paths = {
     index: {
         it: '',
@@ -34,6 +36,7 @@ export const ui = {
         'site.baseurl': "https://ubbipo.it",
         'site.name': 'Ubbìpò Osteria Restaurant',
         
+        'nav.food': 'Food',
         'nav.wine': 'Wine',
         'nav.drinks': 'Drinks',
         'nav.languages': 'Languages',
@@ -69,7 +72,8 @@ export const ui = {
     it: {
         'site.baseurl': "https://ubbipo.it",
         'site.name': 'Ubbìpò Osteria',
-        
+
+        'nav.food': 'Cibo',
         'nav.wine': 'Vini',
         'nav.drinks': 'Bevande',
         'nav.languages': 'Lingue',
