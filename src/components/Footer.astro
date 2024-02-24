@@ -2,14 +2,14 @@
 import PageContainer from "../components/PageContainer.astro";
 ---
 
-<div class="footer">
-    <p>© Ubbipo - Via De Filippo, 13 - Agropoli (SA)</p>
-    <p>Site made with <span class="heart">♡</span> by <a href="mailto:marcin@realemail.net ">Marcin S.</a></p>
+<footer>
+    <p class="address"><i>© Ubbipo - Via De Filippo, 13 - Agropoli (SA)</i></p>
+    <p class="made-with">Site made with <span class="heart">♡</span> by <a href="mailto:marcin@realemail.net ">Marcin S.</a></p>
     <slot name="footer" />
-</div>
+</footer>
 
 <style>
-    .footer {
+    footer {
 		width: 65%;
 		max-width: 1000px;
 		margin: 0 auto;
@@ -29,7 +29,16 @@ import PageContainer from "../components/PageContainer.astro";
 			width: 95%;
 		}
     }
-    .footer * {
+
+    .address {
+        margin-top: 0.5rem;
+        font-size: 17px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+    .made-with {
         margin-top: 0.5rem;
         font-size: 16px;
 
