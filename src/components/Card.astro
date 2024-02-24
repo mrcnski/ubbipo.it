@@ -1,19 +1,21 @@
 ---
+import type { ImageMetadata } from 'astro';
+
 interface Props {
 	title: string;
 	body: string;
 	href: string;
-	img?: string;
-	icon?: string;
+	img?: ImageMetadata;
+	icon?: ImageMetadata;
 }
 
-const { href, title, body, img, icon } = Astro.props;
+const { href, title, body, icon } = Astro.props;
 ---
 
 <div class="link-card">
 	<a href={href}>
 		<div class="heading">
-			{(icon) && <img src={icon} class="icon filter-brown" />}
+			{(icon) && <img src={icon.src} class="icon filter-brown" />}
 			<h2>
 				{title}
 				<span>&rarr;</span>

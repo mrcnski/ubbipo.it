@@ -1,7 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 import logoLong from "../assets/images/logo-long.svg";
-import logoFull from "../assets/images/logo-full.svg";
 import iconBeer from "../assets/images/icon-beer.svg";
 import iconFood from "../assets/images/icon-food.svg";
 import iconMenu from "../assets/images/icon-menu.svg";
@@ -22,7 +21,7 @@ The outer container is needed just to center the whole thing.
 <div id="main-nav-main" class="navbar-container-outer">
     <div class="navbar-container">
         <a class="nav-logo" href={translatePath("")}>
-            <img class="nav-logo-inner" src={logoLong.src} alt="Ubbìpò" />
+            <Image class="nav-logo-inner" src={logoLong} alt="Ubbìpò" />
         </a>
 
         {/* "Spacer". Empty div to push the menu button to the right. */}

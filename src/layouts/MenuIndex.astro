@@ -1,12 +1,8 @@
 ---
-import ShootingMain from "../assets/images/shooting-main.jpg";
-import LogoFullWhite from "../assets/images/logo-full-white.svg";
 import Layout from "./Layout.astro";
 import PageContainer from "../components/PageContainer.astro";
-import PageSection from "../components/PageSection.astro";
 import Card from "../components/Card.astro";
 
-import { Image } from "astro:assets";
 import iconBeer from "../assets/images/icon-beer.svg";
 import iconFood from "../assets/images/icon-food.svg";
 // import iconMenu from "../assets/images/icon-menu.svg";
@@ -25,17 +21,17 @@ const translatePath = useTranslatedPath(lang);
         <Card href={translatePath("menu/cibo")}
               title={t('menu.food.title')}
               body={t("menu.food.description")}
-              icon={iconFood.src}
+              icon={iconFood}
             />
         <Card href={translatePath("menu/vini")}
               title={t('menu.wine.title')}
               body={t("menu.wine.description")}
-              icon={iconWine.src}
+              icon={iconWine}
             />
         <Card href={translatePath("menu/bevande")}
               title={t('menu.drinks.title')}
               body={t("menu.drinks.description")}
-              icon={iconBeer.src}
+              icon={iconBeer}
             />
         <div style="height: 1rem;" />
     </PageContainer>
