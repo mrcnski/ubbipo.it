@@ -37,12 +37,11 @@
 		display: table-cell;
 		text-align: center;
         vertical-align: middle;
-		text-decoration: none;
         
+		text-transform: lowercase;
+		text-decoration: none;
 		color: var(--brown);
         font-size: 22px;
-
-        transition: background-color 0.3s; /* Transition effect on hover */
 
 		@media (max-width: 600px) {
 			font-size: 14px;
@@ -57,11 +56,6 @@
 		height: 40%;
 
 		border-right: 1px solid var(--gray-bg);
-	}
-	
-	:global(.menu-nav-link:hover) {
-		background-color: var(--gray-light-bg);
-		color: black;
 	}
 </style>
 
@@ -83,6 +77,8 @@
 			const a = document.createElement('a');
 
 			a.classList.add('menu-nav-link');
+			a.classList.add('clickable');
+			a.classList.add('spreadable');
 			a.href = `#${id}`;
 			a.textContent = text;
 			menuNavbar.appendChild(a);

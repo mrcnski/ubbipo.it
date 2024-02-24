@@ -59,3 +59,27 @@ h3 {
 a {
   color: var(--green);
 }
+
+.clickable {
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.clickable * {
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.clickable:is(:hover, :focus-within) {
+  background-color: var(--gray-light-bg);
+}
+.clickable:is(:hover, :focus-within) * {
+  color: var(--brown);
+}
+
+.spreadable {
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.spreadable:is(:hover, :focus-within) {
+  letter-spacing: 0.05rem;
+}
+
+.filter-brown {
+    filter: invert(29%) sepia(11%) saturate(1450%) hue-rotate(327deg) brightness(103%) contrast(85%);
+}

@@ -12,7 +12,7 @@ const pageLang = getLangFromUrl(Astro.url);
 
     <div class="picker-container">
         {Object.entries(languages).map(([lang, label]) => (
-            <a class={"lang-link" + ((pageLang === lang) ? " lang-link-active" : "")}
+            <a class={"lang-link clickable" + ((pageLang === lang) ? " lang-link-active" : "")}
                href={urlToLangPath(Astro.url, lang as keyof typeof languages)}
                title={label}
                >
@@ -42,22 +42,17 @@ const pageLang = getLangFromUrl(Astro.url);
         
         margin-right: 1rem;
         border: 1px solid var(--white-bg);
+        border-radius: 5px;
         
         text-align: center;
         text-decoration: none;
         font-size: 20px;
         color: var(--brown);
 
-        transition: background-color 0.3s; /* Transition effect on hover */
-
         @media (max-width: 700px) {
             font-size: 16px;
         }
     }
-	.lang-link:hover {
-		background-color: var(--gray-bg);
-		color: black;
-	}
 
     .lang-link-active {
         border: 1px solid var(--brown);

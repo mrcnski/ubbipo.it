@@ -40,10 +40,11 @@ export const ui = {
         'site.baseurl': "https://ubbipo.it",
         'site.name': 'Ubbìpò Osteria Restaurant',
         
-        'nav.food': 'Food',
-        'nav.wine': 'Wine',
-        'nav.drinks': 'Drinks',
-        'nav.languages': 'Languages',
+        'nav.menu': 'menu',
+        'nav.food': 'food',
+        'nav.wine': 'wine',
+        'nav.drinks': 'drinks',
+        'nav.languages': 'languages',
 
         'index.title': "Home",
         'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
@@ -80,10 +81,11 @@ export const ui = {
         'site.baseurl': "https://ubbipo.it",
         'site.name': 'Ubbìpò Osteria',
 
-        'nav.food': 'Cibo',
-        'nav.wine': 'Vini',
-        'nav.drinks': 'Bevande',
-        'nav.languages': 'Lingue',
+        'nav.menu': 'menù',
+        'nav.food': 'cibo',
+        'nav.wine': 'vini',
+        'nav.drinks': 'bevande',
+        'nav.languages': 'lingue',
 
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",
@@ -95,7 +97,7 @@ export const ui = {
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
         'menu.food.dishes': 'Piatti',
         
-        'menu.wine.title': 'Carta dei Vini',
+        'menu.wine.title': 'Menù dei Vini',
         'menu.wine.description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",
         'menu.wine.vini-rossi': 'Rossi',
         'menu.wine.vini-bianchi': 'Bianchi',

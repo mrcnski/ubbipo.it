@@ -23,17 +23,17 @@ The outer container is needed just to center the whole thing.
 <div id="navbar-main" class="navbar-container-container">
     <div class="navbar-container">
         <nav class="navbar">
-            <a class="nav-link" href={translatePath("")}>
+            <a class="nav-link clickable spreadable" href={translatePath("")}>
                 <div class="navbox nav-logo">
                     <Image src={logoGreen} alt="Ubbìpò" width="32" />
                     Ubbìpò
                 </div>
             </a>
             <div></div>
-            <a id="nav-button-menu" class="nav-link" href={translatePath("menu")} style="cursor: pointer;">
+            <a id="nav-button-menu" class="nav-link clickable spreadable" href={translatePath("menu")} style="cursor: pointer;">
                 <div class="navbox">
-                    <Image class="nav-icon" src={iconMenu} alt="Menu" />
-                    Menu
+                    <Image class="nav-icon filter-brown" src={iconMenu} alt={t("nav.menu")} />
+                    {t("nav.menu")}
                 </div>
             </a>
         </nav>
@@ -47,21 +47,21 @@ Appearing-and-disappearing navbar with menu links.
 <div id="navbar-menu" class="navbar-container-container">
     <div class="navbar-container">
         <nav class="navbar">
-            <a class="nav-link" href={translatePath("menu/cibo")}>
+            <a class="nav-link clickable spreadable" href={translatePath("menu/cibo")}>
                 <div class="navbox">
-                    <Image class="nav-icon" src={iconFood} alt={t('nav.food')} />
+                    <Image class="nav-icon filter-brown" src={iconFood} alt={t('nav.food')} />
                     {t('nav.food')}
                 </div>
             </a>
-            <a class="nav-link" href={translatePath("menu/vini")}>
+            <a class="nav-link clickable spreadable" href={translatePath("menu/vini")}>
                 <div class="navbox">
-                    <Image class="nav-icon" src={iconWine} alt={t('nav.wine')} />
+                    <Image class="nav-icon filter-brown" src={iconWine} alt={t('nav.wine')} />
                     {t('nav.wine')}
                 </div>
             </a>
-            <a class="nav-link" href={translatePath("menu/bevande")}>
+            <a class="nav-link clickable spreadable" href={translatePath("menu/bevande")}>
                 <div class="navbox">
-                    <Image class="nav-icon" src={iconBeer} alt={t('nav.drinks')} />
+                    <Image class="nav-icon filter-brown" src={iconBeer} alt={t('nav.drinks')} />
                     {t('nav.drinks')}
                 </div>
             </a>
@@ -74,7 +74,7 @@ Appearing-and-disappearing navbar with menu links.
         top: 5rem;
         display: none;
         opacity: 0;
-        transition: opacity 0.3s;
+        transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 
         @media (max-width: 700px) {
             top: 4rem;
@@ -82,6 +82,10 @@ Appearing-and-disappearing navbar with menu links.
     }
     #navbar-menu .navbar-container {
         max-width: 1050px;
+    }
+
+    #nav-button-menu {
+		/* color: var(--green); */
     }
     
     .navbar-container-container {
@@ -130,21 +134,16 @@ Appearing-and-disappearing navbar with menu links.
         padding-right: 0.75rem;
         
 		color: var(--brown);
-        font-family: 'MADE Tommy Soft Light', sans-serif;
         font-size: 22px;
-
-        transition: background-color 0.3s; /* Transition effect on hover */
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
 
 		@media (max-width: 600px) {
 			font-size: 16px;
 		}
 	}
-	.nav-link:hover {
-		background-color: var(--gray-bg);
-		color: black;
-	}
 
     .nav-logo {
+        color: var(--brown);
         font-family: 'MADE Tommy Soft Regular', sans-serif;
         font-size: 26px;
 
@@ -244,14 +243,23 @@ Appearing-and-disappearing navbar with menu links.
         }
         
         // Set the current page in the navbar to active.
-        // Trim any trailing slashes from the current page.
-        const currentPage = window.location.pathname.replace(/\/$/, '');
         const navLinks = document.querySelectorAll('.nav-link');
+        // Trim any trailing slashes from the current page.
+        var currentPage = window.location.pathname.replace(/\/$/, '');
+        // Ensure a leading slash.
+        if (!currentPage.startsWith('/')) {
+            currentPage = '/' + currentPage;
+        }
         navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
+            const linkHref = link.getAttribute('href');
+
+            if (linkHref === currentPage) {
                 // Add the nav-link-active class.
                 link.classList.add('nav-link-active');
             }
         });
+        if (menuButton && currentPage.includes("menu")) {
+            menuButton.classList.add('nav-link-active');
+        }
     });
 </script>
