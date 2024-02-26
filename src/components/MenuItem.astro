@@ -26,7 +26,7 @@ const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
 const headingName = (price) ? "menu-heading-price" : "menu-heading";
 const unavailable = (available != "yes") ? "unavailable" : "";
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---

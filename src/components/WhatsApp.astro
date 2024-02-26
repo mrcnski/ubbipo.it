@@ -2,37 +2,77 @@
 import { Image } from 'astro:assets';
 
 import WhatsAppIcon from "@images/icon/whatsapp.svg";
+
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<a href="https://wa.me/393888699623">
-    <Image id="img-whatsapp" src={WhatsAppIcon} alt="WhatsApp" />
-</a>
+<div id="whatsapp">
+    <a href="https://wa.me/393888699623">
+        {t("site.book")}
+        <Image src={WhatsAppIcon} id="img-whatsapp" alt="WhatsApp" />
+    </a>
+</div>
 
 <style>
-    #img-whatsapp {
-        width: 48px;
-        height: 48px;
-        
+    #whatsapp {
         position: fixed;
-        /* In MenuNav we add to the bottom to match the nav */
-        bottom: 5rem;
+        
+        bottom: 16px;
         right: 1rem;
         z-index: 1000;
 
+        border-radius: 8px;
+
         transition: bottom 0.3s;
-        
-        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+
+        background-color: #24d366;
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+
+        transform: scale(0.9);
+        transform-origin: bottom right;
+        &:hover {
+            transform: scale(0.99);
+            
+            @media (max-width: 600px) {
+                transform: scale(0.66);
+            }
+        }
         
         @media (max-width: 600px) {
-            width: 40px;
-            height: 40px;
-            
             bottom: 3.75rem;
-        
-            filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+            transform: scale(0.6);
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+
+            padding: 0.75rem 1.75rem;
+
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-family: 'MADE Tommy Soft Regular', sans-serif;
         }
     }
-    #img-whatsapp:hover {
-        transform: scale(1.1);
+    
+    #img-whatsapp {
+        width: 18px;
+        height: 18px;
+
+        margin-left: 1rem;
+        margin-right: 0;
+
+        /* To white. */
+        filter: invert(100%) sepia(9%) saturate(7500%) hue-rotate(266deg) brightness(123%) contrast(107%);
+
+        @media (max-width: 600px) {
+            width: 28px;
+            height: 28px;
+        }
     }
 </style>

@@ -38,6 +38,7 @@ export const paths = {
 export const ui = {
     en: {
         'site.name': 'Ubbìpò Osteria Restaurant',
+        'site.book': "Book table",
         
         'nav.menu': 'menu',
         'nav.food': 'food',
@@ -78,6 +79,7 @@ export const ui = {
     },
     it: {
         'site.name': 'Ubbìpò Osteria',
+        'site.book': 'Prenota',
 
         'nav.menu': 'menù',
         'nav.food': 'cibo',
