@@ -1,14 +1,13 @@
 ---
-import Layout from "./Layout.astro";
-import PageContainer from "../components/PageContainer.astro";
-import Card from "../components/Card.astro";
+import Layout from "@layouts/Layout.astro";
+import PageContainer from "@components/PageContainer.astro";
+import Card from "@components/Card.astro";
 
-import iconBeer from "../assets/images/icon-beer.svg";
-import iconFood from "../assets/images/icon-food.svg";
-// import iconMenu from "../assets/images/icon-menu.svg";
-import iconWine from "../assets/images/icon-wine.svg";
+import iconBeer from "@images/icon/beer.svg";
+import iconFood from "@images/icon/food.svg";
+import iconWine from "@images/icon/wine.svg";
 
-import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);

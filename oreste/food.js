@@ -44,7 +44,7 @@ export const dishes = [
                 '*salumi* del salumificio "G.ioi" {slow}',
                 '*olive* ammaccate',
                 '*acqua sale:* pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
-                '(su richiesta: *alici* di menaica del “Donatella Marino”) {slow}',
+                '(su richiesta: *alici* di menaica di “Donatella Marino”) {slow}',
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
