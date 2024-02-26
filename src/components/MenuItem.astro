@@ -19,6 +19,7 @@ import iconVegan from "../assets/images/icon-vegan.svg";
 import iconNoSulfites from "../assets/images/icon-no-sulfites.svg";
 
 import MenuIngredients from "./MenuIngredients.astro";
+import FormatText from "./FormatText.astro";
 
 const { name, ingredients, description, producer, location, tags, glass, bottle, price, available } = Astro.props;
 const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
@@ -45,9 +46,24 @@ const t = useTranslations(lang);
         </div>
 
         <div class:list={["menu-item-row", unavailable]}>
-            {(price) && <span class="price"><span class="price-field">{t("menu.price")}</span><span class="price-value">{price}</span></span>}
-            {(glass) && <span class="price"><span class="price-field">{t("menu.glass")}</span><span class="price-value">{glass} / </span></span>}
-            {(bottle) && <span class="price"><span class="price-field">{t("menu.bottle")}</span><span class="price-value">{bottle}</span></span>}
+            {(price) && 
+                <span class="price">
+                    <span class="price-field"> {t("menu.price")} </span>
+                    <span class="price-value"><FormatText text={price} /></span>
+                </span>
+            }
+            {(glass) && 
+                <span class="price">
+                    <span class="price-field">{t("menu.glass")}</span>
+                    <span class="price-value">{glass} / </span>
+                </span>
+            }
+            {(bottle) && 
+                <span class="price">
+                    <span class="price-field">{t("menu.bottle")}</span>
+                    <span class="price-value">{bottle}</span>
+                </span>
+            }
         </div>
     </div>
 
@@ -58,7 +74,8 @@ const t = useTranslations(lang);
 
             {(splitTags.includes("vegan")) && <Image src={iconVegan} alt={t("menu.vegan")} width="16" /> <span class="menu-tag-vegan">{t("menu.vegan")}</span>}
 
-            {(splitTags.includes("no-sulfites")) && <Image src={iconNoSulfites} class="filter-brown" alt={t("menu.no-sulfites")} width="14" /> <span class="menu-tag-no-sulfites">{t("menu.no-sulfites")}</span>}
+            {(splitTags.includes("no-sulfites")) && 
+                <Image src={iconNoSulfites} class="filter-brown" alt={t("menu.no-sulfites")} width="20" /> <span class="menu-tag-no-sulfites">{t("menu.no-sulfites")}</span>}
           </div>
         : ""
     }

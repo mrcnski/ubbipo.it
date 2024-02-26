@@ -1,0 +1,20 @@
+---
+interface Props {
+    text: string;
+}
+
+const { text } = Astro.props;
+
+import iconSlowFood from "../assets/images/icon-slow-food.svg";
+
+const regexItalics = /["|“]([^"“”]+)["|”]/g;
+const regexBold = /\*([^\*]+)\*/g;
+const regexSlow = /{slow}/g;
+---
+
+<Fragment set:html={
+    text
+        .replace(regexItalics, "<i>$1</i>")
+        .replace(regexBold, "<b>$1</b>")
+        .replace(regexSlow, `<img src=${iconSlowFood.src} alt="Slow food" width="48" />`)
+}/>

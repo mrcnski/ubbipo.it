@@ -12,7 +12,7 @@ export const dishes = [
                 '*mozzarella* nella mortella del "Le Starze"',
                 '*olive* ammaccate',
                 '*acqua sale*: pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
-                '*alici* di menaica del “Donatella Marino” {slow} *(+ €4)*',
+                '(su richiesta: *alici* di menaica di “Donatella Marino”) {slow}',
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
@@ -20,14 +20,17 @@ export const dishes = [
                 '*mozzarella* in myrtle from "Le Starze"',
                 'bruised *olives*',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
-                'menaica *anchovies* from "Donatella Marino" {slow} *(+ €4)*',
+                '(by request: menaica *anchovies* from "Donatella Marino") {slow}',
             ],
         },
         description: "",
         producer: "",
         location: "",
         tags: "", // Example: "vegan, no-sulfites, bio"    For no tags: ""
-        price: "19",
+        price: {
+            it: '19 "(per alici +4)"',
+            en: '19 "(for anchovies +4)"',
+        },
         available: "yes", // For no: "no"
     },
     {
@@ -41,20 +44,23 @@ export const dishes = [
                 '*salumi* del salumificio "G.ioi" {slow}',
                 '*olive* ammaccate',
                 '*acqua sale:* pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
-                '*alici* di menaica del “Donatella Marino” {slow} *(+ €4)*',
+                '(su richiesta: *alici* di menaica del “Donatella Marino”) {slow}',
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
                 'bruised *olives*',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
-                'menaica *anchovies* from "Donatella Marino" {slow} *(+ €4)*',
+                '(by request: menaica *anchovies* from "Donatella Marino") {slow}',
             ],
         },
         description: "",
         producer: "",
         location: "",
         tags: "", 
-        price: "15",
+        price: {
+            it: '15 "(per alici +4)"',
+            en: '15 "(for anchovies +4)"',
+        },
         available: "yes",
     },
 ];

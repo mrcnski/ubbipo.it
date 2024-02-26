@@ -3,7 +3,7 @@ interface Props {
     ingredients: Array<string>;
 }
 
-import iconSlowFood from "../assets/images/icon-slow-food.svg";
+import FormatText from "./FormatText.astro";
 
 const { ingredients } = Astro.props;
 
@@ -15,12 +15,7 @@ const regexSlow = /{slow}/g;
 <ul>
     {ingredients.map((ingredient) => 
         <li>
-            <Fragment set:html={
-                ingredient
-                    .replace(regexItalics, "<i>$1</i>")
-                    .replace(regexBold, "<b>$1</b>")
-                    .replace(regexSlow, `<img src=${iconSlowFood.src} alt="Slow food" width="48" />`)
-            }/>
+            <FormatText text={ingredient} />
         </li>
     )}
 </ul>
@@ -32,10 +27,5 @@ const regexSlow = /{slow}/g;
     }
     li {
         list-style-type: "— ";
-    }
-    :global(img) {
-        margin: 0 0.25rem;
-        vertical-align: middle;
-        display: inline-block;
     }
 </style>
