@@ -1,15 +1,15 @@
 ---
 import { Image } from 'astro:assets';
-import logoLong from "../assets/images/logo-long.svg";
-import iconBeer from "../assets/images/icon-beer.svg";
-import iconFood from "../assets/images/icon-food.svg";
-import iconMenu from "../assets/images/icon-menu.svg";
-import iconWine from "../assets/images/icon-wine.svg";
+import logoLong from "@images/logo-long.svg";
+import iconBeer from "@images/icon-beer.svg";
+import iconFood from "@images/icon-food.svg";
+import iconMenu from "@images/icon-menu.svg";
+import iconWine from "@images/icon-wine.svg";
 
-import LanguagePicker from '../components/LanguagePicker.astro';
-import NavCard from "../components/NavCard.astro";
+import LanguagePicker from '@components/LanguagePicker.astro';
+import NavCard from "@components/NavCard.astro";
 
-import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);

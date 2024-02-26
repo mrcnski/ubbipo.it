@@ -6,10 +6,6 @@ interface Props {
 import FormatText from "./FormatText.astro";
 
 const { ingredients } = Astro.props;
-
-const regexItalics = /["|“]([^"“”]+)["|”]/g;
-const regexBold = /\*([^\*]+)\*/g;
-const regexSlow = /{slow}/g;
 ---
 
 <ul>

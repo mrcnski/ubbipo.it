@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && npm test && astro build",
     "preview": "astro preview",
+    "test": "jest",
     "astro": "astro"
   },
   "dependencies": {
@@ -15,5 +16,13 @@
     "astro": "^4.3.7",
     "less": "^4.2.0",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
   }
 }

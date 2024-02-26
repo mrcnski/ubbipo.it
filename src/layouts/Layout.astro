@@ -16,12 +16,10 @@ interface Props {
 
 const { title, description } = Astro.props;
 
-import { getLangFromUrl, useTranslations, urlToLangPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, urlToLangUrl } from '../i18n/utils';
 import { languages } from '../i18n/ui';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-const baseurl = t("site.baseurl");
 ---
 
 <!doctype html>
@@ -36,13 +34,13 @@ const baseurl = t("site.baseurl");
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		{
 			Object.keys(languages).map((language) =>
-				<link rel="alternate" hreflang={language} href={`${baseurl}${urlToLangPath(Astro.url, language as "it" | "en")}`} />
+				<link rel="alternate" hreflang={language} href={`${urlToLangUrl(Astro.url!, language as "it" | "en")}`} />
 			)
 		}
 
 		<meta property="og:title" content={title /* raw title (no branding) */} />
-		<meta property="og:url" content={`${baseurl}${urlToLangPath(Astro.url, lang)}`} />
-		<meta property="og:image" content={`${baseurl}/assets/images/logo-full.png`} />
+		<meta property="og:url" content={`${urlToLangUrl(Astro.url!, lang)}`} />
+		<meta property="og:image" content={`${Astro.site}assets/images/logo-full.png`} />
 		<meta property="og:type" content="website" />
 		<meta property="og:description" content={description} />
 

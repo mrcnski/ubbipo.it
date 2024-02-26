@@ -13,13 +13,13 @@ interface Props {
 }
 
 import { Image } from 'astro:assets';
-import iconBio from "../assets/images/icon-bio.svg";
-import iconLocation from "../assets/images/icon-location.svg";
-import iconVegan from "../assets/images/icon-vegan.svg";
-import iconNoSulfites from "../assets/images/icon-no-sulfites.svg";
+import iconBio from "@images/icon-bio.svg";
+import iconLocation from "@images/icon-location.svg";
+import iconVegan from "@images/icon-vegan.svg";
+import iconNoSulfites from "@images/icon-no-sulfites.svg";
 
-import MenuIngredients from "./MenuIngredients.astro";
-import FormatText from "./FormatText.astro";
+import MenuIngredients from "@components/MenuIngredients.astro";
+import FormatText from "@components/FormatText.astro";
 
 const { name, ingredients, description, producer, location, tags, glass, bottle, price, available } = Astro.props;
 const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
