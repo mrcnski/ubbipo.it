@@ -24,6 +24,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'MADE Tommy Soft Bold';
+  src: url('/fonts/made-tommy-soft-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 h1, h2 {
   font-family: 'MADE Tommy Soft Regular', sans-serif;
@@ -64,7 +71,8 @@ a {
   color: var(--green);
 }
 
-img {
+img, svg {
+  max-width: 100%;
   margin: 0 0.25rem;
   vertical-align: middle;
   display: inline-block;

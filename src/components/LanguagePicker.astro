@@ -1,6 +1,4 @@
 ---
-// import { Image } from 'astro:assets';
-// import iconLanguage from "../assets/images/icon-language.svg";
 
 import { languages } from '../i18n/ui';
 import { getLangFromUrl, urlToLangPath } from '../i18n/utils';
@@ -8,8 +6,6 @@ const pageLang = getLangFromUrl(Astro.url);
 ---
 
 <div class="languages-container">
-    <!-- <Image src={iconLanguage} alt={t("nav.languages")} width="24" /> -->
-
     <div class="picker-container">
         {Object.entries(languages).map(([lang, label]) => (
             <a class={"lang-link" + ((pageLang === lang) ? " lang-link-active" : "")}

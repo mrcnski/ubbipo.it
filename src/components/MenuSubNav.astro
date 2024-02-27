@@ -70,6 +70,8 @@
 	document.addEventListener('astro:page-load', () => {
 		// Add all h2 ID's to the navbar.
 		const h2s = document.querySelectorAll('h2');
+		// If there are less than 2 h2's, don't show the navbar.
+		if (h2s.length < 2) return;
 		const menuNavbar = document.getElementById("menu-navbar");
 		if (!menuNavbar) return;
 		h2s.forEach(h2 => {

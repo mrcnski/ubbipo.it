@@ -3,7 +3,6 @@ import { Image } from 'astro:assets';
 import logoLong from "@images/logo/long.svg";
 import iconBeer from "@images/icon/beer.svg";
 import iconFood from "@images/icon/food.svg";
-import iconMenu from "@images/icon/menu.svg";
 import iconWine from "@images/icon/wine.svg";
 
 import LanguagePicker from '@components/LanguagePicker.astro';
@@ -28,7 +27,7 @@ The outer container is needed just to center the whole thing.
         <div style="width: 100%;"></div>
 
         <nav class="navbar">
-            <NavCard id="nav-button-menu" icon={iconMenu} text={t('nav.menu')} href={translatePath("menu")} />
+            <NavCard id="nav-button-menu" text={t('nav.menu')} href={translatePath("menu")} />
         </nav>
 
         <LanguagePicker />

@@ -2,13 +2,14 @@
 interface Props {
     id?: string,
     icon?: ImageMetadata,
-    text: string,
+    text?: string,
+    alt?: string,
     href?: string,
 }
 
 import { Image } from 'astro:assets';
 
-const { id, icon, text, href } = Astro.props;
+const { id, icon, text, alt, href } = Astro.props;
 const classList = ['nav-card'];
 
 // Set the current page in the navbar to active.
@@ -27,8 +28,9 @@ if (href === currentPage ||
 ---
 
 <a id={id} class:list={classList} href={href} style="cursor: pointer;">
+    {/* The inner div is used to apply the border to the text. */}
     <div class="inner">
-        {(icon) && <Image class="nav-icon filter-brown" src={icon} alt={text} />}
+        {(icon) && <Image class="nav-icon filter-brown" src={icon} alt={alt || text!} />}
         {text}
     </div>
 </a>
@@ -94,5 +96,10 @@ if (href === currentPage ||
         @media (max-width: 600px) {
             width: 16px;
         }
+    }
+    
+    #nav-button-menu {
+        font-family: 'MADE Tommy Soft Bold', sans-serif;
+        text-transform: uppercase;
     }
 </style>
