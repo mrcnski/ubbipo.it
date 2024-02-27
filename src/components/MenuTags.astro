@@ -1,0 +1,56 @@
+---
+interface Props {
+  location?: string;
+  tags?: Array<string>;
+}
+
+import { Image } from 'astro:assets';
+import iconLocation from "@images/icon/location.svg";
+import iconVegan from "@images/icon/vegan.svg";
+import iconNoSulfites from "@images/icon/no-sulfites.svg";
+
+const { location, tags = [] } = Astro.props;
+
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="menu-tags">
+  {(location) && <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span>{location}</span>}
+
+  {(tags.includes("vegan")) && <Image src={iconVegan} alt={t("menu.vegan")} width="16" /> <span class="menu-tag-vegan">{t("menu.vegan")}</span>}
+
+  {(tags.includes("no-sulfites")) && 
+      <Image src={iconNoSulfites} class="filter-brown" alt={t("menu.no-sulfites")} width="20" /> <span class="menu-tag-no-sulfites">{t("menu.no-sulfites")}</span>}
+</div>
+
+<style>
+    .menu-tags {
+        margin-top: 1rem;
+        margin-bottom: 0;
+
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 0.5rem;
+            color: var(--green);
+        }
+
+        span {
+            font-size: 14px;
+            margin-bottom: 0;
+            margin-left: 0.25rem;
+            margin-right: 1.75rem;
+        }
+    }
+    .menu-tag-vegan {
+        color: var(--green);
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+    }
+    .menu-tag-no-sulfites {
+        color: var(--brown);
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+    }
+</style>

@@ -24,6 +24,7 @@ export const dishes = [
             ],
         },
         description: "",
+        image: "tagliere misto.jpg", // Images in 'src/assets/images/menu' folder.
         producer: "",
         location: "",
         tags: "", // Example: "vegan, no-sulfites, bio"    For no tags: ""
@@ -54,6 +55,7 @@ export const dishes = [
             ],
         },
         description: "",
+        image: "tagliere salumi.jpg",
         producer: "",
         location: "",
         tags: "", 

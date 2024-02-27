@@ -6,6 +6,7 @@ export const viniRossi = [
             en: "Cellaia Rosso",
         },
         description: "Cilento DOP, Aglianico, Barbera, Piedirosso, 12.5%, 2020",
+        image: "",
         producer: "Azienda Agricola Marino",
         location: "Agropoli",
         tags: "vegan, bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
@@ -16,6 +17,7 @@ export const viniRossi = [
     {
         name: "Caos",
         description: "Vino Rosso, 12 varietà diverse, 14%, 2020",
+        image: "",
         producer: "Azienda Agricola Antonio Bianco",
         location: "Gioi",
         tags: "no-sulfites",
@@ -26,6 +28,7 @@ export const viniRossi = [
     {
         name: "Colle Arenario",
         description: "Cilento DOC, Aglianico, 13%, 2020",
+        image: "",
         producer: "Tenuta Passaro",
         location: "Castellabate",
         tags: "",
@@ -36,6 +39,7 @@ export const viniRossi = [
     {
         name: "Donnaluna Rosso",
         description: "Cilento DOP, Aglianico, 14%, 2020",
+        image: "",
         producer: "Viticoltori De Conciliis",
         location: "Prignano",
         tags: "bio",
@@ -46,6 +50,7 @@ export const viniRossi = [
     {
         name: "Rosso Campania",
         description: "Campania IGP, Aglianico, Cabernet sauvignon, 13%, 2021",
+        image: "",
         producer: "Azienda Agricola Tredaniele",
         location: "Trentinara",
         tags: "",
@@ -56,6 +61,7 @@ export const viniRossi = [
     {
         name: "Malabrocca",
         description: "Paestum IGP, Aglianico, Camaiola, 12.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Salvatore Magnoni",
         location: "Rutino",
         tags: "no-sulfites",
@@ -66,6 +72,7 @@ export const viniRossi = [
     {
         name: "Patrinus",
         description: "Paestum IGT, Aglianico, Primitivo, 14%, 2021",
+        image: "",
         producer: "Azienda Agricola Alferio Romito",
         location: "Castellabate",
         tags: "bio",
@@ -76,6 +83,7 @@ export const viniRossi = [
     {
         name: "Klèos",
         description: "Cilento DOP, Aglianico, 14%, 2021",
+        image: "",
         producer: "Azienda Agricola Luigi Maffini",
         location: "Giungano",
         tags: "",
@@ -86,6 +94,7 @@ export const viniRossi = [
     {
         name: "Rosso Del Ciglio",
         description: "Paestum IGP, Aglianico, 14.5%, 2020",
+        image: "",
         producer: "Azienda Agricola Salvatore Magnoni",
         location: "Rutino",
         tags: "no-sulfites, bio",
@@ -96,6 +105,7 @@ export const viniRossi = [
     {
         name: "Rosso Paestum",
         description: "Paestum IGP, Cabernet Sauvignon, Aglianico, 13.5%, 2018",
+        image: "",
         producer: "Azienda Agricola Tredaniele",
         location: "Trentinara",
         tags: "",
@@ -106,6 +116,7 @@ export const viniRossi = [
     {
         name: "Proclamo Riserva",
         description: "Cilento DOP, Aglianico, 15%, 2014",
+        image: "",
         producer: "Azienda Agricola Marino",
         location: "Agropoli",
         tags: "",
@@ -116,6 +127,7 @@ export const viniRossi = [
     {
         name: "Primalaterra 2012",
         description: "Cilento DOP, Aglianico, 16%, 2012",
+        image: "",
         producer: "Azienda Agricola Salvatore Magnoni",
         location: "Rutino",
         tags: "",
@@ -129,6 +141,7 @@ export const viniBianci = [
     {
         name: "Cellaia Bianco",
         description: "Cilento DOP, Fiano, Malvasia, 12.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Marino",
         location: "Agropoli",
         tags: "vegan, bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
@@ -139,6 +152,7 @@ export const viniBianci = [
     {
         name: "Colli Monticoricesi",
         description: "Bianco Campania, Fiano, Falanghina, 13%, 2022",
+        image: "",
         producer: "Azienda Agricola Le Grazie",
         location: "Montecorice",
         tags: "",
@@ -149,6 +163,7 @@ export const viniBianci = [
     {
         name: "Etèl",
         description: "Campania IGP, Falanghina, 13%, 2022",
+        image: "",
         producer: "Azienda Agricola Albamarina",
         location: "Foria di Centola",
         tags: "",
@@ -159,6 +174,7 @@ export const viniBianci = [
     {
         name: "Ogliastro Marina",
         description: "Cilento DOC, Fiano, 13%, 2022",
+        image: "",
         producer: "Tenuta Passaro",
         location: "Castellabate",
         tags: "",
@@ -169,6 +185,7 @@ export const viniBianci = [
     {
         name: "Valmezzana",
         description: "Cilento DOP, Fiano, 14%, 2022",
+        image: "",
         producer: "Azienda Agricola Albamarina",
         location: "Foria di Centola",
         tags: "",
@@ -179,6 +196,7 @@ export const viniBianci = [
     {
         name: "Proclamo",
         description: "Cilento DOP, Fiano, 13.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Marino",
         location: "Agropoli",
         tags: "vegan, bio",
@@ -189,6 +207,7 @@ export const viniBianci = [
     {
         name: "Vincenzì",
         description: "Campania IGP, Fiano, 12.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Le Grazie",
         location: "Montecorice",
         tags: "",
@@ -199,6 +218,7 @@ export const viniBianci = [
     {
         name: "Donnaluna Bianco",
         description: "Cilento DOC, Fiano, 13%, 2022",
+        image: "",
         producer: "Viticoltori De Conciliis",
         location: "Prignano Cilento",
         tags: "bio",
@@ -209,6 +229,7 @@ export const viniBianci = [
     {
         name: "Corsole",
         description: "Campania IGP, Fiano, 13.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Tredaniele",
         location: "Trentinara",
         tags: "",
@@ -219,6 +240,7 @@ export const viniBianci = [
     {
         name: "Licosa",
         description: "Cilento DOC, Fiano, 13.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Alferio Romito",
         location: "Castellabate",
         tags: "bio",
@@ -229,6 +251,7 @@ export const viniBianci = [
     {
         name: "Kràtos",
         description: "Cilento DOP, Fiano, 13%, 2022",
+        image: "",
         producer: "Azienda Agricola Luigi Maffini",
         location: "Giungano",
         tags: "",
@@ -239,6 +262,7 @@ export const viniBianci = [
     {
         name: "Vesole",
         description: "Campania IGP, Fiano, 12.5%, 2020",
+        image: "",
         producer: "Azienda Agricola Tredaniele",
         location: "Trentinara",
         tags: "",
@@ -252,6 +276,7 @@ export const viniRosati = [
     {
         name: "Maricinè",
         description: "Paestum IGP, Aglianico, 13.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Albamarina",
         location: "Foria di Centola",
         tags: "",    // Example: "vegan, no-sulfites, bio"    For no tags: ""
@@ -262,6 +287,7 @@ export const viniRosati = [
     {
         name: "Anna",
         description: "Campania IGP, Pinot Nero, 13%, 2022",
+        image: "",
         producer: "Azienda Agricola Tredaniele",
         location: "Trentinara",
         tags: "",
@@ -272,6 +298,7 @@ export const viniRosati = [
     {
         name: "Primmavera",
         description: "Paestum IGP, Aglianico, Camaiola, 13.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Salvatore Magnoni",
         location: "Rutino",
         tags: "",
@@ -285,6 +312,7 @@ export const viniVivaci = [
     {
         name: "Caprarizzo",
         description: "Paestum IGT, Greco, 11.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Caprarizzo",
         location: "Castellabate",
         tags: "",   // Example: "vegan, no-sulfites, bio"    For no tags: ""
@@ -295,6 +323,7 @@ export const viniVivaci = [
     {
         name: "Pashkà",
         description: "Paestum Rosso IGP, Aglianico, Barbera, 12%, 2022",
+        image: "",
         producer: "Azienda Agricola Casebianche",
         location: "Torchiara",
         tags: "bio",
@@ -305,6 +334,7 @@ export const viniVivaci = [
     {
         name: "Desiderio Bianco",
         description: "Campania IGT, Fiano, 13.5%, 2022",
+        image: "",
         producer: "Azienda Agricola Alfonso Rotolo",
         location: "Rutino",
         tags: "",
@@ -315,6 +345,7 @@ export const viniVivaci = [
     {
         name: "Desiderio Rosato",
         description: "Aglianico Rosè Frizzante, Aglianico, 13%, 2022",
+        image: "",
         producer: "Azienda Agricola Alfonso Rotolo",
         location: "Rutino",
         tags: "",
@@ -328,6 +359,7 @@ export const viniSpumanti = [
     {
         name: "Selim",
         description: "Vino Spumante Brut, Aglianico, Fiano, 11.5%",
+        image: "",
         producer: "Viticoltori De Conciliis",
         location: "Prignano Cilento",
         tags: "",   // Example: "vegan, no-sulfites, bio"    For no tags: ""
@@ -338,6 +370,7 @@ export const viniSpumanti = [
     {
         name: "Tredaniele Spumante",
         description: "Vino Spumante Brut Rosè, Pinot Nero, 12.5%",
+        image: "",
         producer: "Azienda Agricola Tredaniele",
         location: "Trentinara",
         tags: "",

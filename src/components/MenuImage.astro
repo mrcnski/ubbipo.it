@@ -1,0 +1,38 @@
+---
+interface Props {
+  relativeSrc: string;
+  alt: string;
+}
+
+import { Image } from 'astro:assets';
+
+const { relativeSrc, alt } = Astro.props;
+
+const dir = '/src/assets/images/menu';
+const src = `${dir}/${relativeSrc}`;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/menu/*');
+if (!images[src]) throw new Error(`"${relativeSrc}" does not exist in glob: "${dir}/*"`);
+---
+
+<Image src={images[src]()} alt={alt} />
+
+<style>
+    img {
+        width: 195px;
+        height: 130px;
+
+        padding: 0.5rem;
+        border: 1px solid var(--brown);
+        border-radius: 10px;
+        margin: 0;
+
+        object-fit: cover;
+
+        transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+</style>

@@ -1,0 +1,131 @@
+---
+interface Props {
+    name: string;
+    price?: string;
+    glass?: string;
+    bottle?: string;
+    available: string;
+    bio: boolean;
+}
+
+import { Image } from 'astro:assets';
+import iconBio from "@images/icon/bio.svg";
+
+import FormatText from "@components/FormatText.astro";
+
+const { name, price, glass, bottle, available, bio } = Astro.props;
+
+const availability = (available != "yes") ? "unavailable" : "";
+
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+{/* Outer div controls whether the name/bio portion is on the same line as the price. */}
+<div class:list={["menu-heading", availability]}>
+    {/* Portion that should always be on the same line. 
+        If the price portion is wrapped, the BIO icon should be right-aligned. */}
+    <div class="menu-heading-same-line">
+        <h3>{name}</h3>
+
+        {(bio) && <Image src={iconBio} alt="Bio" width="24" class="icon-bio" />}
+    </div>
+
+    <div class:list={["menu-item-row", availability]}>
+        {(price) && 
+            <span class="price">
+                <span class="price-field"> {t("menu.price")} </span>
+                <span class="price-value"><FormatText text={price} /></span>
+            </span>
+        }
+        {(glass) && 
+            <span class="price">
+                <span class="price-field">{t("menu.glass")}</span>
+                <span class="price-value">{glass}</span>
+            </span>
+        }
+        {(glass && bottle) && <span> / </span>}
+        {(bottle) && 
+            <span class="price">
+                <span class="price-field">{t("menu.bottle")}</span>
+                <span class="price-value">{bottle}</span>
+            </span>
+        }
+    </div>
+</div>
+
+<style>
+    .menu-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        gap: 1.5rem;
+
+        margin-top: 2.25rem;
+        margin-bottom: 1rem;
+        
+        color: var(--brown);
+
+        @media (max-width: 900px) {
+            flex-flow: column;
+            align-items: flex-start;
+
+            gap: 0.3rem;
+        }
+    }
+    .menu-heading-same-line {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        width: 100%;
+        gap: 1.5rem;
+
+        @media (max-width: 900px) {
+            justify-content: space-between;
+        }
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    .menu-item-row {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.75rem;
+        /* flex-wrap: wrap; */
+
+        span {
+            margin-bottom: 0rem;
+        }
+    }
+
+    .price {
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        white-space: nowrap;
+    }
+    .price-field {
+        font-family: 'MADE Tommy Soft Regular', sans-serif;
+    }
+    .price-value {
+        margin-left: 0.25rem;
+    }
+    .price, .price-field, .price-value {
+        font-size: 16px;
+    }
+
+    .icon-bio {
+        display: inline-block;
+        /* margin-left: 1.5rem; */
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .unavailable h3, .unavailable span {
+        color: var(--gray);
+    }
+</style>

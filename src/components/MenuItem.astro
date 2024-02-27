@@ -3,6 +3,7 @@ interface Props {
     name: string;
     ingredients?: Array<string>;
     description?: string;
+    image?: string;
     producer?: string;
     location?: string;
     tags?: string;
@@ -12,19 +13,14 @@ interface Props {
     available: string;
 }
 
-import { Image } from 'astro:assets';
-import iconBio from "@images/icon/bio.svg";
-import iconLocation from "@images/icon/location.svg";
-import iconVegan from "@images/icon/vegan.svg";
-import iconNoSulfites from "@images/icon/no-sulfites.svg";
-
+import MenuHeading from "@components/MenuHeading.astro";
+import MenuImage from "@components/MenuImage.astro";
 import MenuIngredients from "@components/MenuIngredients.astro";
-import FormatText from "@components/FormatText.astro";
+import MenuTags from "@components/MenuTags.astro";
 
-const { name, ingredients, description, producer, location, tags, glass, bottle, price, available } = Astro.props;
-const splitTags = tags?.split(",").map(tag => tag.toLowerCase().trim()) ?? [];
-const headingName = (price) ? "menu-heading-price" : "menu-heading";
-const unavailable = (available != "yes") ? "unavailable" : "";
+const { name, ingredients, description, image, producer, location, tags, glass, bottle, price, available } = Astro.props;
+// Filter out empty tags.
+var splitTags = tags?.split(",").filter(tag => tag).map(tag => tag.toLowerCase().trim()) ?? [];
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
@@ -32,11 +28,7 @@ const t = useTranslations(lang);
 ---
 
 <div class="menu-item">
-    <div class:list={[headingName, unavailable]}>
-        <h3>{name}</h3>
-        {(splitTags.includes("bio")) && 
-            <Image src={iconBio} alt="Bio." width="24" class="icon-bio" />}
-    </div>
+    <MenuHeading name={name} price={price} glass={glass} bottle={bottle} available={available} bio={splitTags.includes("bio")} />
 
     <div class="menu-item-content">
         <div class="menu-item-column">
@@ -44,62 +36,18 @@ const t = useTranslations(lang);
             {(description) && <span class="menu-item-description">{description}</span>}
             {(producer) && <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>{producer}</span>}
         </div>
-
-        <div class:list={["menu-item-row", unavailable]}>
-            {(price) && 
-                <span class="price">
-                    <span class="price-field"> {t("menu.price")} </span>
-                    <span class="price-value"><FormatText text={price} /></span>
-                </span>
-            }
-            {(glass) && 
-                <span class="price">
-                    <span class="price-field">{t("menu.glass")}</span>
-                    <span class="price-value">{glass} / </span>
-                </span>
-            }
-            {(bottle) && 
-                <span class="price">
-                    <span class="price-field">{t("menu.bottle")}</span>
-                    <span class="price-value">{bottle}</span>
-                </span>
-            }
-        </div>
+        {(image) && 
+            <div class="menu-item-image">
+                <MenuImage relativeSrc={image} alt={name} />
+            </div>
+        }
     </div>
 
-    {
-    (location || splitTags.length > 0)
-        ? <div class="menu-tags">
-            {(location) && <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span>{location}</span>}
-
-            {(splitTags.includes("vegan")) && <Image src={iconVegan} alt={t("menu.vegan")} width="16" /> <span class="menu-tag-vegan">{t("menu.vegan")}</span>}
-
-            {(splitTags.includes("no-sulfites")) && 
-                <Image src={iconNoSulfites} class="filter-brown" alt={t("menu.no-sulfites")} width="20" /> <span class="menu-tag-no-sulfites">{t("menu.no-sulfites")}</span>}
-          </div>
-        : ""
-    }
+    {(location || splitTags.length > 0) && <MenuTags location={location} tags={splitTags} />}
 </div>
 
 <style>
     .menu-item {
-    }
-
-    .menu-heading {
-        display: flex;
-        align-items: center;
-
-        @media (max-width: 800px) {
-            justify-content: space-between;
-        }
-    }
-    .menu-heading-price {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        
-        color: var(--brown);
     }
     
     .menu-item-content {
@@ -108,12 +56,14 @@ const t = useTranslations(lang);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        row-gap: 0.5rem;
+        align-items: center;
+        row-gap: 1.5rem;
         column-gap: 2rem;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 900px) {
             flex-direction: column;
             justify-content: space-between;
+            align-items: flex-start;
         }
     }
     .menu-item-ingredients {
@@ -123,29 +73,12 @@ const t = useTranslations(lang);
         font-size: 18px;
     }
     
-    .menu-item-row {
-        display: flex;
-        flex-direction: row;
-        column-gap: 0.5rem;
-    }
     .menu-item-column {
         display: flex;
         flex-direction: column;
     }
-    
-    .menu-item-row span {
-        margin-bottom: 0rem;
-    }
-
-    .unavailable h3, .unavailable span {
-        color: var(--gray);
-    }
-    
-    .icon-bio {
-        display: inline-block;
-        margin-left: 1.5rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
+    .menu-item-image {
+        flex: 0 0 auto;
     }
     
     .producer {
@@ -155,47 +88,5 @@ const t = useTranslations(lang);
     .producer-field {
         margin-right: 0.5rem;
         font-size: 16px;
-    }
-
-    .price {
-        margin-bottom: 0;
-        line-height: 1.5rem;
-        white-space: nowrap;
-        text-align: right;
-    }
-    .price-field {
-        font-family: 'MADE Tommy Soft Regular', sans-serif;
-    }
-    .price-value {
-        margin-left: 0.5rem;
-    }
-    .price, .price-field, .price-value {
-        font-size: 16px;
-    }
-
-    .menu-tags {
-        margin-top: 1rem;
-        margin-bottom: 0.75rem;
-
-        display: flex;
-        align-items: center;
-    }
-    .menu-tags img {
-        margin-right: 0.5rem;
-        color: var(--green);
-    }
-    .menu-tags span {
-        font-size: 14px;
-        margin-bottom: 0;
-        margin-left: 0.25rem;
-        margin-right: 1.75rem;
-    }
-    .menu-tag-vegan {
-        color: var(--green);
-        font-family: 'MADE Tommy Soft Regular', sans-serif;
-    }
-    .menu-tag-no-sulfites {
-        color: var(--brown);
-        font-family: 'MADE Tommy Soft Regular', sans-serif;
     }
 </style>
