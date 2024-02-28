@@ -2,7 +2,9 @@
 ---
 
 <div class="menu-navbar-container">
-	<nav id="menu-navbar"></nav> 
+	<nav id="menu-navbar">
+		{/* Generated links go here. */}
+	</nav> 
 </div>
 
 <style lang="less">
@@ -75,15 +77,10 @@
 		const menuNavbar = document.getElementById("menu-navbar");
 		if (!menuNavbar) return;
 		h2s.forEach(h2 => {
-			const id = h2.id;
-			const text = h2.textContent;
 			const a = document.createElement('a');
-
 			a.classList.add('menu-nav-link');
-			a.classList.add('clickable');
-			a.classList.add('spreadable');
-			a.href = `#${id}`;
-			a.textContent = text;
+			a.href = `#${h2.id}`;
+			a.textContent = h2.textContent;
 			menuNavbar.appendChild(a);
 		});
 		

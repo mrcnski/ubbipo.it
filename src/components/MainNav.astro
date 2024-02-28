@@ -93,21 +93,6 @@ Appearing-and-disappearing navbar with menu links.
         .navbar {
             display: flex;
             width: 100%;
-            
-            .nav-card {
-                position: relative;
-
-                &:not(:last-child)::after {
-                    position: absolute;
-                    content: "";
-                    right: 0;
-                    top: 30%;
-                    width: 1px;
-                    height: 40%;
-
-                    border-right: 1px solid var(--gray-bg);
-                }
-            }
         }
     }
 

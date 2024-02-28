@@ -37,6 +37,7 @@ if (href === currentPage ||
 
 <style lang="less">
 	.nav-card {
+        position: relative;
         display: flex;
 		text-align: center;
         vertical-align: middle;
@@ -63,6 +64,17 @@ if (href === currentPage ||
         }
         &:hover * {
             color: var(--green);
+        }
+            
+        &:not(:last-child)::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 30%;
+            width: 1px;
+            height: 40%;
+
+            border-right: 1px solid var(--gray-bg);
         }
 
         * {
@@ -101,6 +113,5 @@ if (href === currentPage ||
     #nav-button-menu {
         font-family: 'MADE Tommy Soft Bold', sans-serif;
         text-transform: uppercase;
-        /* letter-spacing: 0.5px; */
     }
 </style>
