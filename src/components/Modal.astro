@@ -213,7 +213,7 @@ const { triggerId, title, closeText = t("nav.close") } = Astro.props
     modalCloseButton!.addEventListener('click', closeModal)
   })
 
-  window.closeModal = closeModal
+  window.close = closeModal
 
   // Listen for view transitions
   document.addEventListener('astro:after-swap', () => {
