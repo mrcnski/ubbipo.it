@@ -87,7 +87,7 @@ export const ui = {
         'nav.wine': 'vini',
         'nav.drinks': 'bevande',
         'nav.languages': 'lingue',
-        'nav.close': 'chiudere',
+        'nav.close': 'chiudi',
 
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",

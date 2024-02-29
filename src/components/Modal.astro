@@ -38,7 +38,7 @@ const { triggerId, title, closeText = t("nav.close") } = Astro.props
 
   :where(.modal) {
     background-color: white;
-    border: 2px solid var(--brown);
+    border: 1.5px solid var(--brown);
     max-width: 95%;
     padding: 0;
   }
@@ -74,16 +74,19 @@ const { triggerId, title, closeText = t("nav.close") } = Astro.props
   }
 
   .modal__close button {
-    border: 1px solid var(--gray);
+    border: 1px solid var(--brown);
     background-color: white;
-    color: var(--brown);
     transition: background-color 0.15s ease-in-out;
     margin: 0;
     padding: 0.25em 0.5em;
+
+    color: var(--brown);
+    font-family: 'MADE Tommy Soft Light', sans-serif;
   }
 
   .modal__close button:hover,
   .modal__close button:focus {
+    cursor: pointer;
     background-color: var(--hover-bg);
   }
 
