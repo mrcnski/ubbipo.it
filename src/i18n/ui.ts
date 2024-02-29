@@ -45,6 +45,7 @@ export const ui = {
         'nav.wine': 'wine',
         'nav.drinks': 'drinks',
         'nav.languages': 'languages',
+        'nav.close': 'close',
 
         'index.title': "Home",
         'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
@@ -86,6 +87,7 @@ export const ui = {
         'nav.wine': 'vini',
         'nav.drinks': 'bevande',
         'nav.languages': 'lingue',
+        'nav.close': 'chiudere',
 
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",

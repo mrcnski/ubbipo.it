@@ -1,29 +1,37 @@
 ---
 interface Props {
-  relativeSrc: string;
-  alt: string;
+    name: string;
+    relativeSrc: string;
+    alt: string;
 }
 
 import { Image } from 'astro:assets';
+import Modal from "@components/Modal.astro";
 
-const { relativeSrc, alt } = Astro.props;
+const { name, relativeSrc, alt } = Astro.props;
 
+const modalId = `modal-${relativeSrc.split(".")[0].replaceAll(/\s/g, '-')}`;
 const dir = '/src/assets/images/menu';
 const src = `${dir}/${relativeSrc}`;
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/menu/*');
-if (!images[src]) throw new Error(`"${relativeSrc}" does not exist in glob: "${dir}/*"`);
+const image = images[src]();
+if (!image) throw new Error(`"${relativeSrc}" does not exist in glob: "${dir}/*"`);
 ---
 
-<Image src={images[src]()} alt={alt} />
+<Image class="image-nonmodal" id={modalId} src={image} alt={alt} quality="low" />
+
+<Modal triggerId={modalId} title={name} >
+    <Image class="image-modal" src={image} alt={alt} quality="high">
+</Modal>
 
 <style lang="less">
-    img {
+    .image-nonmodal {
         width: 195px;
         height: 130px;
 
         padding: 0.5rem;
         border: 1px solid var(--gray);
-        border-radius: 10px;
+        border-radius: 1rem;
         margin: 0;
 
         object-fit: cover;
@@ -31,8 +39,16 @@ if (!images[src]) throw new Error(`"${relativeSrc}" does not exist in glob: "${d
         transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 
         &:hover {
-            cursor: pointer;
+            cursor: zoom-in;
             transform: scale(1.1);
         }
+    }
+
+    .image-modal {
+        width: auto;
+        max-width: 85vw;
+        height: auto;
+        max-height: 75vh;
+        object-fit: contain;
     }
 </style>
