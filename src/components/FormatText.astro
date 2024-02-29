@@ -16,5 +16,11 @@ const regexSlow = /{slow}/g;
     text
         .replace(regexItalics, "<i>$1</i>")
         .replace(regexBold, "<b>$1</b>")
-        .replace(regexSlow, `<img src=${iconSlowFood.src} alt="Slow food" width="48" />`)
+        .replace(regexSlow, `<img class="icon-slow" src=${iconSlowFood.src} alt="Slow food" width="48" />`)
 }/>
+
+<style lang="less">
+    :global(.icon-slow) {
+        margin: 0 0.25em;
+    }
+</style>
