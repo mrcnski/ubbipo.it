@@ -11,7 +11,7 @@ const t = useTranslations(lang);
 const { d, dArray } = useDataTranslations(lang);
 ---
 
-<MenuLayout title={t("menu.food.title")} description={t("menu.food.description")}>
+<MenuLayout title={t("menu.food.title")} description={t("menu.food.description")} info={t("menu.food.info")}>
     <PageSection sectionTitle={t("menu.food.dishes")}>
         {dishes.map((dish: any) => (
             <MenuItem 

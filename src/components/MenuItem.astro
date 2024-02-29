@@ -13,6 +13,7 @@ interface Props {
     available: string;
 }
 
+import FormatText from "@components/FormatText.astro";
 import MenuHeading from "@components/MenuHeading.astro";
 import MenuImage from "@components/MenuImage.astro";
 import MenuIngredients from "@components/MenuIngredients.astro";
@@ -32,18 +33,29 @@ const t = useTranslations(lang);
 
     <div class="menu-item-content">
         <div class="menu-item-column">
-            {(ingredients) && <span class="menu-item-ingredients"><MenuIngredients ingredients={ingredients} /></span>}
-            {(description) && <span class="menu-item-description">{description}</span>}
-            {(producer) && <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>{producer}</span>}
+            {(ingredients) && 
+                <span class="menu-item-ingredients"><MenuIngredients ingredients={ingredients} /></span>}
+            {(description) && 
+                <span class="menu-item-description"><FormatText text={description} /></span>}
+            {(producer) && 
+                <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>
+                    <FormatText text={producer} />
+                </span>}
+
+            <span class="non-mobile-only">
+                {(location || splitTags.length > 0) && <MenuTags location={location} tags={splitTags} />}
+            </span>
         </div>
         {(image) && 
             <div class="menu-item-image">
                 <MenuImage name={name} relativeSrc={image} alt={name} />
             </div>
         }
-    </div>
 
-    {(location || splitTags.length > 0) && <MenuTags location={location} tags={splitTags} />}
+    </div>
+    <span class="mobile-only">
+        {(location || splitTags.length > 0) && <MenuTags location={location} tags={splitTags} />}
+    </span>
 </div>
 
 <style lang="less">
@@ -56,7 +68,7 @@ const t = useTranslations(lang);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         row-gap: 1.5rem;
         column-gap: 2rem;
 
@@ -76,6 +88,7 @@ const t = useTranslations(lang);
     .menu-item-column {
         display: flex;
         flex-direction: column;
+        gap: 0.35em;
 
         max-width: 70ch;
     }
@@ -84,11 +97,26 @@ const t = useTranslations(lang);
     }
     
     .producer {
-        margin-top: 0.5rem;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .producer-field {
-        margin-right: 0.5rem;
-        font-size: 16px;
+        margin-right: 0.4em;
+        font-size: 1rem;
+    }
+
+    .non-mobile-only {
+        display: inline-block;
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+    }
+    .mobile-only {
+        display: none;
+
+        @media (max-width: 900px) {
+            margin-top: 0.35rem;
+            display: inline-block;
+        }
     }
 </style>

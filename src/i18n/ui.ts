@@ -52,6 +52,7 @@ export const ui = {
 
         'menu.title': 'Menu',
         'menu.description': 'A selection of traditional Italian dishes and wines from the Cilento region of Italy.',
+        'menu.food.info': 'Click on images to enlarge them!',
 
         'menu.food.title': 'Food Menu',
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
@@ -76,6 +77,7 @@ export const ui = {
         'menu.producer': 'producer',
         'menu.location': 'Location',
         'menu.vegan': 'vegan',
+        'menu.vegetarian': 'vegetarian',
         'menu.no-sulfites': 'no sulfites added',
     },
     it: {
@@ -94,6 +96,7 @@ export const ui = {
 
         'menu.title': 'Menù',
         'menu.description': 'Una selezione di piatti tradizionali italiani e vini della regione del Cilento in Italia.',
+        'menu.food.info': 'Cliccate sulle immagini per ingrandirle!',
 
         'menu.food.title': 'Menù Cibo',
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
@@ -118,6 +121,7 @@ export const ui = {
         'menu.producer': 'produttore',
         'menu.location': 'Località',
         'menu.vegan': 'vegano',
+        'menu.vegetarian': 'vegetariano',
         'menu.no-sulfites': 'senza solfiti aggiunti',
     },
 } as const;

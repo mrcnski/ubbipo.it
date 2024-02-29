@@ -9,17 +9,19 @@ import PageContainer from "@components/PageContainer.astro";
 interface Props {
 	title: string;
 	description: string;
+	info?: string,
 }
 
-const { title, description } = Astro.props;
+const { title, description, info } = Astro.props;
 ---
 
 <Layout title={title} description={description}>
-	<div class="menu-header">
-		<Image src={logoFull} alt="Logo" width="300" />
-	</div>
-
 	<PageContainer>
+		<div class="menu-header">
+			<Image src={logoFull} alt="Logo" width="300" />
+			{(info) && <span class="menu-info"><i>{info}</i></span>}
+		</div>
+
 		<slot />
 	</PageContainer>
 
@@ -32,5 +34,13 @@ const { title, description } = Astro.props;
 		margin-top: 8rem;
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.menu-info {
+		margin-top: 3rem;
+		margin-left: 2rem;
+		width: 100%;
 	}
 </style>

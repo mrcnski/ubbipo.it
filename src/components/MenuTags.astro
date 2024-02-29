@@ -7,6 +7,7 @@ interface Props {
 import { Image } from 'astro:assets';
 import iconLocation from "@images/icon/location.svg";
 import iconVegan from "@images/icon/vegan.svg";
+import iconVegetarian from "@images/icon/vegetarian.svg";
 import iconNoSulfites from "@images/icon/no-sulfites.svg";
 
 const { location, tags = [] } = Astro.props;
@@ -19,7 +20,9 @@ const t = useTranslations(lang);
 <div class="menu-tags">
   {(location) && <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span>{location}</span>}
 
-  {(tags.includes("vegan")) && <Image src={iconVegan} alt={t("menu.vegan")} width="16" /> <span class="menu-tag-vegan">{t("menu.vegan")}</span>}
+  {(tags.includes("vegetarian") || tags.includes("vegetariano")) && <Image class="filter-green" src={iconVegetarian} alt={t("menu.vegetarian")} width="18" /> <span class="menu-tag-vegetarian">{t("menu.vegetarian")}</span>}
+
+  {(tags.includes("vegan") || tags.includes("vegano")) && <Image src={iconVegan} alt={t("menu.vegan")} width="16" /> <span class="menu-tag-vegan">{t("menu.vegan")}</span>}
 
   {(tags.includes("no-sulfites")) && 
       <Image src={iconNoSulfites} class="filter-brown" alt={t("menu.no-sulfites")} width="20" /> <span class="menu-tag-no-sulfites">{t("menu.no-sulfites")}</span>}
@@ -27,13 +30,14 @@ const t = useTranslations(lang);
 
 <style lang="less">
     .menu-tags {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         margin-bottom: 0;
 
         display: flex;
         align-items: center;
 
         img {
+            margin-left: 0.25rem;
             margin-right: 0.5rem;
             color: var(--green);
         }
@@ -45,7 +49,7 @@ const t = useTranslations(lang);
             margin-right: 1.75rem;
         }
     }
-    .menu-tag-vegan {
+    .menu-tag-vegan, .menu-tag-vegetarian {
         color: var(--green);
         font-family: 'MADE Tommy Soft Regular', sans-serif;
     }
