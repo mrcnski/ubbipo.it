@@ -49,6 +49,10 @@ export const ui = {
 
         'index.title': "Home",
         'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
+        'index.1.title': "#OsteriaUbbìpò",
+        'index.1.description': "We prefer to identify ourselves as an OSTERIA, as the warm atmosphere and intimacy of the place create the perfect setting to enjoy a glass of wine accompanied by simple dishes, Cilento cheeses and cured meats.",
+        'index.2.title': "#100PercentCilento",
+        'index.2.description': "The menu reflects the love for home cooking, simple and genuine, and is inspired by the tradition of this wonderful land; the products are strictly Cilento. Every sip of wine and every bite of food carries centuries of tradition, giving a delightful journey through the flavors and scents of Cilento.",
 
         'menu.title': 'Menu',
         'menu.description': 'A selection of traditional Italian dishes and wines from the Cilento region of Italy.',
