@@ -88,50 +88,52 @@ const t = useTranslations(lang);
         column-gap: 3rem;
         row-gap: 2rem;
         
-        @media (max-width: 1400px) {
+        @media (max-width: 1200px) {
             flex-direction: column;
+            align-items: center;
         }
 
         :global(.index-item-img) {
-            flex-basis: 60%;
+            flex-basis: 55%;
         }
         :global(.index-item-description) {
-            flex-basis: 40%;
+            flex-basis: 45%;
         }
 
         img {
             height: auto;
             border-radius: 0.5rem;
 
-            @media (max-width: 1400px) {
+            @media (max-width: 1200px) {
                 width: 100%;
-                max-width: 600px;
+                max-width: 500px;
             }
         }
         p {
-            margin-top: 10rem;
+            margin-top: 8rem;
 
             width: 100%;
-            max-width: 30ch;
+            max-width: 40ch;
             text-align: justify;
 
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: var(--brown);
 
-            @media (max-width: 1400px) {
+            @media (max-width: 1200px) {
                 margin-top: 0;
             }
             @media (max-width: 600px) {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }
 
     .index-header {
-        margin-top: 4rem;
-        margin-bottom: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
 
         text-transform: none;
+        font-family: 'MADE Tommy Soft Light', sans-serif;
 
         @media (max-width: 600px) {
             font-size: 1.5rem;
