@@ -53,9 +53,11 @@ const t = useTranslations(lang);
         }
 
     </div>
-    <span class="mobile-only">
-        {(location || splitTags.length > 0) && <MenuTags location={location} tags={splitTags} />}
-    </span>
+    {(location || splitTags.length > 0) && 
+        <span class="mobile-only">
+            <MenuTags location={location} tags={splitTags} />
+        </span>
+    }
 </div>
 
 <style lang="less">

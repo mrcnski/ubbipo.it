@@ -76,13 +76,17 @@
 		if (h2s.length < 2) return;
 		const menuNavbar = document.getElementById("menu-navbar");
 		if (!menuNavbar) return;
-		h2s.forEach(h2 => {
-			const a = document.createElement('a');
-			a.classList.add('menu-nav-link');
-			a.href = `#${h2.id}`;
-			a.textContent = h2.textContent;
-			menuNavbar.appendChild(a);
-		});
+
+		// If the links don't alreay exist in the navbar...
+		if (menuNavbar.children.length === 0) {
+			h2s.forEach(h2 => {
+				const a = document.createElement('a');
+				a.classList.add('menu-nav-link');
+				a.href = `#${h2.id}`;
+				a.textContent = h2.textContent;
+				menuNavbar.appendChild(a);
+			});
+		}
 		
 		const footer = document.querySelector('footer');
 		const whatsappButton = document.getElementById("whatsapp");
