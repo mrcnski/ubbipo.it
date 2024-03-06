@@ -93,6 +93,10 @@ export const ui = {
 
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",
+        'index.1.title': "#OsteriaUbbìpò",
+        'index.1.description': "Preferiamo identificarci come un'OSTERIA, poiché l'atmosfera calda e l'intimità del locale creano il perfetto scenario per godersi un bicchiere di vino accompagnato da piatti semplici, formaggi e salumi cilentani.",
+        'index.2.title': "#CentoPerCentoCilento",
+        'index.2.description': "Il menu riflette l'amore per la cucina casalinga, semplice e genuina e si ispira alla tradizione di questa meravigliosa terra, i prodotti sono rigorosamente cilentani. Ogni sorso di vino e ogni morso di cibo portano con sé secoli di tradizione, regalando un viaggio deliziante tra sapori e profumi del Cilento.",
 
         'menu.title': 'Menù',
         'menu.description': 'Una selezione di piatti tradizionali italiani e vini della regione del Cilento in Italia.',

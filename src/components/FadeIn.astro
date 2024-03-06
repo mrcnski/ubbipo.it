@@ -1,0 +1,49 @@
+---
+// Make sure the ID doesn't start with a number.
+let id: string | undefined;
+while (!id || /^\d/.test(id)) {
+    id = Math.random().toString(36).slice(2, 11)
+}
+---
+
+<div id={id} class="fade-in">
+  <slot />
+</div>
+
+<style lang="less">
+    .fade-in {
+        opacity: 0;
+        transform: translateY(5vh);
+        visibility: hidden;
+        transition: opacity 1.2s ease-in, transform 1.2s ease-in;
+        will-change: opacity, visibility;
+    }
+    .fade-in.is-visible {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+    }
+</style>
+
+<script define:vars={{id}}>
+    document.addEventListener('astro:page-load', () => {
+        const element = document.querySelector(`#${id}`);
+        // console.log(element);
+        const callback = (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0,
+        };
+        const observer = new IntersectionObserver(callback, options);
+        observer.observe(element);
+    });
+</script>
