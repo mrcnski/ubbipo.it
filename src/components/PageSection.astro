@@ -1,9 +1,13 @@
 ---
-const { sectionTitle } = Astro.props;
+interface Props {
+    title?: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <div class="page-section">
-    <h2 id={sectionTitle.toLowerCase().split(" ").join("-")}>{ sectionTitle }</h2>
+    {(title) && <h2 id={title.toLowerCase().split(" ").join("-")}>{ title }</h2>}
     
     <slot />
 </div> 

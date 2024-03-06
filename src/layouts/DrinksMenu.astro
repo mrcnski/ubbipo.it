@@ -12,7 +12,7 @@ const { d } = useDataTranslations(lang);
 ---
 
 <MenuLayout title={t("menu.drinks.title")} description={t("menu.drinks.description")}>
-    <PageSection sectionTitle={t("menu.drinks.beer")}>
+    <PageSection title={t("menu.drinks.beer")}>
         {beers.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)!}
@@ -29,7 +29,7 @@ const { d } = useDataTranslations(lang);
         ))}
     </PageSection>
 
-    <PageSection sectionTitle={t("menu.drinks.drinks")}>
+    <PageSection title={t("menu.drinks.drinks")}>
         {drinks.map((drink: any) => (
             <MenuItem 
                 name={d(drink.name)!}
