@@ -23,7 +23,7 @@ const t = useTranslations(lang);
     </noscript>
 
     <PageContainer>
-        <PageSection>
+        <div style="padding: 0 1rem;">
             <FadeIn> <h2 class="index-header">{t("index.1.title")}</h2> </FadeIn>
             <div class="index-content">
                 <FadeIn classList={["index-item-img"]}>
@@ -33,8 +33,6 @@ const t = useTranslations(lang);
                     <p class="index-description">{t("index.1.description")}</p>
                 </FadeIn>
             </div>
-
-            <br>
             
             <FadeIn> <h2 class="index-header">{t("index.2.title")}</h2> </FadeIn>
             <div class="index-content index-large-reverse">
@@ -45,14 +43,11 @@ const t = useTranslations(lang);
                     <p class="index-description">{t("index.2.description")}</p>
                 </FadeIn>
             </div>
-            
-        </PageSection>
+        </div>
 
         <PageSection>
             <br>
-            <FadeIn>
-                <slot name="lightwidget" />
-            </FadeIn>
+            <slot name="lightwidget" />
         </PageSection>
     </PageContainer>
 </Layout>
