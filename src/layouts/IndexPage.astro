@@ -34,6 +34,8 @@ const t = useTranslations(lang);
                 </FadeIn>
             </div>
 
+            <br>
+            
             <FadeIn> <h2 class="index-header">{t("index.2.title")}</h2> </FadeIn>
             <div class="index-content index-large-reverse">
                 <FadeIn classList={["index-item-img"]}>
@@ -87,20 +89,26 @@ const t = useTranslations(lang);
         align-items: center;
         column-gap: 3rem;
         row-gap: 2rem;
+
+        padding: 0 2rem;
         
         @media (max-width: 1200px) {
             flex-direction: column;
         }
+        @media (max-width: 600px) {
+            padding: 0 1rem;
+        }
 
         :global(.index-item-img) {
-            flex-basis: 55%;
+            flex-basis: 50%;
         }
         :global(.index-item-description) {
-            flex-basis: 45%;
+            flex-basis: 50%;
         }
 
         img {
             height: auto;
+
             border: 1px solid var(--brown);
             border-radius: 0.5rem;
 
@@ -115,6 +123,11 @@ const t = useTranslations(lang);
             text-align: justify;
 
             margin: 0;
+
+            padding: 1rem 1rem;
+            border-top: 1px solid var(--green);
+            border-bottom: 1px solid var(--green);
+            border-radius: 0.5rem;
 
             font-size: var(--font-size-important);
             color: var(--brown);
