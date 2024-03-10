@@ -3,14 +3,10 @@ export const languages = {
     en: 'English',
 };
 
-export const defaultLang = 'it';
-export const showDefaultLang = false;
-
 /// Data for translating a path to a given language. 
 ///
-/// The trailing slashes are not included - the caller is expected to remove them if present.
-///
-/// TODO: This should be generated from the filesystem.
+/// The trailing slashes are not included. When querying the map, the caller is expected to remove
+/// them if present.
 export const paths = {
     index: {
         it: '',

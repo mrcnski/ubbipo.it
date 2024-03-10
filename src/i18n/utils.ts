@@ -1,4 +1,7 @@
-import { ui, paths, defaultLang } from './ui';
+import { languages, ui, paths } from './ui';
+import Astro from "../../astro.config.mjs";
+
+const defaultLang = Astro.i18n!.defaultLocale as keyof typeof languages;
 
 export function getLangFromUrl(url: URL) {
     const [, lang] = url.pathname.split('/');
@@ -6,15 +9,17 @@ export function getLangFromUrl(url: URL) {
     return defaultLang;
 }
 
-/// Returns a function that translates from the given `ui` key to the given language.
+/// Returns a function for a given language `lang`, that provides the translated UI strings for that
+/// language, when given a `key`.
 export function useTranslations(lang: keyof typeof ui) {
     return function t(key: keyof typeof ui[typeof defaultLang]) {
         return ui[lang][key] || ui[defaultLang][key];
     }
 }
 
-/// Returns a function that translates the given data to the given language. The data could be a
-/// string in which case it is returned as is, or an object containing translations.
+/// Returns a function for a given language that translates data, such as menu item descriptions.
+/// The data could be a string, in which case it is returned as is, or an object containing
+/// translations, in which case the correct translation is chosen.
 export function useDataTranslations(lang: keyof typeof ui) {
     function d(record: string | Record<string, string>) {
         if (typeof record === 'string') return record;
