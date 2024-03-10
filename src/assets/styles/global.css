@@ -14,33 +14,32 @@
 }
 
 @font-face {
-  font-family: 'MADE Tommy Soft Regular';
+  font-family: 'MADE Tommy Soft';
+  src: url('/fonts/made-tommy-soft-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE Tommy Soft';
   src: url('/fonts/made-tommy-soft-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
-  font-family: 'MADE Tommy Soft Light';
-  src: url('/fonts/made-tommy-soft-light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'MADE Tommy Soft Bold';
+  font-family: 'MADE Tommy Soft';
   src: url('/fonts/made-tommy-soft-bold.woff') format('woff');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 h1, h2 {
-  font-family: 'MADE Tommy Soft Regular', sans-serif;
+  font-family: 'MADE Tommy Soft', sans-serif;
+  font-weight: normal;
 }
 
-h3, h4, h5, h6, p, span, a {  
-  font-family: 'MADE Tommy Soft Light', sans-serif;
+h3, h4, h5, h6, p, span, a, button {  
+  font-family: 'MADE Tommy Soft', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
