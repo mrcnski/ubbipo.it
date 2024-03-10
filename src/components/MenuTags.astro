@@ -18,7 +18,7 @@ const t = useTranslations(lang);
 ---
 
 <div class="menu-tags">
-  {(location) && <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span>{location}</span>}
+  {(location) && <Image src={iconLocation} alt={t("menu.location")} width="14" /> <span class="menu-tag-location">{location}</span>}
 
   {(tags.includes("vegetarian") || tags.includes("vegetariano")) && <Image class="filter-green" src={iconVegetarian} alt={t("menu.vegetarian")} width="18" /> <span class="menu-tag-vegetarian">{t("menu.vegetarian")}</span>}
 
@@ -44,10 +44,14 @@ const t = useTranslations(lang);
 
         span {
             font-size: 14px;
+
             margin-bottom: 0;
             margin-left: 0.25rem;
             margin-right: 1.75rem;
         }
+    }
+    .menu-tag-location {
+        color: black;
     }
     .menu-tag-vegan, .menu-tag-vegetarian {
         color: var(--green);

@@ -33,7 +33,8 @@ while (!id || /^\d/.test(id)) {
 <script define:vars={{id}}>
     document.addEventListener('astro:page-load', () => {
         const element = document.querySelector(`#${id}`);
-        // console.log(element);
+        if (!element) return;
+
         const callback = (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -42,12 +43,12 @@ while (!id || /^\d/.test(id)) {
                 }
             });
         };
-
         const options = {
             root: null,
             rootMargin: "0px",
             threshold: 0.25,
         };
+        
         const observer = new IntersectionObserver(callback, options);
         observer.observe(element);
     });

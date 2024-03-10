@@ -18,18 +18,21 @@
   src: url('/fonts/made-tommy-soft-light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'MADE Tommy Soft';
   src: url('/fonts/made-tommy-soft-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'MADE Tommy Soft';
   src: url('/fonts/made-tommy-soft-bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 h1, h2 {
@@ -69,6 +72,10 @@ h3 {
   margin-bottom: 1rem;
   
   font-size: 1.4rem;
+}
+
+b {
+  font-weight: normal;
 }
 
 a {
