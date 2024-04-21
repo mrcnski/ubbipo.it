@@ -11,16 +11,20 @@ const { name, description, image } = Astro.props;
 ---
 
 <div class="allergen">
-    <Image class="allergen-image filter-brown" src={image} alt={description} />
-    <p class="allergen-name">{name}</p>
+    <div class="allergen-title">
+        <Image class="allergen-image filter-brown" src={image} alt={description} />
+        <p class="allergen-name">{name}</p>
+    </div>
+
+    <p class="allergen-description">{description}</p>
 </div>
 
 <style>
     .allergen {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
 
         margin-top: 2rem;
     }
@@ -31,13 +35,33 @@ const { name, description, image } = Astro.props;
         object-fit: contain;
     }
 
+    .allergen-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+
+        width: 100%;
+    }
+
     .allergen-name {
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: light;
 
         margin: 0;
 
         text-transform: uppercase;
         color: var(--green);
+        line-height: 1.2;
+    }
+    .allergen-description {
+        font-size: 1rem;
+        font-weight: light;
+
+        margin: 0;
+        width: 100%;
+
+        color: var(--brown);
     }
 </style>
