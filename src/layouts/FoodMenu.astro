@@ -4,7 +4,20 @@ import MenuItem from "@components/MenuItem.astro";
 import PageSection from "@components/PageSection.astro";
 import Allergen from "@components/Allergen.astro";
 
-import iconFood from "@images/icon/food.svg";
+import iconCelery from "@images/icon/allergens/celery.svg";
+import iconCrustacean from "@images/icon/allergens/crustacean.svg";
+import iconEgg from "@images/icon/allergens/egg.svg";
+import iconFish from "@images/icon/allergens/fish.svg";
+import iconGluten from "@images/icon/allergens/gluten.svg";
+import iconLupins from "@images/icon/allergens/lupins.svg";
+import iconMilk from "@images/icon/allergens/milk.svg";
+import iconMollusc from "@images/icon/allergens/mollusc.svg";
+import iconMustard from "@images/icon/allergens/mustard.svg";
+import iconNut from "@images/icon/allergens/nut.svg";
+import iconPeanut from "@images/icon/allergens/peanut.svg";
+import iconSesame from "@images/icon/allergens/sesame.svg";
+import iconSoy from "@images/icon/allergens/soy.svg";
+import iconSulphite from "@images/icon/allergens/sulphite.svg";
 
 import { dishes } from "@oreste/food.js";
 
@@ -35,72 +48,72 @@ const { d, dArray } = useDataTranslations(lang);
         <Allergen 
             name={t("menu.food.allergens.gluten.name")}
             description={t("menu.food.allergens.gluten.description")}
-            image={iconFood}
+            image={iconGluten}
         />
         <Allergen 
             name={t("menu.food.allergens.crustaceans.name")}
             description={t("menu.food.allergens.crustaceans.description")}
-            image={iconFood}
+            image={iconCrustacean}
         />
         <Allergen 
             name={t("menu.food.allergens.eggs.name")}
             description={t("menu.food.allergens.eggs.description")}
-            image={iconFood}
+            image={iconEgg}
         />
         <Allergen 
             name={t("menu.food.allergens.fish.name")}
             description={t("menu.food.allergens.fish.description")}
-            image={iconFood}
+            image={iconFish}
         />
         <Allergen 
             name={t("menu.food.allergens.peanuts.name")}
             description={t("menu.food.allergens.peanuts.description")}
-            image={iconFood}
+            image={iconPeanut}
         />
         <Allergen 
             name={t("menu.food.allergens.soy.name")}
             description={t("menu.food.allergens.soy.description")}
-            image={iconFood}
+            image={iconSoy}
         />
         <Allergen 
             name={t("menu.food.allergens.milk.name")}
             description={t("menu.food.allergens.milk.description")}
-            image={iconFood}
+            image={iconMilk}
         />
         <Allergen 
             name={t("menu.food.allergens.nuts.name")}
             description={t("menu.food.allergens.nuts.description")}
-            image={iconFood}
+            image={iconNut}
         />
         <Allergen 
             name={t("menu.food.allergens.celery.name")}
             description={t("menu.food.allergens.celery.description")}
-            image={iconFood}
+            image={iconCelery}
         />
         <Allergen 
             name={t("menu.food.allergens.mustard.name")}
             description={t("menu.food.allergens.mustard.description")}
-            image={iconFood}
+            image={iconMustard}
         />
         <Allergen 
             name={t("menu.food.allergens.sesame.name")}
             description={t("menu.food.allergens.sesame.description")}
-            image={iconFood}
+            image={iconSesame}
         />
         <Allergen 
             name={t("menu.food.allergens.sulfites.name")}
             description={t("menu.food.allergens.sulfites.description")}
-            image={iconFood}
+            image={iconSulphite}
         />
         <Allergen 
             name={t("menu.food.allergens.lupine.name")}
             description={t("menu.food.allergens.lupine.description")}
-            image={iconFood}
+            image={iconLupins}
         />
         <Allergen 
             name={t("menu.food.allergens.mollusks.name")}
             description={t("menu.food.allergens.mollusks.description")}
-            image={iconFood}
+            image={iconMollusc}
         />
     </PageSection>
 </MenuLayout>
