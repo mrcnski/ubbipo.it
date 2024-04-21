@@ -1,0 +1,43 @@
+---
+interface Props {
+    name: string;
+    description: string;
+    image: ImageMetadata;
+}
+
+import { Image } from 'astro:assets';
+
+const { name, description, image } = Astro.props;
+---
+
+<div class="allergen">
+    <Image class="allergen-image filter-brown" src={image} alt={description} />
+    <p class="allergen-name">{name}</p>
+</div>
+
+<style>
+    .allergen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        margin-top: 2rem;
+    }
+
+    .allergen-image {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+    }
+
+    .allergen-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        margin: 0;
+
+        text-transform: uppercase;
+        color: var(--green);
+    }
+</style>

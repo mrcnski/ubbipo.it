@@ -52,11 +52,16 @@ export const ui = {
 
         'menu.title': 'Menu',
         'menu.description': 'A selection of traditional Italian dishes and wines from the Cilento region of Italy.',
-        'menu.food.info': 'Click on images to enlarge them.',
-
+        
         'menu.food.title': 'Food Menu',
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
         'menu.food.dishes': 'Dishes',
+        'menu.food.dishes.description': 'Click on images to enlarge them.',
+        'menu.food.allergens': 'Allergens',
+
+        'menu.food.allergens.description': '*Notification of Food Allergen* information to consumers according to EU regulation 1169/2011.<br><br>Food and beverages served in this establishment may contain one or more of the allergens listed below. In addition, cross-contamination of other ingredients with the same ingredients may occur in the kitchen during preparation.<br><br>If you suffer from food allergies or intolerances, please inform our staff who will be able to help you avoid foods that contain substances that could cause allergic reactions. Next to each dish you will find the corresponding numbers for the various Allergens.',
+        'menu.food.allergens.gluten.name': 'Gluten',
+        'menu.food.allergens.gluten.description': 'cereals, wheat, rye, barley, oats, spelt, kamut, including hybridized derivatives',
         
         'menu.wine.title': 'Wine Menu',
         'menu.wine.description': 'A list of wines curated from different regions of Italy. We have a wide variety including red, white, rosé, and vegan wines.',
@@ -100,11 +105,16 @@ export const ui = {
 
         'menu.title': 'Menù',
         'menu.description': 'Una selezione di piatti tradizionali italiani e vini della regione del Cilento in Italia.',
-        'menu.food.info': 'Cliccate sulle immagini per ingrandirle.',
-
+        
         'menu.food.title': 'Menù Cibo',
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
         'menu.food.dishes': 'Piatti',
+        'menu.food.dishes.description': 'Cliccate sulle immagini per ingrandirle.',
+        'menu.food.allergens': 'Lista Allergeni',
+
+        'menu.food.allergens.description': '*Segnalazione Allergeni Informativa* sugli alimenti ai consumatori secondo il regolamento UE1169/2011.<br><br>Gli alimenti e le bevande somministrati in questo locale possono contenere uno o più allergeni sotto riportati. Inoltre in cucina possono verificarsi durante le preparazioni contaminazioni crociate di altri ingredienti con gli stessi ingredienti.<br><br>Se soffrite di allergie o intolleranze alimentari segnalatelo al nostro personale che saprà mettervi nelle condizioni di evitare gli alimenti che contengono sostanze che potrebbero causarvi reazioni di natura allergica. A fianco di ogni pietanza troverete i numeri corrispondenti ai vari Allergeni.',
+        'menu.food.allergens.gluten.name': 'Glutine',
+        'menu.food.allergens.gluten.description': 'cereali, grano, segale, orzo, avena, farro, kamut, inclusi ibridati derivati',
         
         'menu.wine.title': 'Menù dei Vini',
         'menu.wine.description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",

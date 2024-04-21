@@ -6,7 +6,8 @@
       "@components/*": ["src/components/*"],
       "@images/*": ["src/assets/images/*"],
       "@i18n/*": ["src/i18n/*"],
-      "@layouts/*": ["src/layouts/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@oreste/*": ["oreste/*"]
     }
   },
   "extends": "astro/tsconfigs/strict"

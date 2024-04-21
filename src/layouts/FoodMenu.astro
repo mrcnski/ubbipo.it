@@ -1,18 +1,21 @@
 ---
-import MenuLayout from "./MenuLayout.astro";
-import MenuItem from "../components/MenuItem.astro";
-import PageSection from "../components/PageSection.astro";
+import MenuLayout from "@layouts/MenuLayout.astro";
+import MenuItem from "@components/MenuItem.astro";
+import PageSection from "@components/PageSection.astro";
+import Allergen from "@components/Allergen.astro";
 
-import { dishes } from "../../oreste/food.js";
+import iconFood from "@images/icon/food.svg";
 
-import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
+import { dishes } from "@oreste/food.js";
+
+import { getLangFromUrl, useTranslations, useDataTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const { d, dArray } = useDataTranslations(lang);
 ---
 
-<MenuLayout title={t("menu.food.title")} description={t("menu.food.description")} info={t("menu.food.info")}>
-    <PageSection title={t("menu.food.dishes")}>
+<MenuLayout title={t("menu.food.title")} description={t("menu.food.description")}>
+    <PageSection title={t("menu.food.dishes")} description={t("menu.food.dishes.description")}>
         {dishes.map((dish: any) => (
             <MenuItem 
                 name={d(dish.name)!}
@@ -26,5 +29,13 @@ const { d, dArray } = useDataTranslations(lang);
                 available={d(dish.available)!}
             />
         ))}
+    </PageSection>
+
+    <PageSection title={t("menu.food.allergens")} description={t("menu.food.allergens.description")}>
+        <Allergen 
+            name={t("menu.food.allergens.gluten.name")}
+            description={t("menu.food.allergens.gluten.description")}
+            image={iconFood}
+        />
     </PageSection>
 </MenuLayout>
