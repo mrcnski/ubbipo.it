@@ -9,7 +9,7 @@ export const dishes = [
             it: [
                 '*salumi* del salumificio "G.ioi" {slow}',
                 '*cacioricotta* biologica cilentana "I Moresani" {slow}',
-                '*mozzarella* nella mortella del "Le Starze"',
+                '*mozzarella* nella mortella de "Le Starze"',
                 '*olive* ammaccate',
                 '*acqua sale*: pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
                 '(su richiesta: *alici* di menaica di “Donatella Marino”) {slow}',
