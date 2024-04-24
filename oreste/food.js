@@ -27,7 +27,7 @@ export const dishes = [
         image: "tagliere misto.jpg", // Images in 'src/assets/images/menu' folder.
         producer: "",
         location: "",
-        tags: "", // Example: "vegan, no-sulfites, bio"    For no tags: ""
+        tags: "bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         price: {
             it: '19 "(per alici +4)"',
             en: '19 "(for anchovies +4)"',
