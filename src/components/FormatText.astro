@@ -6,10 +6,12 @@ interface Props {
 const { text } = Astro.props;
 
 import iconSlowFood from "@images/icon/slow-food.svg";
+import iconBio from "@images/icon/bio.svg";
 
 const regexItalics = /["|“]([^"“”]+)["|”]/g;
 const regexBold = /\*([^\*]+)\*/g;
 const regexSlow = /{slow}/g;
+const regexBio = /{bio}/g;
 ---
 
 <Fragment set:html={
@@ -17,10 +19,14 @@ const regexSlow = /{slow}/g;
         .replace(regexItalics, "<i>$1</i>")
         .replace(regexBold, "<b>$1</b>")
         .replace(regexSlow, `<img class="icon-slow" src=${iconSlowFood.src} alt="Slow food" width="48" />`)
+        .replace(regexBio, `<img class="icon-bio" src=${iconBio.src} alt="Biologico" width="20" />`)
 }/>
 
 <style lang="less">
     :global(.icon-slow) {
+        margin: 0 0.25em;
+    }
+    :global(.icon-bio) {
         margin: 0 0.25em;
     }
 </style>

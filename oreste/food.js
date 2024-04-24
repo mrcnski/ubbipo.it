@@ -5,10 +5,10 @@ export const dishes = [
             en: "Cilento Mixed Platter",
         },
         ingredients: {
-            // Use {slow} for slow food products.
+            // Use {slow} for slow food products and {bio} for bio/organic.
             it: [
                 '*salumi* del salumificio "G.ioi" {slow}',
-                '*cacioricotta* cilentana biologica "I Moresani" {slow}',
+                '*cacioricotta* cilentana "I Moresani" {slow} {bio}',
                 '*mozzarella* nella mortella "Le Starze"',
                 '*olive* ammaccate',
                 '*acqua sale*: fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
@@ -16,7 +16,7 @@ export const dishes = [
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
-                'Cilento organic *cacioricotta cheese* "I Moresani" {slow}',
+                'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}',
                 '*mozzarella* in myrtle from "Le Starze"',
                 'bruised *olives*',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',

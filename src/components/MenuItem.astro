@@ -38,8 +38,9 @@ const t = useTranslations(lang);
             {(description) && 
                 <span class="menu-item-description"><FormatText text={description} /></span>}
             {(producer) && 
-                <span class="producer"><span class="producer-field">{t("menu.producer")}:</span>
-                    <FormatText text={producer} />
+                <span class="producer">
+                    {/*<span class="producer-field">{t("menu.producer")}:</span>*/}
+                    <b>"<FormatText text={producer} />"</b>
                 </span>}
 
             <span class="non-mobile-only">
