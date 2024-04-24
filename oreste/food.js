@@ -16,7 +16,7 @@ export const dishes = [
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
-                'Cilento organic *cacioricotta cheese* "I Moresani" {slow}',
+                'Cilento organic *cacioricotta cheese* "I Moresani" {slow} tags: "bio"',
                 '*mozzarella* in myrtle from "Le Starze"',
                 'bruised *olives*',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
@@ -27,7 +27,7 @@ export const dishes = [
         image: "tagliere misto.jpg", // Images in 'src/assets/images/menu' folder.
         producer: "",
         location: "",
-        tags: "bio", // Example: "vegan, no-sulfites, bio"    For no tags: ""
+        tags: "", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         price: {
             it: '19 "(per alici +4)"',
             en: '19 "(for anchovies +4)"',
