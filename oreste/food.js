@@ -16,7 +16,7 @@ export const dishes = [
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
-                'Cilento organic *cacioricotta cheese* "I Moresani" {slow} tags: "bio"',
+                'Cilento organic *cacioricotta cheese* "I Moresani" {slow}',
                 '*mozzarella* in myrtle from "Le Starze"',
                 'bruised *olives*',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
