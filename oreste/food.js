@@ -81,7 +81,7 @@ export const dishes = [
                 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
             en: [
-                '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
+                'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}',
                 '*mozzarella in myrtle* from "Le Starze"',
                 'matured *pecorino cheese* with orange compote',
                 '*bruised olives* "Homemade"',
