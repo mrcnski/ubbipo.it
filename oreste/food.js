@@ -12,7 +12,7 @@ export const dishes = [
                 '*mozzarella nella mortella* "Le Starze"',
                 '*olive ammaccate*',
                 '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
-                'su richiesta: *alici di menaica* di “Donatella Marino”) {slow}',
+                'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
             en: [
                 '*cold cuts* from the "G.ioi" charcuterie {slow}',
