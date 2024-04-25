@@ -10,7 +10,7 @@ export const dishes = [
                 '*salumi* "salumificio G.ioi" {slow}',
                 '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
                 '*mozzarella nella mortella* "Le Starze"',
-                '*olive ammaccate* Homemade',
+                '*olive ammaccate* "Homemade"',
                 '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
                 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
@@ -18,7 +18,7 @@ export const dishes = [
                 '*cold cuts* from the "G.ioi charcuterie" {slow}',
                 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}',
                 '*mozzarella in myrtle* from "Le Starze"',
-                '*bruised olives* Homemade',
+                '*bruised olives* "Homemade"',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
                 'by request: *menaica anchovies* from "Donatella Marino" {slow}',
             ],
@@ -29,7 +29,7 @@ export const dishes = [
         location: "",
         tags: "", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         price: {
-            it: '19 "(per alici +4)"',
+            it: '*19* "(per alici *+4*)"',
             en: '19 "(for anchovies +4)"',
         },
         available: "yes", // For no: "no"
