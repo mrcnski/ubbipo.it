@@ -30,7 +30,7 @@ export const dishes = [
         tags: "", // Example: "vegan, no-sulfites, bio"    For no tags: ""
         price: {
             it: '*19* "(per alici *+4*)"',
-            en: '19 "(for anchovies +4)"',
+            en: '*19* "(for anchovies *+4*)"',
         },
         available: "yes", // For no: "no"
     },
@@ -42,16 +42,16 @@ export const dishes = [
         ingredients: {
             // Use {slow} for slow food products.
             it: [
-                '*salumi* del salumificio "G.ioi" {slow}',
-                '*olive* ammaccate',
-                '*acqua sale:* pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
-                '(su richiesta: *alici* di menaica di “Donatella Marino”) {slow}',
+                '*salumi* "salumificio G.ioi" {slow}',
+                '*olive ammaccate* "Homemade"'
+                '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
+                'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
             en: [
-                '*cold cuts* from the "G.ioi" charcuterie {slow}',
-                'bruised *olives*',
+                '*cold cuts* from the "G.ioi charcuterie" {slow}',
+                '*bruised olives* "Homemade"',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
-                '(by request: menaica *anchovies* from "Donatella Marino") {slow}',
+                'by request: *menaica anchovies* from "Donatella Marino" {slow}',
             ],
         },
         description: "",
@@ -60,8 +60,8 @@ export const dishes = [
         location: "",
         tags: "", 
         price: {
-            it: '15 "(per alici +4)"',
-            en: '15 "(for anchovies +4)"',
+            it: '*15* "(per alici *+4*)"',
+            en: '*15* "(for anchovies *+4*)"',
         },
         available: "yes",
     },
@@ -73,20 +73,20 @@ export const dishes = [
         ingredients: {
             // Use {slow} for slow food products.
             it: [
-                '*cacioricotta* biologica cilentana "I Moresani" {slow}',
-                '*mozzarella* nella mortella del "Le Starze"',
+                '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
+                '*mozzarella nella mortella* "Le Starze"',
                 '*pecorino* stagionato con composta di arance',
-                '*olive* ammaccate',
-                '*acqua sale:* pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
-                '(su richiesta: *alici* di menaica di “Donatella Marino”) {slow}',
+                '*olive ammaccate* "Homemade"',
+                '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
+                'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
             en: [
-                'Cilento organic *cacioricotta cheese* "I Moresani" {slow}',
-                '*mozzarella* in myrtle from "Le Starze"',
+                '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
+                '*mozzarella in myrtle* from "Le Starze"',
                 'matured *pecorino cheese* with orange compote',
-                'bruised *olives*',
+                '*bruised olives* "Homemade"',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
-                '(by request: menaica *anchovies* from "Donatella Marino") {slow}',
+                'by request: *menaica anchovies* from "Donatella Marino" {slow}',
             ],
         },
         description: "",
@@ -95,8 +95,8 @@ export const dishes = [
         location: "",
         tags: "vegetarian", 
         price: {
-            it: '15 "(per alici +4)"',
-            en: '15 "(for anchovies +4)"',
+            it: '*15* "(per alici *+4*)"',
+            en: '*15* "(for anchovies *+4*)"',
         },
         available: "yes",
     },
