@@ -7,8 +7,8 @@ export const dishes = [
         ingredients: {
             // Use {slow} for slow food products and {bio} for bio/organic.
             it: [
-                '*salumi* del salumificio "G.ioi" {slow}',
-                '*cacioricotta* cilentana "I Moresani" {slow} {bio}',
+                '*salumi* "salumificio G.ioi" {slow}',
+                '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
                 '*mozzarella* nella mortella "Le Starze"',
                 '*olive* ammaccate',
                 '*acqua sale*: fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
