@@ -75,7 +75,7 @@ export const dishes = [
             it: [
                 '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
                 '*mozzarella nella mortella* "Le Starze"',
-                '*pecorino* stagionato con composta di arance',
+                '*pecorino* stagionato con composta di frutta',
                 '*olive ammaccate* "Homemade"',
                 '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
                 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
@@ -83,7 +83,7 @@ export const dishes = [
             en: [
                 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}',
                 '*mozzarella in myrtle* from "Le Starze"',
-                'matured *pecorino cheese* with orange compote',
+                'matured *pecorino cheese* with fruit compote',
                 '*bruised olives* "Homemade"',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
                 'by request: *menaica anchovies* from "Donatella Marino" {slow}',
@@ -108,14 +108,14 @@ export const dishes = [
         ingredients: {
             // Use {slow} for slow food products.
             it: [
-                '*olive* ammaccate',
-                '*acqua sale:* pane fresella del "Panificio Clelia", pomodori, origano selvatico, olio EVO della "azienda agricola Marino"',
-                '(su richiesta: *alici* di menaica di “Donatella Marino”) {slow}',
+                '*olive ammaccate*',
+                '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
+                'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
             en: [
                 'bruised *olives*',
                 '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"',
-                '(by request: menaica *anchovies* from "Donatella Marino") {slow}',
+                'by request: *menaica anchovies* from "Donatella Marino" {slow}',
             ],
         },
         description: "",
@@ -124,8 +124,8 @@ export const dishes = [
         location: "",
         tags: "vegan", 
         price: {
-            it: '9 "(per alici +4)"',
-            en: '9 "(for anchovies +4)"',
+            it: '*9* "(per alici *+4*)"',
+            en: '*9* "(for anchovies *+4*)"',
         },
         available: "yes",
     },
@@ -144,8 +144,8 @@ export const dishes = [
         location: "",
         tags: "vegetarian", 
         price: {
-            it: '6',
-            en: '6',
+            it: '*6*',
+            en: '*6*',
         },
         available: "yes",
     },
@@ -159,14 +159,14 @@ export const dishes = [
             it: [
                 '*pane raffermo*',
                 '*uova*',
-                '*cacioricotta* biologica cilentana "I Moresani" {slow}',
+                '*cacioricotta cilentana* "I Moresani" {slow} {bio}',
                 '*parmigiano*, *pecorino*',
                 '*prezzemolo*',
             ],
             en: [
                 '*stale bread*',
                 '*eggs*',
-                'Cilento organic *cacioricotta cheese* "I Moresani" {slow}',
+                'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}',
                 '*parmigiano cheese*, *pecorino cheese*',
                 '*parsley*',
             ],
@@ -177,19 +177,19 @@ export const dishes = [
         location: "",
         tags: "vegetarian", 
         price: {
-            it: '6',
-            en: '6',
+            it: '*6*',
+            en: '*6*',
         },
         available: "yes",
     },
     {
         name: {
             it: "Piatto del Giorno",
-            en: "Piatto del Giorno",
+            en: "Dish of the Day",
         },
         ingredients: "",
         description: {
-            it: "Pasta ripassata in padella.<br><br>In base alla disponibilità:<br>— Pasta e ceci di Cicerale<br>— Pasta e fagioli di Controne<br>— Pasta al forno",
+            it: "Pasta ripassata in padella.<br><br>In base alla disponibilità:<br>— Pasta e ceci di Cicerale<br>-Pasta arruscata<br>— Pasta e fagioli di Controne<br>— Pasta al forno",
             en: "Twice-cooked pasta in a pan<br><br>Subject to availability:<br>— Pasta and chickpeas from Cicerale<br>— Pasta and beans from Controne<br>— Baked pasta",
         },
         image: "",
@@ -197,8 +197,8 @@ export const dishes = [
         location: "",
         tags: "vegetarian", 
         price: {
-            it: '10',
-            en: '10',
+            it: '*10*',
+            en: '*10*',
         },
         available: "yes",
     },
