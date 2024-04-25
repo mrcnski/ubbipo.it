@@ -43,7 +43,7 @@ export const dishes = [
             // Use {slow} for slow food products.
             it: [
                 '*salumi* "salumificio G.ioi" {slow}',
-                '*olive ammaccate* "Homemade"'
+                '*olive ammaccate* "Homemade"',
                 '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"',
                 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
