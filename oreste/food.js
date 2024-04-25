@@ -184,8 +184,8 @@ export const dishes = [
     },
     {
         name: {
-            it: "Pasta Arruscata",
-            en: "Pasta Arruscata",
+            it: "Piatto del Giorno",
+            en: "Piatto del Giorno",
         },
         ingredients: "",
         description: {
