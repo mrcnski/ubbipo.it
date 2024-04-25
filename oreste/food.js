@@ -15,7 +15,7 @@ export const dishes = [
                 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}',
             ],
             en: [
-                '*cold cuts* from the "G.ioi" charcuterie {slow}',
+                '*cold cuts* from the "G.ioi charcuterie" {slow}',
                 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}',
                 '*mozzarella in myrtle* from "Le Starze"',
                 '*bruised olives* Homemade',
