@@ -195,7 +195,7 @@ export const dishes = [
         image: "",
         producer: "",
         location: "",
-        tags: "vegetarian","vegan", 
+        tags: "vegetarian", "vegan", 
         price: {
             it: '*10*',
             en: '*10*',
