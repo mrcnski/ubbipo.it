@@ -192,7 +192,7 @@ export const dishes = [
             it: "In base alla disponibilità:<br>— Pasta e ceci di Cicerale {slow} {bio}<br>- Cavatelli o Fusilli<br>- Pasta arruscata<br>— Pasta e fagioli di Controne{slow}<br>— Pasta al forno",
             en: "Subject to availability:<br>— Pasta and chickpeas from Cicerale {slow} {bio}<br>— Pasta and beans from Controne {slow}<br>— Baked pasta",
         },
-        image: "",
+        image: "Cavatelli.jpeg",
         producer: "",
         location: "",
         tags: "vegetarian", "vegan",
