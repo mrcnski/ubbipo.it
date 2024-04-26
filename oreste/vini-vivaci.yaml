@@ -1,0 +1,58 @@
+# Some notes about the format:
+#
+# - Images go in the 'src/assets/images/menu' folder.
+#
+# - Use {slow} for the slow food logo.
+# - Use {bio} for the bio logo.
+# - To make a food or wine BIO, add it to the tags:
+#   tags: 'vegan, bio'
+#
+# - Use the asterisk for bold text:
+#   '*salumi*'
+# - Use double quotes for italics:
+#   '"I Moresani" {slow} {bio}'
+#
+# - Try to always use single quotes around each value:
+#   '*salumi*'
+# - To make a single quote like in 'Mbattane, do this:
+#   'Mulignane ''Mbattane'
+
+- name: 'Caprarizzo'
+  description: 'Paestum IGT, Greco, 11.5%, 2022'
+  image: ''
+  producer: 'Azienda Agricola Caprarizzo'
+  location: 'Castellabate'
+  tags: ''
+  glass: ''
+  bottle: '22'
+  available: 'yes'
+
+- name: 'Pashkà'
+  description: 'Paestum Rosso IGP, Aglianico, Barbera, 12%, 2022'
+  image: ''
+  producer: 'Azienda Agricola Casebianche'
+  location: 'Torchiara'
+  tags: 'bio'
+  glass: ''
+  bottle: '24'
+  available: 'yes'
+
+- name: 'Desiderio Bianco'
+  description: 'Campania IGT, Fiano, 13.5%, 2022'
+  image: ''
+  producer: 'Azienda Agricola Alfonso Rotolo'
+  location: 'Rutino'
+  tags: ''
+  glass: ''
+  bottle: '24'
+  available: 'yes'
+
+- name: 'Desiderio Rosato'
+  description: 'Aglianico Rosè Frizzante, Aglianico, 13%, 2022'
+  image: ''
+  producer: 'Azienda Agricola Alfonso Rotolo'
+  location: 'Rutino'
+  tags: ''
+  glass: ''
+  bottle: '26'
+  available: 'yes'

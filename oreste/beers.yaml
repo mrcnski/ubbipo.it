@@ -1,0 +1,73 @@
+# Some notes about the format:
+#
+# - Images go in the 'src/assets/images/menu' folder.
+#
+# - Use {slow} for the slow food logo.
+# - Use {bio} for the bio logo.
+# - To make a food or wine BIO, add it to the tags:
+#   tags: 'vegan, bio'
+#
+# - Use the asterisk for bold text:
+#   '*salumi*'
+# - Use double quotes for italics:
+#   '"I Moresani" {slow} {bio}'
+#
+# - Try to always use single quotes around each value:
+#   '*salumi*'
+# - To make a single quote like in 'Mbattane, do this:
+#   'Mulignane ''Mbattane'
+
+- name: 'Unachiara'
+  description: 'Helles, 33 cl. vol. 5.2%'
+  image: ''
+  producer: 'Birrificio Fieij'
+  location: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  price: '5'
+  available: 'yes'
+
+- name: 'Unafresca'
+  description: 'Hefe-Weizen, 33 cl. vol. 5.5%'
+  image: ''
+  producer: 'Birrificio Fieij'
+  location: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  price: '5'
+  available: 'yes'
+
+- name: 'Unambrata'
+  description: 'American Pale Ale, 33 cl. vol. 6%'
+  image: ''
+  producer: 'Birrificio Fieij'
+  location: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  price: '5'
+  available: 'yes'
+
+- name: 'Unaspecial'
+  description: 'Belgian Dark Ale, 33 cl. vol. 6%'
+  image: ''
+  producer: 'Birrificio Fieij'
+  location: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  price: '5'
+  available: 'yes'
+
+- name: 'Unaforte'
+  description: 'Belgian Strong Ale, 33 cl. vol. 8.5%'
+  image: ''
+  producer: 'Birrificio Fieij'
+  location: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  price: '5'
+  available: 'yes'

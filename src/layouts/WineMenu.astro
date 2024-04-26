@@ -1,9 +1,25 @@
 ---
-import MenuLayout from "./MenuLayout.astro";
-import MenuItem from "../components/MenuItem.astro";
-import PageSection from "../components/PageSection.astro";
+import yaml from 'js-yaml';
+import fs from 'fs';
 
-import { viniRossi, viniBianci, viniRosati, viniVivaci, viniSpumanti } from "../../oreste/wine.js";
+import MenuLayout from "@layouts/MenuLayout.astro";
+import MenuItem from "@components/MenuItem.astro";
+import PageSection from "@components/PageSection.astro";
+
+let viniRossi: any[] = [];
+let viniBianchi: any[] = [];
+let viniRosati: any[] = [];
+let viniVivaci: any[] = [];
+let viniSpumanti: any[] = [];
+try {
+    viniRossi = yaml.load(fs.readFileSync('oreste/vini-rossi.yaml', 'utf8')) as any[];
+    viniBianchi = yaml.load(fs.readFileSync('oreste/vini-bianchi.yaml', 'utf8')) as any[];
+    viniRosati = yaml.load(fs.readFileSync('oreste/vini-rosati.yaml', 'utf8')) as any[];
+    viniVivaci = yaml.load(fs.readFileSync('oreste/vini-vivaci.yaml', 'utf8')) as any[];
+    viniSpumanti = yaml.load(fs.readFileSync('oreste/vini-spumanti.yaml', 'utf8')) as any[];
+} catch (e) {
+  console.log(e);
+}
 
 import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
@@ -29,7 +45,7 @@ const { d } = useDataTranslations(lang);
     </PageSection>
 
     <PageSection title={t("menu.wine.vini-bianchi")}>
-        {viniBianci.map((vino) => (
+        {viniBianchi.map((vino) => (
             <MenuItem
                 name={d(vino.name)!}
                 description={d(vino.description)}

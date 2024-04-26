@@ -1,4 +1,7 @@
 ---
+import yaml from 'js-yaml';
+import fs from 'fs';
+
 import MenuLayout from "@layouts/MenuLayout.astro";
 import MenuItem from "@components/MenuItem.astro";
 import PageSection from "@components/PageSection.astro";
@@ -19,7 +22,12 @@ import iconSesame from "@images/icon/allergens/sesame.svg";
 import iconSoy from "@images/icon/allergens/soy.svg";
 import iconSulphite from "@images/icon/allergens/sulphite.svg";
 
-import { dishes } from "@oreste/food.js";
+let dishes: any[] = [];
+try {
+  dishes = yaml.load(fs.readFileSync('oreste/food.yaml', 'utf8')) as any[];
+} catch (e) {
+  console.log(e);
+}
 
 import { getLangFromUrl, useTranslations, useDataTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);

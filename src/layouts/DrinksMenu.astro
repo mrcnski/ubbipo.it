@@ -1,9 +1,19 @@
 ---
+import yaml from 'js-yaml';
+import fs from 'fs';
+
 import MenuLayout from "./MenuLayout.astro";
 import MenuItem from "../components/MenuItem.astro";
 import PageSection from "../components/PageSection.astro";
 
-import { beers, drinks } from "../../oreste/drinks.js";
+let beers: any[] = [];
+let drinks: any[] = [];
+try {
+  beers = yaml.load(fs.readFileSync('oreste/beers.yaml', 'utf8')) as any[];
+  drinks = yaml.load(fs.readFileSync('oreste/drinks.yaml', 'utf8')) as any[];
+} catch (e) {
+  console.log(e);
+}
 
 import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);

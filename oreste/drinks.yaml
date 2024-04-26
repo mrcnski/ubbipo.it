@@ -1,0 +1,100 @@
+# Some notes about the format:
+#
+# - Images go in the 'src/assets/images/menu' folder.
+#
+# - Use {slow} for the slow food logo.
+# - Use {bio} for the bio logo.
+# - To make a food or wine BIO, add it to the tags:
+#   tags: 'vegan, bio'
+#
+# - Use the asterisk for bold text:
+#   '*salumi*'
+# - Use double quotes for italics:
+#   '"I Moresani" {slow} {bio}'
+#
+# - Try to always use single quotes around each value:
+#   '*salumi*'
+# - To make a single quote like in 'Mbattane, do this:
+#   'Mulignane ''Mbattane'
+
+- name:
+    it: 'Acqua Microfiltrata'
+    en: 'Microfiltered Water'
+  description:
+    it: 'Sistema Culligan, 75 cl'
+    en: 'Culligan System, 75 cl'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '2'
+  available: 'yes'
+
+- name: 'Cedrata Tassoni'
+  description:
+    it: 'Storica bibita italiana del 1956. Bevanda analcolica frizzante, dolce ma con una punta di aspro.'
+    en: 'Historic Italian soda from 1956. Non-alcoholic sparkling drink, sweet but with a hint of sourness to it.'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '3'
+  available: 'yes'
+
+- name: 'Mir-tonic'
+  description:
+    it: 'Una nuova idea di Gin. 100% made in Cilento.'
+    en: 'A new take on Gin. 100% made in Cilento.'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '7'
+  available: 'yes'
+
+- name: 'Spritz'
+  description:
+    it: 'Classico cocktail italiano a base di vino.'
+    en: 'Classic Italian wine-based cocktail.'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '7'
+  available: 'yes'
+
+- name:
+    it: 'Liquori artigianali'
+    en: 'Artisanal liqueurs'
+  description:
+    it: 'La nostra selezione di liquori artigianali locali. Chiedeteci cosa è disponibile!'
+    en: 'Our selection of local handmade liqueurs. Ask us for what''s available!'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '4'
+  available: 'yes'
+
+- name: 'Amaro Di Sassano Penna'
+  description:
+    it: 'Amaro di erbe e radici. Produttore di 120 anni situato nel cuore del Cilento.'
+    en: 'Herbal and root bitter. 120-year-old producer located in the heart of Cilento.'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '3'
+  available: 'yes'
