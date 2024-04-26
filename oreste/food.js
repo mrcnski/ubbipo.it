@@ -189,13 +189,13 @@ export const dishes = [
         },
         ingredients: "",
         description: {
-            it: "In base alla disponibilità:<br>— Pasta e ceci di Cicerale<br>- Pasta arruscata<br>— Pasta e fagioli di Controne<br>— Pasta al forno",
+            it: "In base alla disponibilità:<br>— Pasta e ceci di Cicerale<br>- Cavatelli o Fusilli<br>- Pasta arruscata<br>— Pasta e fagioli di Controne<br>— Pasta al forno",
             en: "Subject to availability:<br>— Pasta and chickpeas from Cicerale<br>— Pasta and beans from Controne<br>— Baked pasta",
         },
         image: "",
         producer: "",
         location: "",
-        tags: "vegetarian", 
+        tags: "vegetarian","vegan", 
         price: {
             it: '*10*',
             en: '*10*',
