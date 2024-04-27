@@ -17,15 +17,15 @@
 # - To make a single quote like in 'Mbattane, do this:
 #   'Mulignane ''Mbattane'
 
-- name: 'Unachiara'
-  description: 'Helles, 33 cl. vol. 5.2%'
-  image: ''
-  producer: 'Birrificio Fieij'
+- name: '4LUPPOLI'
+  description: 'Lager, 40 cl. vol. 5%'
+  image: 'BF588.png'
+  producer: 'Birrificio Poretti'
   location: ''
   tags: ''
   glass: ''
   bottle: ''
-  price: '5'
+  price: '*5*'
   available: 'yes'
 
 - name: 'Unafresca'
