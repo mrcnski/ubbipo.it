@@ -185,18 +185,18 @@
       - '*melanzane*'
       - '*pane raffermo*'
       - '*uova*'
-      - '*cacioricotta* biologica cilentana ''I Moresani'' {slow}'
+      - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
       - '*parmigiano*, *pecorino*'
-      - '*sugo di pomodoro* "Mutti"'
+      - '*sugo di pomodoro*'
       - '*prezzemolo*, *basilico*'
-      - '*olio EVO* della "azienda agricola Marino"'
+      - '*olio EVO* "Az. Agr. Marino"'
     en:
       - '*eggplant*'
       - '*stale bread*'
       - '*eggs*'
-      - 'Cilento organic *cacioricotta cheese* ''I Moresani'' {slow}'
+      - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*parmigiano cheese*, *pecorino cheese*'
-      - '*tomato sauce* "Mutti"'
+      - '*tomato sauce*'
       - '*parsley*, *basil*'
       - '*EVO oil* from "Marino farm"'
   description: ''
@@ -205,8 +205,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '8'
-    en: '8'
+    it: '*8*'
+    en: '*8*'
   available: 'yes'
 
 - name:
@@ -218,16 +218,16 @@
       - '*patate*'
       - '*uova*'
       - '*fior di latte* "Le Starze"'
-      - '*sugo di pomodoro* "Mutti"'
+      - '*sugo di pomodoro*'
       - '*parmigiano*'
       - '*basilico*'
-      - '*olio EVO* della "azienda agricola Marino"'
+      - '*olio EVO* "Az. Agr. Marino"'
     en:
       - '*eggplant*, *zucchini*'
       - '*potatoes*'
       - '*eggs*'
       - '*fior di latte* "Le Starze"'
-      - '*tomato sauce* "Mutti"'
+      - '*tomato sauce*'
       - '*parmigiano cheese*'
       - '*basil*'
       - '*EVO oil* from "Marino farm"'
@@ -237,8 +237,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '10'
-    en: '10'
+    it: '*10*'
+    en: '*10*'
   available: 'yes'
 
 - name:
@@ -248,16 +248,16 @@
     it:
       - '*patate*'
       - 'con prodotti di stagione: *asparagi* selvatici o *carciofi* o *cipolla di vatolla* {slow}'
-      - '*uova* "AIA senza uso di antibiotici allevamento a terra"'
+      - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*parmigiano*'
-      - '*cacioricotta* biologica cilentana "I Moresani" {slow}'
+      - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
       - '*olio di girasole*'
     en:
       - '*potatoes*'
       - 'with seasonal products: wild *asparagus* or *artichokes* or *Vatolla onion* {slow}'
-      - '*eggs* "AIA without the use of antibiotics, free-range"'
+      - '*eggs* "without the use of antibiotics, free-range"'
       - '*parmigiano cheese*'
-      - 'Cilento organic *cacioricotta cheese* "I Moresani" {slow}'
+      - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*sunflower oil*'
   description: ''
   image: 'frittata.jpg'
@@ -265,8 +265,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '7'
-    en: '7'
+    it: '*7*'
+    en: '*7*'
   available: 'yes'
 
 - name:
@@ -277,7 +277,7 @@
       - '*alici* Cilentane'
       - '*pane raffermo*'
       - '*aglio*, *prezzemolo*'
-      - '*olio EVO* della "azienda agricola Marino"'
+      - '*olio EVO* "Az. Agr. Marino"'
     en:
       - 'Cilento *anchovies*'
       - '*stale bread*'
@@ -289,8 +289,8 @@
   location: ''
   tags: ''
   price:
-    it: '9'
-    en: '9'
+    it: '*9*'
+    en: '*9*'
   available: 'yes'
 
 - name:
@@ -301,15 +301,15 @@
       - '*alici* Cilentane'
       - '*pane raffermo*'
       - '*uova*'
-      - '*cacioricotta* biologica cilentana "I Moresani" {slow}'
+      - '**cacioricotta cilentana* "I Moresani" {slow} {bio}'
       - '*sugo di pomodoro*'
       - '*aglio*, *prezzemolo*'
-      - '*olio EVO* della "azienda agricola Marino"'
+      - '*olio EVO* "Az. Agr. Marino"'
     en:
       - 'Cilento *anchovies*'
       - '*stale bread*'
       - '*eggs*'
-      - 'Cilento organic *cacioricotta cheese* "I Moresani" {slow}'
+      - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*tomato sauce*'
       - '*garlic*, *parsley*'
       - '*EVO oil* from "Marino farm"'
@@ -319,8 +319,8 @@
   location: ''
   tags: ''
   price:
-    it: '9'
-    en: '9'
+    it: '*9*'
+    en: '*9*'
   available: 'yes'
 
 - name:
@@ -328,12 +328,12 @@
     en: 'Chickpeas with Rosemary'
   ingredients:
     it:
-      - '*ceci* biologici di Cicerale "Azienda Agricola Denazzano" {slow}'
-      - '*sugo di pomodoro* "Mutti"'
+      - '*ceci* di Cicerale "Azienda Agricola Denazzano" {slow} {bio}'
+      - '*sugo di pomodoro*'
       - '*aglio*, *rosmarino*'
-      - '*olio EVO* della "azienda agricola Marino"'
+      - '*olio EVO* "Az. Agr. Marino"'
     en:
-      - 'Cicerale organic *chickpeas* "Azienda Agricola Denazzano" {slow}'
+      - 'Cicerale *chickpeas* "Azienda Agricola Denazzano" {slow} {bio}'
       - '*tomato sauce* "Mutti"'
       - '*garlic*, *rosemary*'
       - '*EVO oil* from "Marino farm"'
@@ -343,8 +343,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '27'
-    en: '27'
+    it: '*9*'
+    en: '*9*'
   available: 'yes'
 
 - name:
@@ -354,7 +354,7 @@
     it:
       - '*verdure* di stagione'
       - '*aglio*, *basilico*'
-      - '*olio EVO* della "azienda agricola Marino"'
+      - '*olio EVO* "Az. Agr. Marino"'
     en:
       - 'seasonal *vegetables*'
       - '*garlic*, *basil*'
@@ -365,6 +365,6 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '6'
-    en: '6'
+    it: '*7*'
+    en: '*7*'
   available: 'yes'
