@@ -27,6 +27,7 @@
   bottle: ''
   price: '*3*'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Birra alla spina *4LUPPOLI*'
   description: 'Lager, 40 cl. vol. 5%'
@@ -38,6 +39,7 @@
   bottle: ''
   price: '*5*'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Unambrata'
   description: 'American Pale Ale, 33 cl. vol. 6%'
@@ -48,7 +50,8 @@
   glass: ''
   bottle: ''
   price: '5'
-  available: 'yes'
+  available: 'no'
+  visible: 'no'
 
 - name: 'Unaspecial'
   description: 'Belgian Dark Ale, 33 cl. vol. 6%'
@@ -59,7 +62,8 @@
   glass: ''
   bottle: ''
   price: '5'
-  available: 'yes'
+  available: 'no'
+  visible: 'no'
 
 - name: 'Unaforte'
   description: 'Belgian Strong Ale, 33 cl. vol. 8.5%'
@@ -70,4 +74,5 @@
   glass: ''
   bottle: ''
   price: '5'
-  available: 'yes'
+  available: 'no'
+  visible: 'no'

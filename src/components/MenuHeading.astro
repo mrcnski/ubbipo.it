@@ -15,7 +15,7 @@ import FormatText from "@components/FormatText.astro";
 
 const { name, price, glass, bottle, available, bio } = Astro.props;
 
-const availability = (available != "yes") ? "unavailable" : "";
+const availableClass = (available != "yes") ? "unavailable" : "";
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
@@ -23,16 +23,16 @@ const t = useTranslations(lang);
 ---
 
 {/* Outer div controls whether the name/bio portion is on the same line as the price. */}
-<div class:list={["menu-heading", availability]}>
+<div class:list={["menu-heading", availableClass]}>
     {/* Portion that should always be on the same line. 
         If the price portion is wrapped, the BIO icon should be right-aligned. */}
     <div class="menu-heading-same-line">
-        <h3>{name}</h3>
+        <h3><FormatText text={name} /></h3>
 
         {(bio) && <Image src={iconBio} alt="Bio" width="24" class="icon-bio" />}
     </div>
 
-    <div class:list={["menu-item-row", availability]}>
+    <div class:list={["menu-item-row", availableClass]}>
         {(price) && 
             <span class="price">
                 <span class="price-field"> {t("menu.price")} </span>

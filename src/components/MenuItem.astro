@@ -11,6 +11,7 @@ interface Props {
     bottle?: string;
     price?: string;
     available: string;
+    visible: string;
 }
 
 import FormatText from "@components/FormatText.astro";
@@ -19,16 +20,18 @@ import MenuImage from "@components/MenuImage.astro";
 import MenuIngredients from "@components/MenuIngredients.astro";
 import MenuTags from "@components/MenuTags.astro";
 
-const { name, ingredients, description, image, producer, location, tags, glass, bottle, price, available } = Astro.props;
+const { name, ingredients, description, image, producer, location, tags, glass, bottle, price, available, visible } = Astro.props;
 // Filter out empty tags.
 var splitTags = tags?.split(",").filter(tag => tag).map(tag => tag.toLowerCase().trim()) ?? [];
+
+const visibleClass = (visible != "yes") ? "invisible" : "";
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="menu-item">
+<div class:list={["menu-item", visibleClass]}>
     <MenuHeading name={name} price={price} glass={glass} bottle={bottle} available={available} bio={splitTags.includes("bio")} />
 
     <div class="menu-item-content">
@@ -121,5 +124,9 @@ const t = useTranslations(lang);
             margin-top: 0.35rem;
             display: inline-block;
         }
+    }
+
+    .invisible {
+        display: none;
     }
 </style>

@@ -26,6 +26,7 @@
   glass: '7'
   bottle: '20'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Colli Monticoricesi'
   description: 'Bianco Campania, Fiano, Falanghina, 13%, 2022'
@@ -36,6 +37,7 @@
   glass: '7'
   bottle: '20'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Etèl'
   description: 'Campania IGP, Falanghina, 13%, 2022'
@@ -46,6 +48,7 @@
   glass: '7'
   bottle: '21'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Ogliastro Marina'
   description: 'Cilento DOC, Fiano, 13%, 2022'
@@ -56,6 +59,7 @@
   glass: '7'
   bottle: '22'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Valmezzana'
   description: 'Cilento DOP, Fiano, 14%, 2022'
@@ -66,6 +70,7 @@
   glass: '8'
   bottle: '24'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Proclamo'
   description: 'Cilento DOP, Fiano, 13.5%, 2022'
@@ -76,6 +81,7 @@
   glass: '8'
   bottle: '24'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Vincenzì'
   description: 'Campania IGP, Fiano, 12.5%, 2022'
@@ -86,6 +92,7 @@
   glass: '8'
   bottle: '25'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Donnaluna Bianco'
   description: 'Cilento DOC, Fiano, 13%, 2022'
@@ -96,6 +103,7 @@
   glass: '8'
   bottle: '26'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Corsole'
   description: 'Campania IGP, Fiano, 13.5%, 2022'
@@ -106,6 +114,7 @@
   glass: '10'
   bottle: '27'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Licosa'
   description: 'Cilento DOC, Fiano, 13.5%, 2022'
@@ -116,6 +125,7 @@
   glass: '10'
   bottle: '32'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Kràtos'
   description: 'Cilento DOP, Fiano, 13%, 2022'
@@ -126,6 +136,7 @@
   glass: '10'
   bottle: '34'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Vesole'
   description: 'Campania IGP, Fiano, 12.5%, 2020'
@@ -136,3 +147,4 @@
   glass: ''
   bottle: '38'
   available: 'yes'
+  visible: 'yes'

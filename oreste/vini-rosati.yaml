@@ -26,6 +26,7 @@
   glass: '7'
   bottle: '22'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Anna'
   description: 'Campania IGP, Pinot Nero, 13%, 2022'
@@ -36,6 +37,7 @@
   glass: '10'
   bottle: '27'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Primmavera'
   description: 'Paestum IGP, Aglianico, Camaiola, 13.5%, 2022'
@@ -46,3 +48,4 @@
   glass: '10'
   bottle: '31'
   available: 'yes'
+  visible: 'yes'

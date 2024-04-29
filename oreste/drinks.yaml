@@ -31,6 +31,7 @@
   location: ''
   price: '2'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Cedrata Tassoni'
   description:
@@ -44,6 +45,7 @@
   location: ''
   price: '3'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Mir-tonic'
   description:
@@ -57,6 +59,7 @@
   location: ''
   price: '7'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Spritz'
   description:
@@ -70,6 +73,7 @@
   location: ''
   price: '7'
   available: 'yes'
+  visible: 'yes'
 
 - name:
     it: 'Liquori artigianali'
@@ -85,6 +89,7 @@
   location: ''
   price: '4'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Amaro Di Sassano Penna'
   description:
@@ -98,3 +103,4 @@
   location: ''
   price: '3'
   available: 'yes'
+  visible: 'yes'

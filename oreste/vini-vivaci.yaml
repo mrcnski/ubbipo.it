@@ -26,6 +26,7 @@
   glass: ''
   bottle: '22'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Pashkà'
   description: 'Paestum Rosso IGP, Aglianico, Barbera, 12%, 2022'
@@ -36,6 +37,7 @@
   glass: ''
   bottle: '24'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Desiderio Bianco'
   description: 'Campania IGT, Fiano, 13.5%, 2022'
@@ -46,6 +48,7 @@
   glass: ''
   bottle: '24'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Desiderio Rosato'
   description: 'Aglianico Rosè Frizzante, Aglianico, 13%, 2022'
@@ -56,3 +59,4 @@
   glass: ''
   bottle: '26'
   available: 'yes'
+  visible: 'yes'

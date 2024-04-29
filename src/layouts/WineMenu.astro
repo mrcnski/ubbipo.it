@@ -21,7 +21,7 @@ try {
   console.log(e);
 }
 
-import { getLangFromUrl, useTranslations, useDataTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useDataTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const { d } = useDataTranslations(lang);
@@ -40,6 +40,7 @@ const { d } = useDataTranslations(lang);
                 glass={d(vino.glass)}
                 bottle={d(vino.bottle)}
                 available={d(vino.available)!}
+                visible={d(vino.visible)!}
             />
         ))}
     </PageSection>
@@ -56,6 +57,7 @@ const { d } = useDataTranslations(lang);
                 glass={d(vino.glass)}
                 bottle={d(vino.bottle)}
                 available={d(vino.available)!}
+                visible={d(vino.visible)!}
             />
         ))}
     </PageSection>
@@ -72,6 +74,7 @@ const { d } = useDataTranslations(lang);
                 glass={d(vino.glass)}
                 bottle={d(vino.bottle)}
                 available={d(vino.available)!}
+                visible={d(vino.visible)!}
             />
         ))}
     </PageSection>
@@ -88,6 +91,7 @@ const { d } = useDataTranslations(lang);
                 glass={d(vino.glass)}
                 bottle={d(vino.bottle)}
                 available={d(vino.available)!}
+                visible={d(vino.visible)!}
             />
         ))}
     </PageSection>
@@ -104,6 +108,7 @@ const { d } = useDataTranslations(lang);
                 glass={d(vino.glass)}
                 bottle={d(vino.bottle)}
                 available={d(vino.available)!}
+                visible={d(vino.visible)!}
             />
         ))}
     </PageSection>

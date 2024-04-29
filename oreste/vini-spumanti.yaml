@@ -26,6 +26,7 @@
   glass: '9'
   bottle: '25'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Tredaniele Spumante'
   description: 'Vino Spumante Brut Rosè, Pinot Nero, 12.5%'
@@ -36,3 +37,4 @@
   glass: ''
   bottle: '37'
   available: 'yes'
+  visible: 'yes'

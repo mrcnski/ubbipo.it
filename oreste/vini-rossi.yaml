@@ -28,6 +28,7 @@
   glass: '7'
   bottle: '20'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Caos'
   description: 'Vino Rosso, 12 varietà diverse, 14%, 2020'
@@ -38,6 +39,7 @@
   glass: '7'
   bottle: '20'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Colle Arenario'
   description: 'Cilento DOC, Aglianico, 13%, 2020'
@@ -48,6 +50,7 @@
   glass: '7'
   bottle: '22'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Donnaluna Rosso'
   description: 'Cilento DOP, Aglianico, 14%, 2020'
@@ -58,6 +61,7 @@
   glass: '10'
   bottle: '26'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Rosso Campania'
   description: 'Campania IGP, Aglianico, Cabernet sauvignon, 13%, 2021'
@@ -68,6 +72,7 @@
   glass: '9'
   bottle: '30'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Malabrocca'
   description: 'Paestum IGP, Aglianico, Camaiola, 12.5%, 2022'
@@ -78,6 +83,7 @@
   glass: '10'
   bottle: '31'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Patrinus'
   description: 'Paestum IGT, Aglianico, Primitivo, 14%, 2021'
@@ -88,6 +94,7 @@
   glass: '10'
   bottle: '32'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Klèos'
   description: 'Cilento DOP, Aglianico, 14%, 2021'
@@ -98,6 +105,7 @@
   glass: '10'
   bottle: '34'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Rosso Del Ciglio'
   description: 'Paestum IGP, Aglianico, 14.5%, 2020'
@@ -108,6 +116,7 @@
   glass: '12'
   bottle: '34'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Rosso Paestum'
   description: 'Paestum IGP, Cabernet Sauvignon, Aglianico, 13.5%, 2018'
@@ -118,6 +127,7 @@
   glass: ''
   bottle: '38'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Proclamo Riserva'
   description: 'Cilento DOP, Aglianico, 15%, 2014'
@@ -128,6 +138,7 @@
   glass: ''
   bottle: '48'
   available: 'yes'
+  visible: 'yes'
 
 - name: 'Primalaterra 2012'
   description: 'Cilento DOP, Aglianico, 16%, 2012'
@@ -138,3 +149,4 @@
   glass: ''
   bottle: '75'
   available: 'yes'
+  visible: 'yes'
