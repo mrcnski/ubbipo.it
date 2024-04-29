@@ -17,7 +17,7 @@
 # - To make a single quote like in 'Mbattane, do this:
 #   'Mulignane ''Mbattane'
 
-- name: 'Birra alla spina '*4LUPPOLI*'
+- name: 'Birra alla spina *4LUPPOLI*'
   description: 'Lager, 20 cl. vol. 5%'
   image: 'birra4luppoli.jpg'
   producer: 'Birrificio Poretti'
@@ -29,7 +29,7 @@
   available: 'yes'
 
 - name: 'Birra alla spina *4LUPPOLI*'
-  description: 'Lager, 20 cl. vol. 5%'
+  description: 'Lager, 40 cl. vol. 5%'
   image: 'birra4luppoli.jpg'
   producer: 'Birrificio Poretti'
   location: ''
@@ -48,7 +48,7 @@
   glass: ''
   bottle: ''
   price: '5'
-  available: 'no'
+  available: 'yes'
 
 - name: 'Unaspecial'
   description: 'Belgian Dark Ale, 33 cl. vol. 6%'
@@ -59,7 +59,7 @@
   glass: ''
   bottle: ''
   price: '5'
-  available: 'no'
+  available: 'yes'
 
 - name: 'Unaforte'
   description: 'Belgian Strong Ale, 33 cl. vol. 8.5%'
@@ -70,4 +70,4 @@
   glass: ''
   bottle: ''
   price: '5'
-  available: 'no'
+  available: 'yes'
