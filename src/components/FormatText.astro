@@ -5,13 +5,19 @@ interface Props {
 
 const { text } = Astro.props;
 
-import iconSlowFood from "@images/icon/slow-food.svg";
 import iconBio from "@images/icon/bio.svg";
+import iconNatural from "@images/icon/natural.svg";
+import iconSlowFood from "@images/icon/slow-food.svg";
 
 const regexItalics = /["|“]([^"“”]+)["|”]/g;
 const regexBold = /\*([^\*]+)\*/g;
-const regexSlow = /{slow}/g;
 const regexBio = /{bio}/g;
+const regexNatural = /{natural}/g;
+const regexSlow = /{slow}/g;
+
+import { getLangFromUrl, useTranslations, useDataTranslations } from '@i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Fragment set:html={
@@ -19,7 +25,8 @@ const regexBio = /{bio}/g;
         .replace(regexItalics, "<i>$1</i>")
         .replace(regexBold, "<b>$1</b>")
         .replace(regexSlow, `<img class="icon-slow" src=${iconSlowFood.src} alt="Slow food" width="48" />`)
-        .replace(regexBio, `<img class="icon-bio" src=${iconBio.src} alt="Biologico" width="20" />`)
+        .replace(regexBio, `<img class="icon-bio" src=${iconBio.src} alt={t("wine.menu.biological")} width="20" />`)
+        .replace(regexNatural, `<img class="icon-natural" src=${iconNatural.src} alt={t("wine.menu.natural")} width="20" />`)
 }/>
 
 <style lang="less">
@@ -27,6 +34,9 @@ const regexBio = /{bio}/g;
         margin: 0 0.25em;
     }
     :global(.icon-bio) {
+        margin: 0 0.25em;
+    }
+    :global(.icon-natural) {
         margin: 0 0.25em;
     }
 </style>

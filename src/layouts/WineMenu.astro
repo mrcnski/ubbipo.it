@@ -18,7 +18,7 @@ try {
     viniVivaci = yaml.load(fs.readFileSync('oreste/vini-vivaci.yaml', 'utf8')) as any[];
     viniSpumanti = yaml.load(fs.readFileSync('oreste/vini-spumanti.yaml', 'utf8')) as any[];
 } catch (e) {
-  console.log(e);
+    console.log(e);
 }
 
 import { getLangFromUrl, useTranslations, useDataTranslations } from '@i18n/utils';
@@ -27,7 +27,11 @@ const t = useTranslations(lang);
 const { d } = useDataTranslations(lang);
 ---
 
-<MenuLayout title={t("menu.wine.title")} description={t("menu.wine.description")}>
+<MenuLayout
+  title={t("menu.wine.title")}
+  description={t("menu.wine.description")}
+  info={t("menu.wine.info")}
+>
     <PageSection title={t("menu.wine.vini-rossi")}>
         {viniRossi.map((vino) => (
             <MenuItem

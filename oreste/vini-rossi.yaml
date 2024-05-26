@@ -6,6 +6,8 @@
 # - Use {bio} for the bio logo.
 # - To make a food or wine BIO, add it to the tags:
 #   tags: 'vegan, bio'
+# - To make a food or wine NATURAL, add it to the tags:
+#   tags: 'natural'
 #
 # - Use the asterisk for bold text:
 #   '*salumi*'

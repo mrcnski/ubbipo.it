@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import logoFull from "@images/logo/full.svg";
 
 import Layout from "@layouts/Layout.astro";
+
+import FormatText from "@components/FormatText.astro";
 import MenuSubNav from "@components/MenuSubNav.astro";
 import PageContainer from "@components/PageContainer.astro";
 
@@ -19,7 +21,7 @@ const { title, description, info } = Astro.props;
 	<PageContainer>
 		<div class="menu-header">
 			<Image src={logoFull} alt="Logo" width="300" />
-			{(info) && <span class="menu-info"><i>{info}</i></span>}
+			{(info) && <span class="menu-info"><i><FormatText text={info} /></i></span>}
 		</div>
 
 		<slot />
@@ -41,6 +43,10 @@ const { title, description, info } = Astro.props;
 	.menu-info {
 		margin-top: 3rem;
 		margin-left: 2rem;
+        margin-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
 		width: 100%;
 	}
 </style>

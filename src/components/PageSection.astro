@@ -13,9 +13,9 @@ const { title, description } = Astro.props;
     {(title) && <h2 id={title.toLowerCase().split(" ").join("-")}>{ title }</h2>}
 
     {(description) && <p class="page-description"><i><FormatText text={ description } /></i></p>}
-    
+
     <slot />
-</div> 
+</div>
 
 <style lang="less">
     .page-section {

@@ -6,14 +6,16 @@ interface Props {
     bottle?: string;
     available: string;
     bio: boolean;
+    natural: boolean;
 }
 
 import { Image } from 'astro:assets';
 import iconBio from "@images/icon/bio.svg";
+import iconNatural from "@images/icon/natural.svg";
 
 import FormatText from "@components/FormatText.astro";
 
-const { name, price, glass, bottle, available, bio } = Astro.props;
+const { name, price, glass, bottle, available, bio, natural } = Astro.props;
 
 const availableClass = (available != "yes") ? "unavailable" : "";
 
@@ -24,29 +26,30 @@ const t = useTranslations(lang);
 
 {/* Outer div controls whether the name/bio portion is on the same line as the price. */}
 <div class:list={["menu-heading", availableClass]}>
-    {/* Portion that should always be on the same line. 
+    {/* Portion that should always be on the same line.
         If the price portion is wrapped, the BIO icon should be right-aligned. */}
     <div class="menu-heading-same-line">
         <h3><FormatText text={name} /></h3>
 
-        {(bio) && <Image src={iconBio} alt="Bio" width="24" class="icon-bio" />}
+        {(bio) && <Image src={iconBio} alt={t("menu.wine.biological")} width="24" class="icon-bio" />}
+        {(natural) && <Image src={iconNatural} alt={t("menu.wine.natural")} width="24" class="icon-natural" />}
     </div>
 
     <div class:list={["menu-item-row", availableClass]}>
-        {(price) && 
+        {(price) &&
             <span class="price">
                 <span class="price-field"> {t("menu.price")} </span>
                 <span class="price-value"><FormatText text={price} /></span>
             </span>
         }
-        {(glass) && 
+        {(glass) &&
             <span class="price">
                 <span class="price-field">{t("menu.glass")}</span>
                 <span class="price-value">{glass}</span>
             </span>
         }
         {(glass && bottle) && <span> / </span>}
-        {(bottle) && 
+        {(bottle) &&
             <span class="price">
                 <span class="price-field">{t("menu.bottle")}</span>
                 <span class="price-value">{bottle}</span>
@@ -60,12 +63,12 @@ const t = useTranslations(lang);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+
         gap: 1.5rem;
 
         margin-top: 2.5rem;
         margin-bottom: 1rem;
-        
+
         color: var(--brown);
 
         @media (max-width: 900px) {
@@ -95,6 +98,10 @@ const t = useTranslations(lang);
         display: inline-block;
         padding-bottom: 4px;
     }
+    .icon-natural {
+        display: inline-block;
+        padding-bottom: 4px;
+    }
 
     .menu-item-row {
         display: flex;
@@ -120,7 +127,7 @@ const t = useTranslations(lang);
     .price, .price-field, .price-value {
         font-size: 1rem;
     }
-    
+
     .unavailable h3, .unavailable span {
         color: var(--gray);
     }
