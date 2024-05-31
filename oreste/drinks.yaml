@@ -47,7 +47,7 @@
   available: 'yes'
   visible: 'yes'
 
-  - name: 'Coca Cola'
+- name: 'Coca Cola'
   description:
     it: ''
     en: ''
@@ -61,7 +61,7 @@
   available: 'yes'
   visible: 'yes'
 
-  - name: 'Campari Soda'
+- name: 'Campari Soda'
   description:
     it: ''
     en: 'Alcoholic Aperitif'
@@ -75,7 +75,7 @@
   available: 'yes'
   visible: 'yes'
 
-  - name: 'SanBitter'
+- name: 'SanBitter'
   description:
     it: ''
     en: 'Non-Alcoholic Aperitif'
@@ -90,7 +90,7 @@
   visible: 'yes'
 
 
-  - name: 'Gin tonic'
+- name: 'Gin tonic'
   description:
     it: ''
     en: ''
