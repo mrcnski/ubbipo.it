@@ -88,7 +88,7 @@
   visible: 'yes'
 
 - name: 'Patrinus'
-  description: 'Paestum IGT, Aglianico, Primitivo, 14%, 2021'
+  description: 'Paestum IGT, Aglianico, Primitivo, 14,5%, 2022'
   image: ''
   producer: 'Azienda Agricola Alferio Romito'
   location: 'Castellabate'
@@ -114,7 +114,7 @@
   image: ''
   producer: 'Azienda Agricola Salvatore Magnoni'
   location: 'Rutino'
-  tags: 'no-sulfites, bio'
+  tags: 'no-sulfites, bio, natural'
   glass: '12'
   bottle: '34'
   available: 'yes'
