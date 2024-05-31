@@ -35,7 +35,7 @@
 
 - name: 'Cedrata Tassoni'
   description:
-    it: 'Storica bibita italiana del 1956. Bevanda analcolica frizzante, dolce ma con una punta di aspro.'
+    it: ''
     en: 'Historic Italian soda from 1956. Non-alcoholic sparkling drink, sweet but with a hint of sourness to it.'
   image: ''
   producer: ''
@@ -47,6 +47,64 @@
   available: 'yes'
   visible: 'yes'
 
+  - name: 'Coca Cola'
+  description:
+    it: ''
+    en: ''
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '3'
+  available: 'yes'
+  visible: 'yes'
+
+  - name: 'Campari Soda'
+  description:
+    it: ''
+    en: 'Alcoholic Aperitif'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '3'
+  available: 'yes'
+  visible: 'yes'
+
+  - name: 'SanBitter'
+  description:
+    it: ''
+    en: 'Non-Alcoholic Aperitif'
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '3'
+  available: 'yes'
+  visible: 'yes'
+
+
+  - name: 'Gin tonic'
+  description:
+    it: ''
+    en: ''
+  image: ''
+  producer: ''
+  tags: ''
+  glass: ''
+  bottle: ''
+  location: ''
+  price: '8'
+  available: 'yes'
+  visible: 'yes'
+
+
 - name: 'Mir-tonic'
   description:
     it: 'Una nuova idea di Gin. 100% made in Cilento.'
@@ -57,13 +115,13 @@
   glass: ''
   bottle: ''
   location: ''
-  price: '7'
+  price: '9'
   available: 'yes'
   visible: 'yes'
 
 - name: 'Spritz'
   description:
-    it: 'Classico cocktail italiano a base di vino.'
+    it: ''
     en: 'Classic Italian wine-based cocktail.'
   image: ''
   producer: ''
@@ -71,7 +129,7 @@
   glass: ''
   bottle: ''
   location: ''
-  price: '7'
+  price: '8'
   available: 'yes'
   visible: 'yes'
 
