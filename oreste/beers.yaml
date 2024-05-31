@@ -17,10 +17,10 @@
 # - To make a single quote like in 'Mbattane, do this:
 #   'Mulignane ''Mbattane'
 
-- name: 'Birra alla spina *4LUPPOLI*'
-  description: 'Lager, 20 cl. vol. 5%'
-  image: 'birra4luppoli.jpg'
-  producer: 'Birrificio Poretti'
+- name: 'Birra alla spina *Messina Cristalli di Sale*'
+  description: 'Lager non filtrata, 20 cl. vol. 5%'
+  image: 'Logo birra.png'
+  producer: 'Birrificio Messina'
   location: ''
   tags: ''
   glass: ''
