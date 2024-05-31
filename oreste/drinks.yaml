@@ -148,17 +148,3 @@
   price: '4'
   available: 'yes'
   visible: 'yes'
-
-- name: 'Amaro Di Sassano Penna'
-  description:
-    it: 'Amaro di erbe e radici. Produttore di 120 anni situato nel cuore del Cilento.'
-    en: 'Herbal and root bitter. 120-year-old producer located in the heart of Cilento.'
-  image: ''
-  producer: ''
-  tags: ''
-  glass: ''
-  bottle: ''
-  location: ''
-  price: '3'
-  available: 'yes'
-  visible: 'yes'
