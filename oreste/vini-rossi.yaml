@@ -120,17 +120,6 @@
   available: 'yes'
   visible: 'yes'
 
-- name: 'Rosso Paestum'
-  description: 'Paestum IGP, Cabernet Sauvignon, Aglianico, 13.5%, 2018'
-  image: ''
-  producer: 'Azienda Agricola Tredaniele'
-  location: 'Trentinara'
-  tags: ''
-  glass: ''
-  bottle: '38'
-  available: 'yes'
-  visible: 'yes'
-
 - name: 'Proclamo Riserva'
   description: 'Cilento DOP, Aglianico, 15%, 2014'
   image: ''
