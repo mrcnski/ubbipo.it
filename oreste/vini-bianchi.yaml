@@ -83,6 +83,17 @@
   available: 'yes'
   visible: 'yes'
 
+- name: 'Iscadoro'
+  description: 'Paestum IGP, Fiano, Malvasia, Trebbiano, 12%, 2022'
+  image: ''
+  producer: 'Azienda Agricola Casebianche'
+  location: 'Torchiara'
+  tags: 'bio, natural'
+  glass: '12'
+  bottle: '32'
+  available: 'yes'
+  visible: 'yes'
+
 - name: 'Licosa'
   description: 'Cilento DOC, Fiano, 13.5%, 2022'
   image: ''
