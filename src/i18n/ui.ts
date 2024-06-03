@@ -1,3 +1,4 @@
+/// Supported languages.
 export const languages = {
     it: 'Italiano',
     en: 'English',

@@ -40,7 +40,7 @@ h1, h2 {
   font-weight: normal;
 }
 
-h3, h4, h5, h6, p, span, a, button {  
+h3, h4, h5, h6, p, span, a, button {
   font-family: 'MADE Tommy Soft', sans-serif;
   font-weight: 300;
 }
@@ -60,7 +60,7 @@ h1 {
 h2 {
   margin-top: 1rem;
   margin-bottom: 3.5rem;
-  
+
   font-size: 2.3rem;
 
   @media (max-width: 768px) {
@@ -70,7 +70,7 @@ h2 {
 
 h3 {
   margin-bottom: 1rem;
-  
+
   font-size: 1.4rem;
 }
 

@@ -33,11 +33,12 @@ const { title, description, info } = Astro.props;
 
 <style lang="less">
 	.menu-header {
-		margin-top: 8rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
+		margin-top: 8rem;
 	}
 
 	.menu-info {
@@ -47,6 +48,9 @@ const { title, description, info } = Astro.props;
         padding-left: 1rem;
         padding-right: 1rem;
 
-		width: 100%;
+        width: 100%;
+
+        color: var(--brown);
+        font-size: var(--font-size-important);
 	}
 </style>
