@@ -120,6 +120,17 @@
   available: 'yes'
   visible: 'yes'
 
+- name: 'Buxento'
+  description: 'Paestum IGP, Aglianicone, 14.5%, 2019'
+  image: ''
+  producer: 'Azienda Agricola Silvaplantarium'
+  location: 'Torre Orsaia'
+  tags: 'no-sulfites, natural'
+  glass: ''
+  bottle: '38'
+  available: 'yes'
+  visible: 'yes'
+
 - name: 'Proclamo Riserva'
   description: 'Cilento DOP, Aglianico, 15%, 2014'
   image: ''
