@@ -256,7 +256,7 @@
   ingredients:
     it:
       - '*patate*'
-      - 'con prodotti di stagione: *asparagi* selvatici o *carciofi* o *cipolla di vatolla* {slow}'
+      - 'con prodotti di stagione:<br>*asparagi* selvatici o *carciofi* o *cipolla di vatolla* {slow}'
       - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*parmigiano*'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
