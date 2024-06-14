@@ -15,8 +15,8 @@ interface Props {
 
 const { title, description } = Astro.props;
 
-import { getLangFromUrl, useTranslations, urlToLangUrl } from '../i18n/utils';
-import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations, urlToLangUrl } from '@i18n/utils';
+import { languages } from '@i18n/ui';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---

@@ -52,7 +52,7 @@ export const ui = {
         'index.2.description': "The menu reflects the love for home cooking, simple and genuine, and is inspired by the tradition of this wonderful land; the products are strictly Cilento. Every sip of wine and every bite of food carries centuries of tradition, giving a delightful journey through the flavors and scents of Cilento.",
 
         'menu.title': 'Menu',
-        'menu.description': 'A selection of traditional Italian dishes and wines from the Cilento region of Italy.',
+        'menu.description': 'Authentic Cilento flavors in a cozy atmosphere',
 
         'menu.food.title': 'Food Menu',
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
@@ -135,7 +135,7 @@ export const ui = {
         'index.2.description': "Il menu riflette l'amore per la cucina casalinga, semplice e genuina e si ispira alla tradizione di questa meravigliosa terra, i prodotti sono rigorosamente cilentani. Ogni sorso di vino e ogni morso di cibo portano con sé secoli di tradizione, regalando un viaggio deliziante tra sapori e profumi del Cilento.",
 
         'menu.title': 'Menù',
-        'menu.description': 'Una selezione di piatti tradizionali italiani e vini della regione del Cilento in Italia.',
+        'menu.description': "I sapori autentici del Cilento in un'atmosfera accogliente",
 
         'menu.food.title': 'Menù Cibo',
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
