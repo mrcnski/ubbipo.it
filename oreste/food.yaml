@@ -41,8 +41,8 @@
   location: ''
   tags: ''
   price:
-    it: '*19* "(per alici *+4*)"'
-    en: '*19* "(for anchovies *+4*)"'
+    it: '*22* "(per alici *+4*)"'
+    en: '*22* "(for anchovies *+4*)"'
   available: 'yes'
   visible: 'yes'
 
@@ -66,8 +66,8 @@
   location: ''
   tags: ''
   price:
-    it: '*15* "(per alici *+4*)"'
-    en: '*15* "(for anchovies *+4*)"'
+    it: '*18* "(per alici *+4*)"'
+    en: '*18* "(for anchovies *+4*)"'
   available: 'yes'
   visible: 'yes'
 
@@ -118,8 +118,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*9* "(per alici *+4*)"'
-    en: '*9* "(for anchovies *+4*)"'
+    it: '*10* "(per alici *+4*)"'
+    en: '*10* "(for anchovies *+4*)"'
   available: 'yes'
   visible: 'yes'
 
@@ -135,8 +135,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*6*'
-    en: '*6*'
+    it: '*10*'
+    en: '*10*'
   available: 'yes'
   visible: 'yes'
 
@@ -162,8 +162,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*6*'
-    en: '*6*'
+    it: '*9*'
+    en: '*9*'
   available: 'yes'
   visible: 'yes'
 
@@ -179,8 +179,8 @@
   location: ''
   tags: 'vegetarian, vegan'
   price:
-    it: '*10*'
-    en: '*10*'
+    it: '*16*'
+    en: '*16*'
   available: 'yes'
   visible: 'yes'
 
@@ -191,7 +191,7 @@
     it:
       - '*melanzane*'
       - '*pane raffermo*'
-      - '*uova*'
+      - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
       - '*parmigiano*, *pecorino*'
       - '*sugo di pomodoro*'
@@ -212,8 +212,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*8*'
-    en: '*8*'
+    it: '*10*'
+    en: '*10*'
   available: 'yes'
   visible: 'yes'
 
@@ -224,7 +224,7 @@
     it:
       - '*melanzane*, *zucchine*'
       - '*patate*'
-      - '*uova*'
+      - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*fior di latte* "Le Starze"'
       - '*sugo di pomodoro*'
       - '*parmigiano*'
@@ -245,8 +245,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*10*'
-    en: '*10*'
+    it: '*12*'
+    en: '*12*'
   available: 'yes'
   visible: 'yes'
 
@@ -256,7 +256,7 @@
   ingredients:
     it:
       - '*patate*'
-      - 'con prodotti di stagione: *asparagi* selvatici o *carciofi* o *cipolla di vatolla* {slow}'
+      - 'con prodotti di stagione:<br>*asparagi* selvatici o *carciofi* o *cipolla di vatolla* {slow}'
       - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*parmigiano*'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
@@ -274,8 +274,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*7*'
-    en: '*7*'
+    it: '*9*'
+    en: '*9*'
   available: 'yes'
   visible: 'yes'
 
@@ -299,8 +299,8 @@
   location: ''
   tags: ''
   price:
-    it: '*9*'
-    en: '*9*'
+    it: '*12*'
+    en: '*12*'
   available: 'yes'
   visible: 'yes'
 
@@ -330,8 +330,8 @@
   location: ''
   tags: ''
   price:
-    it: '*9*'
-    en: '*9*'
+    it: '*14*'
+    en: '*14*'
   available: 'yes'
   visible: 'yes'
 
@@ -355,8 +355,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*9*'
-    en: '*9*'
+    it: '*10*'
+    en: '*10*'
   available: 'yes'
   visible: 'yes'
 
@@ -378,7 +378,7 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*7*'
-    en: '*7*'
+    it: '*9*'
+    en: '*9*'
   available: 'yes'
   visible: 'yes'
