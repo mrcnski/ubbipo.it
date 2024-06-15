@@ -22,15 +22,15 @@
     en: 'Cilento Boom'
   ingredients: ''
   description:
-    it: 'Un viaggio gastronomico esplosivo!'
-    en: 'An explosive culinary journey!'
+    it: 'Un viaggio gastronomico esplosivo!<br>— Assaggi di alcuni prodotti e pietanze cilentane in un unico piatto.'
+    en: 'An explosive culinary journey!<br>— A taste of Cilentan products and dishes in one plate?
   image: 'cilento boom.jpeg'
   producer: ''
   location: ''
   tags: ''
   price:
-    it: '*16*'
-    en: '*16*'
+    it: '*27*'
+    en: '*27*'
   available: 'yes'
   visible: 'yes'
 
