@@ -27,7 +27,7 @@
   image: 'cilento boom.jpeg'
   producer: ''
   location: ''
-  tags: 'vegetarian, vegan'
+  tags: ''
   price:
     it: '*16*'
     en: '*16*'
