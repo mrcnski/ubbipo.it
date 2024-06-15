@@ -189,7 +189,7 @@
     en: 'Dish of the Day'
   ingredients: ''
   description:
-    it: 'In base alla disponibilità:<br>— Pasta e ceci di Cicerale {slow} {bio}<br>- Cavatelli o Fusilli con cacioricotta cilentano {slow} {bio}<br>- Cavatelli, pomodorini, Alici di Menaica {slow},<br>—Colatura di Alici di Menaica <br>— Pasta e fagioli di Controne{slow}'
+    it: 'In base alla disponibilità:<br>— Pasta e ceci di Cicerale {slow} {bio}<br>- Cavatelli o Fusilli con cacioricotta cilentano {slow} {bio}<br>- Cavatelli, pomodorini, Alici di Menaica {slow},<br>colatura di Alici di Menaica <br>— Pasta e fagioli di Controne{slow}'
     en: 'Subject to availability:<br>— Pasta and chickpeas from Cicerale {slow} {bio}<br>— Pasta and beans from Controne {slow}<br>— Cavatelli or Fusilli with Cilentan Cacioricotta{slow} {bio}<br>- Cavatelli with Pomodorini, Alici di Menaica {slow} and Colatura di Alici di Menaica'
   image: 'Cavatelli.jpeg'
   producer: ''
