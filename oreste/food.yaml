@@ -268,12 +268,12 @@
   visible: 'yes'
 
 - name:
-    it: 'Frittata'
-    en: 'Omelette'
+    it: 'Frittata con Cipolla di Vatolla'
+    en: 'Vatolla Onion Omelette'
   ingredients:
     it:
       - '*patate*'
-      - 'con prodotti di stagione:<br>*asparagi* selvatici o *carciofi* o *cipolla di vatolla* {slow}'
+      - '*cipolla di vatolla* {slow}'
       - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*parmigiano*'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
@@ -281,7 +281,7 @@
       - '*Aceto Balsamico di Modena IGP con Fico Bianco del Cilento DOP* "Az. Agricola Albamarina"'
     en:
       - '*potatoes*'
-      - 'with seasonal products: wild *asparagus* or *artichokes* or *Vatolla onion* {slow}'
+      - '*Vatolla onion* {slow}'
       - '*eggs* "without the use of antibiotics, free-range"'
       - '*parmigiano cheese*'
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
