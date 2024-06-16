@@ -29,8 +29,8 @@
   location: ''
   tags: ''
   price:
-    it: '*27*'
-    en: '*27*'
+    it: '*29*'
+    en: '*29*'
   available: 'yes'
   visible: 'yes'
 
