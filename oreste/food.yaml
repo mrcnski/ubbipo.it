@@ -407,13 +407,9 @@
     en: 'Dessert of the Day'
   ingredients:
     it:
-      - ''
-      - ''
-      - ''
+      
     en:
-      - ''
-      - ''
-      - ''
+     
   description: ''
   image: ''
   producer: ''
