@@ -402,7 +402,7 @@
   available: 'yes'
   visible: 'yes'
 
-  - name:
+- name:
     it: 'Dolce del Giorno'
     en: 'Dessert of the Day'
   ingredients:
