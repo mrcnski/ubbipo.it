@@ -83,8 +83,8 @@
   location: ''
   tags: ''
   price:
-    it: '*18* "(per alici *+4*)"'
-    en: '*18* "(for anchovies *+4*)"'
+    it: '*22* "(per alici *+4*)"'
+    en: '*22* "(for anchovies *+4*)"'
   available: 'yes'
   visible: 'yes'
 
@@ -112,8 +112,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*15* "(per alici *+4*)"'
-    en: '*15* "(for anchovies *+4*)"'
+    it: '*22* "(per alici *+4*)"'
+    en: '*22* "(for anchovies *+4*)"'
   available: 'yes'
   visible: 'yes'
 
@@ -318,8 +318,8 @@
   location: ''
   tags: ''
   price:
-    it: '*12*'
-    en: '*12*'
+    it: '*14*'
+    en: '*14*'
   available: 'yes'
   visible: 'yes'
 
