@@ -16,20 +16,20 @@ const translatePath = useTranslatedPath(lang);
 <Layout title={t("menu.title")} description={t("menu.description")}>
     <PageContainer>
         <h1>{t("menu.title")}</h1>
-        
+
         <Card href={translatePath("menu/cibo")}
               title={t('menu.food.title')}
-              body={t("menu.food.description")}
+              body={t("menu.food.tagline")}
               icon={iconFood}
             />
         <Card href={translatePath("menu/vini")}
               title={t('menu.wine.title')}
-              body={t("menu.wine.description")}
+              body={t("menu.wine.tagline")}
               icon={iconWine}
             />
         <Card href={translatePath("menu/bevande")}
               title={t('menu.drinks.title')}
-              body={t("menu.drinks.description")}
+              body={t("menu.drinks.tagline")}
               icon={iconBeer}
             />
         <div style="height: 1rem;" />

@@ -56,6 +56,7 @@ export const ui = {
 
         'menu.food.title': 'Food Menu',
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
+        'menu.food.tagline': 'A menu #100PERCENTCILENTO',
         'menu.food.info': 'Service charge: €3',
         'menu.food.dishes': 'Dishes',
         'menu.food.allergens': 'Allergens',
@@ -92,6 +93,7 @@ export const ui = {
 
         'menu.wine.title': 'Wine Menu',
         'menu.wine.description': 'A list of wines curated from different regions of Italy. We have a wide variety including red, white, rosé, and vegan wines.',
+        'menu.wine.tagline': 'Exclusively from Cilento and Campania, with a predominance of biological and natural wines.',
         'menu.wine.info': '{bio} Biological wines, made without any chemical substances added.<br><br>{natural} Natural wines, obtained from sustainable agriculture using simple or traditional methods.',
         'menu.wine.vini-rossi': 'Red',
         'menu.wine.vini-bianchi': 'White',
@@ -103,6 +105,7 @@ export const ui = {
 
         'menu.drinks.title': 'Beer and Drinks Menu',
         'menu.drinks.description': 'A menu offering a variety of popular beers and non-alcoholic drinks.',
+        'menu.drinks.tagline': '',
         'menu.drinks.beer': 'Beer',
         'menu.drinks.drinks': 'Drinks',
 
@@ -139,6 +142,7 @@ export const ui = {
 
         'menu.food.title': 'Menù Cibo',
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
+        'menu.food.tagline': 'Un menù #100PERCENTCILENTO',
         'menu.food.info': 'Coperto: €3',
         'menu.food.dishes': 'Piatti',
         'menu.food.allergens': 'Lista Allergeni',
@@ -175,6 +179,7 @@ export const ui = {
 
         'menu.wine.title': 'Menù dei Vini',
         'menu.wine.description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",
+        'menu.wine.tagline': "Esclusivamente dal Cilento e dalla Campania con prevalenza di vini biologici e naturali",
         'menu.wine.info': "{bio} Vini biologici, realizzati senza l'aggiunta di sostanze chimiche.<br><br>{natural} Vini naturali, ottenuti da agricoltura sostenibile utilizzando metodi semplici o tradizionali.",
         'menu.wine.vini-rossi': 'Rossi',
         'menu.wine.vini-bianchi': 'Bianchi',
@@ -186,6 +191,7 @@ export const ui = {
 
         'menu.drinks.title': 'Menù Birre e Bevande',
         'menu.drinks.description': 'Un menu che offre una varietà di birre popolari e bevande analcoliche.',
+        'menu.drinks.tagline': '',
         'menu.drinks.beer': 'Birre',
         'menu.drinks.drinks': 'Bevande',
 
