@@ -408,10 +408,8 @@
     it: 'Dolce del Giorno'
     en: 'Dessert of the Day'
   ingredients:
-    it:
-      
-    en:
-     
+    it: 
+    en: 
   description: ''
   image: ''
   producer: ''
