@@ -371,7 +371,7 @@
       - '*garlic*, *rosemary*'
       - '*EVO oil* from "Marino farm"'
   description: ''
-  image: ''
+  image: 'coasttogoat.jpeg'
   producer: ''
   location: ''
   tags: 'vegan'
@@ -401,23 +401,6 @@
   price:
     it: '*9*'
     en: '*9*'
-  available: 'yes'
-  visible: 'yes'
-
-- name:
-    it: 'Cilento COAST TO GOAT'
-    en: 'Cilento COAST TO GOAT'
-  ingredients: ''
-  description: ''
-    it: ''
-    en: ''
-  image: ''
-  producer: ''
-  location: ''
-  tags: ''
-  price:
-    it: '*14*'
-    en: '*14*'
   available: 'yes'
   visible: 'yes'
 
