@@ -403,3 +403,28 @@
     en: '*9*'
   available: 'yes'
   visible: 'yes'
+
+  - name:
+    it: 'Alici ammollicate'
+    en: 'Soaked Anchovies'
+  ingredients:
+    it:
+      - '*alici* Cilentane'
+      - '*pane raffermo*'
+      - '*aglio*, *prezzemolo*'
+      - '*olio EVO* "Az. Agr. Marino"'
+    en:
+      - 'Cilento *anchovies*'
+      - '*stale bread*'
+      - '*garlic*, *parsley*'
+      - '*EVO oil* from "Marino farm"'
+  description: ''
+  image: 'ammollicate.jpeg'
+  producer: ''
+  location: ''
+  tags: ''
+  price:
+    it: '*14*'
+    en: '*14*'
+  available: 'yes'
+  visible: 'yes'
