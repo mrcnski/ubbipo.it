@@ -403,23 +403,3 @@
     en: '*9*'
   available: 'yes'
   visible: 'yes'
-
-- name:
-    it: 'Pasticceria Secca'
-    en: 'Dry pastries'
-  ingredients:
-    it:
-      - '*Morselletti Cilentani*'
-      - '*Biscotti all'Amarena*'
-      - '*Biscotti con Fichi Secchi Cilentani e Mandorle*'
-    en:
-  description: ''
-  image: 'ammollicate.jpeg'
-  producer: ''
-  location: ''
-  tags: ''
-  price:
-    it: '*12*'
-    en: '*12*'
-  available: 'yes'
-  visible: 'yes'
