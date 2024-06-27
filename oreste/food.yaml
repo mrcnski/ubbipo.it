@@ -403,12 +403,12 @@
   visible: 'yes'
 
 - name:
-    it: 'Cilento Boom'
-    en: 'Cilento Boom'
+    it: 'Cilento COAST TO GOAT'
+    en: 'Cilento COAST TO GOAT'
   ingredients: ''
   description:
-    it: 'Un viaggio gastronomico esplosivo!<br>— Assaggi di alcuni prodotti e pietanze cilentane in un unico piatto.'
-    en: 'An explosive culinary journey!<br>— A taste of Cilentan products and dishes in one plate'
+    it: ''
+    en: ''
   image: 'cilento boom.jpeg'
   producer: ''
   location: ''
