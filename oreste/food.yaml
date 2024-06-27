@@ -403,20 +403,3 @@
     en: '*9*'
   available: 'yes'
   visible: 'yes'
-
-- name:
-    it: 'Dolce del Giorno'
-    en: 'Dessert of the Day'
-  ingredients:
-    it: 
-    en: 
-  description: ''
-  image: ''
-  producer: ''
-  location: ''
-  tags: ''
-  price:
-    it: '*8*'
-    en: '*8*'
-  available: 'yes'
-  visible: 'yes'
