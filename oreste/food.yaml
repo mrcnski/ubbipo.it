@@ -403,6 +403,23 @@
   visible: 'yes'
 
 - name:
+    it: 'Cilento Boom'
+    en: 'Cilento Boom'
+  ingredients: ''
+  description:
+    it: 'Un viaggio gastronomico esplosivo!<br>— Assaggi di alcuni prodotti e pietanze cilentane in un unico piatto.'
+    en: 'An explosive culinary journey!<br>— A taste of Cilentan products and dishes in one plate'
+  image: 'cilento boom.jpeg'
+  producer: ''
+  location: ''
+  tags: ''
+  price:
+    it: '*29*'
+    en: '*29*'
+  available: 'yes'
+  visible: 'yes'
+
+- name:
     it: 'Dolce del Giorno'
     en: 'Dessert of the Day'
   ingredients:
