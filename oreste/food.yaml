@@ -355,13 +355,15 @@
   visible: 'yes'
 
 - name:
-    it: 'Ceci al Rosmarino'
-    en: 'Chickpeas with Rosemary'
+    it: 'Cilento Coast to Goat'
+    en: 'Cilento Coast to Goat'
   ingredients:
     it:
-      - '*ceci* di Cicerale "Azienda Agricola Denazzano" {slow} {bio}'
-      - '*sugo di pomodoro*'
-      - '*aglio*, *rosmarino*'
+      - 'Ceci* di Cicerale "Azienda Agricola Denazzano" {slow} {bio}'
+      - '*Cipolla di Vatolla* {slow}'
+      - '*Cacioricotta Cilentana* "I Moresani" {slow} {bio}'
+      - '*Olive Ammaccate* "Homemade"'
+      - '*Pomodorini*, *Aglio*, *Prezzemolo*, *Basilico*'
       - '*olio EVO* "Az. Agr. Marino"'
     en:
       - 'Cicerale *chickpeas* "Azienda Agricola Denazzano" {slow} {bio}'
