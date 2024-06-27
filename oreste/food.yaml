@@ -353,3 +353,53 @@
     en: '*14*'
   available: 'yes'
   visible: 'yes'
+
+- name:
+    it: 'Cilento Coast to Goat'
+    en: 'Cilento Coast to Goat'
+  ingredients:
+    it:
+      - 'Ceci* di Cicerale "Azienda Agricola Denazzano" {slow} {bio}'
+      - '*Cipolla di Vatolla* {slow}'
+      - '*Cacioricotta Cilentana* "I Moresani" {slow} {bio}'
+      - '*Olive Ammaccate* "Homemade"'
+      - '*Pomodorini*, *Aglio*, *Prezzemolo*, *Basilico*'
+      - '*olio EVO* "Az. Agr. Marino"'
+    en:
+      - 'Cicerale *chickpeas* "Azienda Agricola Denazzano" {slow} {bio}'
+      - '*tomato sauce* "Mutti"'
+      - '*garlic*, *rosemary*'
+      - '*EVO oil* from "Marino farm"'
+  description: ''
+  image: 'coasttogoat.jpeg'
+  producer: ''
+  location: ''
+  tags: 'vegan'
+  price:
+    it: '*14*'
+    en: '*14*'
+  available: 'yes'
+  visible: 'yes'
+
+- name:
+    it: 'Ciambotta di Verdure'
+    en: 'Vegetable Ciambotta'
+  ingredients:
+    it:
+      - '*verdure* di stagione'
+      - '*aglio*, *basilico*'
+      - '*olio EVO* "Az. Agr. Marino"'
+    en:
+      - 'seasonal *vegetables*'
+      - '*garlic*, *basil*'
+      - '*EVO oil* from "Marino farm"'
+  description: ''
+  image: ''
+  producer: ''
+  location: ''
+  tags: 'vegan'
+  price:
+    it: '*9*'
+    en: '*9*'
+  available: 'yes'
+  visible: 'yes'
