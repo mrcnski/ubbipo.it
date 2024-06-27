@@ -376,8 +376,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*10*'
-    en: '*10*'
+    it: '*14*'
+    en: '*14*'
   available: 'yes'
   visible: 'yes'
 
@@ -416,8 +416,8 @@
   location: ''
   tags: ''
   price:
-    it: '*29*'
-    en: '*29*'
+    it: '*14*'
+    en: '*14*'
   available: 'yes'
   visible: 'yes'
 
