@@ -405,11 +405,11 @@
   visible: 'yes'
 
 - name:
-    it: 'Alici ammollicate'
-    en: 'Soaked Anchovies'
+    it: 'Pasticceria Secca'
+    en: 'Dry pastries'
   ingredients:
     it:
-      - '*alici* Cilentane'
+      - '*Mo'
       - '*pane raffermo*'
       - '*aglio*, *prezzemolo*'
       - '*olio EVO* "Az. Agr. Marino"'
@@ -418,7 +418,7 @@
       - '*stale bread*'
       - '*garlic*, *parsley*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
+  description: 'Assortimento di pasticceria secca cilentana'
   image: 'ammollicate.jpeg'
   producer: ''
   location: ''
