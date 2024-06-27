@@ -404,7 +404,7 @@
   available: 'yes'
   visible: 'yes'
 
-  - name:
+- name:
     it: 'Alici ammollicate'
     en: 'Soaked Anchovies'
   ingredients:
