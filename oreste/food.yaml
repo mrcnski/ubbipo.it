@@ -403,3 +403,26 @@
     en: '*9*'
   available: 'yes'
   visible: 'yes'
+
+- name:
+    it: 'Ciambotta di Verdure'
+    en: 'Vegetable Ciambotta'
+  ingredients:
+    it:
+      - '*verdure* di stagione'
+      - '*aglio*, *basilico*'
+      - '*olio EVO* "Az. Agr. Marino"'
+    en:
+      - 'seasonal *vegetables*'
+      - '*garlic*, *basil*'
+      - '*EVO oil* from "Marino farm"'
+  description: ''
+  image: 'ciambotta.jpeg'
+  producer: ''
+  location: ''
+  tags: 'vegan'
+  price:
+    it: '*9*'
+    en: '*9*'
+  available: 'yes'
+  visible: 'yes'
