@@ -239,18 +239,18 @@
     en: 'Cilento Parmigiana'
   ingredients:
     it:
-      - '*melanzane*, *zucchine*'
+      - '*melanzane*'
+      - '*zucchine*'
       - '*patate*'
-      - '*uova* "senza uso di antibiotici allevamento a terra"'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
       - '*sugo di pomodoro*'
       - '*parmigiano*'
       - '*basilico*'
       - '*olio EVO* "Az. Agr. Marino"'
     en:
-      - '*eggplant*, *zucchini*'
+      - '*eggplant*'
+      - '*zucchini*'
       - '*potatoes*'
-      - '*eggs*'
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*tomato sauce*'
       - '*parmigiano cheese*'
