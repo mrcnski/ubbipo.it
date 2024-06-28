@@ -405,8 +405,8 @@
   visible: 'yes'
 
 - name:
-    it: 'Ciambotta di Verdure'
-    en: 'Vegetable Ciambotta'
+    it: 'Tagliere di Dolci Secchi'
+    en: 'Platter of Cilentan dry pastries'
   ingredients:
     it:
       - '*verdure* di stagione'
