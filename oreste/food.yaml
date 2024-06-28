@@ -418,7 +418,7 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*9*'
-    en: '*9*'
+    it: '*10*'
+    en: '*10*'
   available: 'yes'
   visible: 'yes'
