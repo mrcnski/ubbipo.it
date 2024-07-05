@@ -147,8 +147,8 @@
   description: ''
   image: 'mozzarella mortella.jpg'
   producer:
-    it: 'Azienda agricola "Le Starze"'
-    en: '"Le Starze" Farm'
+    it: 'Azienda Agricola "Cicco di Buono" {slow}'
+    en: '"Cicco di Buono" Farm {slow}'
   location: ''
   tags: 'vegetarian'
   price:
