@@ -94,14 +94,14 @@
   ingredients:
     it:
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
-      - '*mozzarella nella mortella* "Le Starze"'
+      - '*mozzarella nella mortella* "Az. Ag. Cicco di Buono" {slow}'
       - '*pecorino* stagionato con composta di frutta'
       - '*olive ammaccate* "Homemade"'
       - '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"'
       - 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}'
     en:
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
-      - '*mozzarella in myrtle* from "Le Starze"'
+      - '*mozzarella in myrtle* from "Az. Ag. Cicco di Buono" {slow}'
       - 'matured *pecorino cheese* with fruit compote'
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"'
