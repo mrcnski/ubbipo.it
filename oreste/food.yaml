@@ -41,14 +41,14 @@
     it:
       - '*salumi* "salumificio G.ioi" {slow}'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
-      - '*mozzarella nella mortella* "Le Starze"'
+      - '*mozzarella nella mortella* "Az. Ag. Cicco di Buono" {slow}'
       - '*olive ammaccate* "Homemade"'
       - '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"'
       - 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}'
     en:
       - '*cold cuts* from the "G.ioi charcuterie" {slow}'
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
-      - '*mozzarella in myrtle* from "Le Starze"'
+      - '*mozzarella in myrtle* from "Az. Ag. Cicco di Buono" {slow}'
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"'
       - 'by request: *menaica anchovies* from "Donatella Marino" {slow}'
