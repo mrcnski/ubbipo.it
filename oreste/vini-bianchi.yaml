@@ -83,6 +83,17 @@
   available: 'yes'
   visible: 'yes'
 
+  - name: 'Ossigeno'
+  description: 'Falanghina, Trebbiano, 11%, 2023'
+  image: ''
+  producer: 'Robb de Matt'
+  location: 'Foglianese'
+  tags: 'natural'
+  glass: ''
+  bottle: '28'
+  available: 'yes'
+  visible: 'yes'
+
 - name: 'Iscadoro'
   description: 'Paestum IGP, Fiano, Malvasia, Trebbiano, 12%, 2022'
   image: ''
