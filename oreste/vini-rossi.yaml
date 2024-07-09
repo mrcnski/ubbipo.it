@@ -76,6 +76,17 @@
   available: 'yes'
   visible: 'yes'
 
+- name: 'Ezechiele 25:17'
+  description: 'Aglianico, 11,5%, 2023'
+  image: ''
+  producer: 'Robb de Matt'
+  location: 'Foglianese'
+  tags: 'no-sulfites, natural'
+  glass: ''
+  bottle: '28'
+  available: 'yes'
+  visible: 'yes'
+
 - name: 'Malabrocca'
   description: 'Paestum IGP, Aglianico, Camaiola, 12.5%, 2022'
   image: ''
