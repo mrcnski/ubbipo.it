@@ -41,14 +41,14 @@
     it:
       - '*salumi* "salumificio G.ioi" {slow}'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
-      - '*mozzarella nella mortella* "Az. Ag. Cicco di Buono" {slow}'
+      - '*mozzarella nella mortella* "Az. Ag. Le Starze" {slow}'
       - '*olive ammaccate* "Homemade"'
       - '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"'
       - 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}'
     en:
       - '*cold cuts* from the "G.ioi charcuterie" {slow}'
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
-      - '*mozzarella in myrtle* from "Az. Ag. Cicco di Buono" {slow}'
+      - '*mozzarella in myrtle* from "Az. Ag. Le Starze" {slow}'
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"'
       - 'by request: *menaica anchovies* from "Donatella Marino" {slow}'
@@ -94,14 +94,14 @@
   ingredients:
     it:
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
-      - '*mozzarella nella mortella* "Az. Ag. Cicco di Buono" {slow}'
+      - '*mozzarella nella mortella* "Az. Ag. Le Starze" {slow}'
       - '*pecorino* stagionato con composta di frutta'
       - '*olive ammaccate* "Homemade"'
       - '*acqua sale*: fresella "Panificio Clelia", pomodori, origano selvatico, olio EVO "Az. Agr. Marino"'
       - 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}'
     en:
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
-      - '*mozzarella in myrtle* from "Az. Ag. Cicco di Buono" {slow}'
+      - '*mozzarella in myrtle* from "Az. Ag. Le Starze" {slow}'
       - 'matured *pecorino cheese* with fruit compote'
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread from "Panificio Clelia", tomatoes, wild oregano, EVO oil from "Marino farm"'
@@ -147,8 +147,8 @@
   description: ''
   image: 'mozzarella mortella.jpg'
   producer:
-    it: 'Azienda Agricola "Cicco di Buono" {slow}'
-    en: '"Cicco di Buono" Farm {slow}'
+    it: 'Azienda Agricola "Le Starze" {slow}'
+    en: '"Le Starze" Farm {slow}'
   location: ''
   tags: 'vegetarian'
   price:
