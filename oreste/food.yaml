@@ -355,19 +355,20 @@
   visible: 'yes'
 
 - name:
-    it: 'Cilento Coast to Goat'
-    en: 'Cilento Coast to Goat'
+    it: 'Scarola Sbuttunata'
+    en: 'Scarola Sbuttunata'
   ingredients:
     it:
-      - '*Ceci* di Cicerale "Azienda Agricola Denazzano" {slow} {bio}'
-      - '*Cipolla di Vatolla* {slow}'
-      - '*Cacioricotta Cilentana* "I Moresani" {slow} {bio}'
-      - '*Olive Ammaccate* "Homemade"'
-      - '*Pomodorini*, *Aglio*, *Prezzemolo*, *Basilico*'
+      - '*scarola*'
+      - '*pane cotto*'
+      - '*olive nere* "Homemade"'
+      - '*alici di menaica* di “Donatella Marino” {slow}'
+      - '*capperi*'
+      - '*Aglio*, *Prezzemolo*'
       - '*olio EVO* "Az. Agr. Marino"'
     en:
-      - 'Cicerale *chickpeas* "Azienda Agricola Denazzano" {slow} {bio}'
-      - '*Vatolla Onion* {slow}'
+      - '*escarole*'
+      - '*Cilento bread soup*'
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*bruised olives* "Homemade"'
       - '*cherry tomatoes*, *garlic*, *basil*, *parsley*'
