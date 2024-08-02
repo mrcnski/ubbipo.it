@@ -29,7 +29,7 @@
   location: ''
   tags: ''
   price:
-    it: '*29*'
+    it: '*29* "*a persona*"'
     en: '*29*'
   available: 'yes'
   visible: 'yes'
