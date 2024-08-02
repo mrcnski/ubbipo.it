@@ -22,14 +22,7 @@
     en: 'Cilento Boom'
   ingredients: ''
   description:
-    it: 
-      - '*salumi* "salumificio G.ioi" {slow}'
-      - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
-      - '*mozzarella nella mortella* "Az. Ag. Le Starze" {slow}'
-      - '*olive ammaccate* "Homemade"'
-      - '*acqua sale*: fresella, pomodori, origano selvatico, olio EVO "Az. Agr. Marino"'
-      - 'su richiesta: *alici di menaica* di “Donatella Marino” {slow}'
-      
+    it: 'Un viaggio gastronomico esplosivo!<br>— Assaggi di alcuni prodotti e pietanze cilentane in un unico piatto.'
     en: 'An explosive culinary journey!<br>— A taste of Cilentan products and dishes in one plate'
   image: 'cilento boom.jpeg'
   producer: ''
