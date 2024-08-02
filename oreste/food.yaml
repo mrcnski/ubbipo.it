@@ -22,7 +22,8 @@
     en: 'Cilento Boom'
   ingredients: ''
   description:
-    it: 'Un viaggio gastronomico esplosivo! Degustazione dei sapori del Cilento'
+    it:
+      - '*salumi* "salumificio G.ioi" {slow}'
     en: 'An explosive culinary journey!<br>— Tasting the flavors of Cilento'
   image: 'cilento boom.jpeg'
   producer: ''
