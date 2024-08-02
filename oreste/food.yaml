@@ -22,7 +22,7 @@
     en: 'Cilento Boom'
   ingredients: ''
   description:
-    it: 'Un viaggio gastronomico esplosivo!<br>— Assaggi di alcuni prodotti e pietanze cilentane in un unico piatto.'
+    it: 
       - '*salumi* "salumificio G.ioi" {slow}'
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
       - '*mozzarella nella mortella* "Az. Ag. Le Starze" {slow}'
