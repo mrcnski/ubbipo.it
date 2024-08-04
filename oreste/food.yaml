@@ -30,8 +30,8 @@
   location: ''
   tags: ''
   price:
-    it: '*29* "*a persona*"'
-    en: '*29* "*per person*"'
+    it: '*29* "*a persona minimo 2 persone*"'
+    en: '*29* "*per person* minimum 2 persons"'
   available: 'yes'
   visible: 'yes'
 
