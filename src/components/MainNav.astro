@@ -28,6 +28,7 @@ The outer container is needed just to center the whole thing.
 
         <nav class="navbar">
             <NavCard id="nav-button-menu" text={t('nav.menu')} href={translatePath("menu")} />
+            <NavCard id="nav-button-bnb" text={t('nav.bnb')} href={(lang === 'it') ? 'https://baiaditrentova.com' : 'https://baiaditrentova.com/en'} text={t("nav.bnb")} />
         </nav>
 
         <LanguagePicker />
@@ -53,7 +54,7 @@ Appearing-and-disappearing navbar with menu links.
         position: fixed;
 		display: flex;
 		justify-content: center;
-        
+
         top: 0;
         width: 100%;
         height: 5rem;
@@ -69,31 +70,44 @@ Appearing-and-disappearing navbar with menu links.
 	#main-nav-main {
         .navbar-container {
         }
-        
+
         .navbar {
-            width: 600px;
+            display: flex;
+            width: 800px;
         }
 	}
 
     #main-nav-menu {
         top: 5rem;
         display: none;
-        
+
         opacity: 0;
         transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-        
+
         @media (max-width: 700px) {
             top: 4rem;
         }
-        
+
         .navbar-container {
             max-width: 1050px;
         }
-        
+
         .navbar {
             display: flex;
             width: 100%;
         }
+    }
+
+    :global(#nav-button-menu) {
+        font-weight: bold;
+        text-transform: uppercase;
+
+        flex-grow: 3.5;
+    }
+    :global(#nav-button-bnb) {
+        text-transform: uppercase;
+
+        flex-grow: 3;
     }
 
     .navbar-container {
@@ -104,7 +118,7 @@ Appearing-and-disappearing navbar with menu links.
 
         border-bottom: 1px solid var(--gray);
     }
-	
+
 
     .nav-logo {
         display: flex;
@@ -116,13 +130,13 @@ Appearing-and-disappearing navbar with menu links.
         @media (max-width: 600px) {
             width: 600px;
         }
-        
+
         transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-        
+
         &:hover {
             background-color: var(--hover-bg);
         }
-        
+
         .nav-logo-inner {
             display: flex;
             align-items: center;
@@ -140,7 +154,7 @@ Appearing-and-disappearing navbar with menu links.
             if (!navbarMain || !navbarMenu) {
                 return;
             }
-            
+
             navbarMenu.style.top = navbarMain.offsetHeight + 'px';
             // Set the height to be a bit less than the main navbar.
             navbarMenu.style.height = navbarMain.offsetHeight - 12 + 'px';
@@ -153,14 +167,14 @@ Appearing-and-disappearing navbar with menu links.
             if (!navbarMain || !navbarMenu) {
                 return;
             }
-            
+
             function showNavbarMenu() {
                 navbarMenu!.style.opacity = "1";
             }
             function hideNavbarMenu() {
                 navbarMenu!.style.display = "none";
             }
-            
+
             if (!navbarVisible) {
                 navbarMenu!.style.display = "flex";
                 setTimeout(showNavbarMenu, 5);
