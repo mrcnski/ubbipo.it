@@ -43,7 +43,8 @@ if (href === currentPage ||
         vertical-align: middle;
 		text-decoration: none;
 
-        width: 100%;
+        flex-grow: 1;
+        width: stretch;
         height: 100%;
 
         padding-left: 0.75rem;
@@ -52,8 +53,6 @@ if (href === currentPage ||
 		color: var(--brown);
         font-size: 22px;
         font-weight: normal;
-
-        transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
 		@media (max-width: 600px) {
 			font-size: 16px;
