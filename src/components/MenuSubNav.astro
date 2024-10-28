@@ -4,7 +4,7 @@
 <div class="menu-navbar-container">
 	<nav id="menu-navbar">
 		{/* Generated links go here. */}
-	</nav> 
+	</nav>
 </div>
 
 <style lang="less">
@@ -20,11 +20,11 @@
 		width: 100%;
 		max-width: 1100px;
         height: 4rem;
-        
+
         border-top: 1px solid var(--gray);
-        
+
 		transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
-        
+
         display: table;
 		table-layout: fixed;
 
@@ -32,29 +32,29 @@
 			height: 2.75rem;
 		}
 	}
-	
+
 	:global(.menu-nav-link) {
 		position: relative;
 
 		display: table-cell;
 		text-align: center;
         vertical-align: middle;
-        
+
 		text-transform: lowercase;
 		text-decoration: none;
 		color: var(--brown);
         font-size: 22px;
 
-		transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
 		@media (max-width: 600px) {
 			font-size: 14px;
 		}
 
 		&:hover {
-			background-color: var(--hover-bg);
+            color: var(--green);
 		}
-		
+
 		&:not(:last-child)::after {
 			position: absolute;
 			content: "";
@@ -87,11 +87,11 @@
 				menuNavbar.appendChild(a);
 			});
 		}
-		
+
 		const footer = document.querySelector('footer');
 		const whatsappButton = document.getElementById("whatsapp");
 		var menuNavHidden = true;
-		
+
 		function isVisible(elm: Element) {
 			var rect = elm.getBoundingClientRect();
 			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
@@ -105,7 +105,7 @@
 			}
 
 			if (!menuNavbar || !footer) return;
-			
+
 			const menuNavbarHeight = menuNavbar.clientHeight;
 
 			if (!menuNavHidden && isVisible(footer)) {
