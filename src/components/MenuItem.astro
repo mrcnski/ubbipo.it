@@ -36,11 +36,11 @@ const t = useTranslations(lang);
 
     <div class="menu-item-content">
         <div class="menu-item-column">
-            {(ingredients) && 
-                <span class="menu-item-ingredients"><MenuIngredients ingredients={ingredients} /></span>}
-            {(description) && 
+            {(description) &&
                 <span class="menu-item-description"><FormatText text={description} /></span>}
-            {(producer) && 
+            {(ingredients) &&
+                <span class="menu-item-ingredients"><MenuIngredients ingredients={ingredients} /></span>}
+            {(producer) &&
                 <span class="producer">
                     {/*<span class="producer-field">{t("menu.producer")}:</span>*/}
                     <b>"<FormatText text={producer} />"</b>
@@ -50,14 +50,14 @@ const t = useTranslations(lang);
                 {(location || splitTags.length > 0) && <MenuTags location={location} tags={splitTags} />}
             </span>
         </div>
-        {(image) && 
+        {(image) &&
             <div class="menu-item-image">
                 <MenuImage name={name} relativeSrc={image} alt={name} />
             </div>
         }
 
     </div>
-    {(location || splitTags.length > 0) && 
+    {(location || splitTags.length > 0) &&
         <span class="mobile-only">
             <MenuTags location={location} tags={splitTags} />
         </span>
@@ -67,10 +67,10 @@ const t = useTranslations(lang);
 <style lang="less">
     .menu-item {
     }
-    
+
     .menu-item-content {
         color: var(--brown);
-        
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -90,7 +90,7 @@ const t = useTranslations(lang);
     .menu-item-description {
         font-size: 1.1rem;
     }
-    
+
     .menu-item-column {
         display: flex;
         flex-direction: column;
@@ -101,7 +101,7 @@ const t = useTranslations(lang);
     .menu-item-image {
         flex: 0 0 auto;
     }
-    
+
     .producer {
         font-size: 1rem;
     }

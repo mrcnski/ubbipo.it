@@ -20,11 +20,34 @@
 - name:
     it: 'Cilento Boom'
     en: 'Cilento Boom'
-  ingredients: ''
   description:
-    it: 'Un viaggio gastronomico esplosivo! Degustazione dei sapori del Cilento.<br><br>— Mozzarella nella mortella "Az. Ag. Le Starze" {slow}<br>- Ceci di Cicerale "Az. Ag. Denazzano" {slow}, pomodorini e rosmarino<br>- Cipolla di vatolla {slow} ammollicata <br><br>— Frittata con patate e Cipolla di vatolla {slow}<br>- Ciambotta di verdure di stagione <br><br>— Mulignane Mbuttunate <br><br>— Alici in Tortiera<br>— Scarola Sbuttunata con Alici di Menaica {slow}'
-      
-    en: 'An explosive culinary journey! Tasting the flavors of Cilento. <br><br>— Mozzarella in myrtle "Az. Ag. Le Starze" {slow}<br>- Cicerale chickpeas "Az. Ag. Denazzano" {slow}, cherry tomatoes and rosemary<br>- Soaked Vatolla onion {slow} <br><br>— Vatolla onions Omelette {slow}<br>- Vegetable Ciambotta <br><br>— Mulignane Mbuttunate <br><br>— Baked Anchovies<br>— Scarola Sbuttunata with Menaica anchovies {slow}'
+    it: 'Un viaggio gastronomico esplosivo! Degustazione dei sapori del Cilento.<br><br>'
+    en: 'An explosive culinary journey! Taste the flavors of Cilento.<br><br>'
+  ingredients:
+    it:
+      - 'Mozzarella nella mortella "Az. Ag. Le Starze" {slow}'
+      - 'Ceci di Cicerale "Az. Ag. Denazzano" {slow}, pomodorini e rosmarino'
+      - 'Cipolla di vatolla {slow} ammollicata<br><br>'
+
+      - 'Frittata con patate e Cipolla di vatolla {slow}'
+      - 'Ciambotta di verdure di stagione<br><br>'
+
+      - 'Mulignane Mbuttunate<br><br>'
+
+      - 'Alici in Tortiera'
+      - 'Scarola Sbuttunata con Alici di Menaica {slow}'
+    en:
+      - 'Mozzarella in myrtle "Az. Ag. Le Starze" {slow}'
+      - 'Cicerale chickpeas "Az. Ag. Denazzano" {slow}, cherry tomatoes and rosemary'
+      - 'Soaked Vatolla onion {slow}<br><br>'
+
+      - 'Vatolla onions Omelette {slow}'
+      - 'Vegetable Ciambotta<br><br>'
+
+      - 'Mulignane Mbuttunate<br><br>'
+
+      - 'Baked Anchovies'
+      - 'Scarola Sbuttunata with Menaica anchovies {slow}'
   image: 'cilento boom.jpeg'
   producer: ''
   location: ''
@@ -38,6 +61,7 @@
 - name:
     it: 'Tagliere Misto Cilentano'
     en: 'Cilento Mixed Platter'
+  description: ''
   ingredients:
     it:
       - '*salumi* "salumificio G.ioi" {slow}'
@@ -53,7 +77,6 @@
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread, tomatoes, wild oregano, EVO oil from "Marino farm"'
       - 'by request: *menaica anchovies* from "Donatella Marino" {slow}'
-  description: ''
   image: 'tagliere misto.jpg'
   producer: ''
   location: ''
@@ -67,6 +90,7 @@
 - name:
     it: 'Tagliere Salumi Cilentano'
     en: 'Cilento Salami Platter'
+  description: ''
   ingredients:
     it:
       - '*salumi* "salumificio G.ioi" {slow}'
@@ -78,7 +102,6 @@
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread, tomatoes, wild oregano, EVO oil from "Marino farm"'
       - 'by request: *menaica anchovies* from "Donatella Marino" {slow}'
-  description: ''
   image: 'tagliere salumi.jpg'
   producer: ''
   location: ''
@@ -92,6 +115,7 @@
 - name:
     it: 'Tagliere Formaggio Cilentano'
     en: 'Cilento Cheese Platter'
+  description: ''
   ingredients:
     it:
       - '*cacioricotta cilentana* "I Moresani" {slow} {bio}'
@@ -107,7 +131,6 @@
       - '*bruised olives* "Homemade"'
       - '*water and salt*: fresella bread, tomatoes, wild oregano, EVO oil from "Marino farm"'
       - 'by request: *menaica anchovies* from "Donatella Marino" {slow}'
-  description: ''
   image: 'tagliere formaggi.jpg'
   producer: ''
   location: ''
@@ -121,6 +144,7 @@
 - name:
     it: 'Acqua Sale Cilentana'
     en: 'Cilento Water and Salt'
+  description: ''
   ingredients:
     it:
       - '*olive ammaccate*'
@@ -130,7 +154,6 @@
       - 'bruised *olives*'
       - '*water and salt*: fresella bread, tomatoes, wild oregano, EVO oil from "Marino farm"'
       - 'by request: *menaica anchovies* from "Donatella Marino" {slow}'
-  description: ''
   image: 'acqua sale.jpg'
   producer: ''
   location: ''
@@ -144,8 +167,8 @@
 - name:
     it: 'Mozzarella Nella Mortella'
     en: 'Mozzarella in Myrtle'
-  ingredients: ''
   description: ''
+  ingredients: ''
   image: 'mozzarella mortella.jpg'
   producer:
     it: 'Azienda Agricola "Le Starze" {slow}'
@@ -161,6 +184,7 @@
 - name:
     it: 'Polpette di Pane e Ketchup Casalingo'
     en: 'Breadballs and Homemade Ketchup'
+  description: ''
   ingredients:
     it:
       - '*pane raffermo*'
@@ -174,7 +198,6 @@
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*parmigiano cheese*, *pecorino cheese*'
       - '*parsley*'
-  description: ''
   image: 'polpette.jpg'
   producer: ''
   location: ''
@@ -188,10 +211,20 @@
 - name:
     it: 'Piatto del Giorno'
     en: 'Dish of the Day'
-  ingredients: ''
   description:
-    it: 'In base alla disponibilità:<br>— Lagane e ceci di Cicerale {slow} {bio}<br>- Cavatelli o Fusilli con cacioricotta cilentano {slow} {bio}<br>- Cavatelli, pomodorini, Alici cilentane,<br>colatura di Alici di Menaica di “Donatella Marino” <br>— Pasta e fagioli di Controne{slow}'
-    en: 'Subject to availability:<br>— Lagane pasta and chickpeas from Cicerale {slow} {bio}<br>— Pasta and beans from Controne {slow}<br>— Cavatelli or Fusilli with Cilentan Cacioricotta{slow} {bio}<br>- Cavatelli with Pomodorini, Alici di Menaica {slow}<br>colatura di Alici di Menaica'
+    it: '*In base alla disponibilità:*'
+    en: '*Subject to availability:*'
+  ingredients:
+    it:
+      - 'Lagane e ceci di Cicerale {slow} {bio}'
+      - 'Cavatelli o Fusilli con cacioricotta cilentano {slow} {bio}'
+      - 'Cavatelli, pomodorini, Alici cilentane {slow}, colatura di Alici di Menaica di “Donatella Marino”'
+      - 'Pasta e fagioli di Controne {slow}'
+    en:
+      - 'Lagane pasta and chickpeas from Cicerale {slow} {bio}'
+      - 'Cavatelli or Fusilli with Cilentan Cacioricotta {slow} {bio}'
+      - 'Cavatelli with Pomodorini, Alici di Menaica {slow}, colatura di Alici di Menaica'
+      - 'Pasta and beans from Controne {slow}'
   image: 'cavatellialici.jpeg'
   producer: ''
   location: ''
@@ -205,6 +238,7 @@
 - name:
     it: 'Mulignane ''mbuttanate'
     en: 'Mulignane ''mbuttanate'
+  description: ''
   ingredients:
     it:
       - '*melanzane*'
@@ -224,7 +258,6 @@
       - '*tomato sauce*'
       - '*parsley*, *basil*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
   image: 'mbuttunate.jpeg'
   producer: ''
   location: ''
@@ -238,6 +271,7 @@
 - name:
     it: 'Parmigiana Cilentana'
     en: 'Cilento Parmigiana'
+  description: ''
   ingredients:
     it:
       - '*melanzane*'
@@ -259,7 +293,6 @@
       - '*parmigiano cheese*'
       - '*basil*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
   image: 'parmigiana.jpg'
   producer: ''
   location: ''
@@ -273,6 +306,7 @@
 - name:
     it: 'Frittata con Cipolla di Vatolla'
     en: 'Vatolla Onion Omelette'
+  description: ''
   ingredients:
     it:
       - '*patate*'
@@ -290,7 +324,6 @@
       - 'Cilento *cacioricotta cheese* "I Moresani" {slow} {bio}'
       - '*sunflower oil*'
       - '*Balsamic Vinegar of Modena IGP Condiment with Cilento White Fig DOP* "Az. Agricola Albamarina"'
-  description: ''
   image: 'frittata2.jpeg'
   producer: ''
   location: ''
@@ -304,6 +337,7 @@
 - name:
     it: 'Alici ammollicate'
     en: 'Soaked Anchovies'
+  description: ''
   ingredients:
     it:
       - '*alici* Cilentane'
@@ -315,7 +349,6 @@
       - '*stale bread*'
       - '*garlic*, *parsley*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
   image: 'ammollicate.jpeg'
   producer: ''
   location: ''
@@ -329,6 +362,7 @@
 - name:
     it: 'Alici ''Mbuttanate Alla Cilentana'
     en: 'Cilento ''Mbuttanate Anchovies'
+  description: ''
   ingredients:
     it:
       - '*alici* Cilentane'
@@ -346,7 +380,6 @@
       - '*tomato sauce*'
       - '*garlic*, *parsley*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
   image: 'alicimbuttunate.jpeg'
   producer: ''
   location: ''
@@ -360,6 +393,7 @@
 - name:
     it: 'Scarola Sbuttunata'
     en: 'Scarola Sbuttunata'
+  description: ''
   ingredients:
     it:
       - '*scarola*'
@@ -376,7 +410,6 @@
       - '*menaica anchovies* from "Donatella Marino" {slow}'
       - '*cappers*, *garlic*, *parsley*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
   image: ''
   producer: ''
   location: ''
@@ -390,6 +423,7 @@
 - name:
     it: 'Ciambotta di Verdure'
     en: 'Vegetable Ciambotta'
+  description: ''
   ingredients:
     it:
       - '*verdure* di stagione'
@@ -399,7 +433,6 @@
       - 'seasonal *vegetables*'
       - '*garlic*, *basil*'
       - '*EVO oil* from "Marino farm"'
-  description: ''
   image: 'ciambotta.jpeg'
   producer: ''
   location: ''
@@ -413,12 +446,12 @@
 - name:
     it: 'Tagliere di Dolci Secchi'
     en: 'Platter of Cilentan dry pastries'
+  description: ''
   ingredients:
     it:
       - '*Varietà di Biscotti Cilentani*'
     en:
       - '*Assortment of Cilentan biscotti*'
-  description: ''
   image: 'tagliere dolci.jpeg'
   producer: ''
   location: ''
