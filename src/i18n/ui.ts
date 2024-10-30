@@ -38,7 +38,7 @@ export const ui = {
         'site.book': "Book table",
 
         'nav.menu': 'menu',
-        'nav.bnb': 'bnb',
+        'nav.bnb': 'b&b',
         'nav.food': 'food',
         'nav.wine': 'wine',
         'nav.drinks': 'drinks',
@@ -125,7 +125,7 @@ export const ui = {
         'site.book': 'Prenota',
 
         'nav.menu': 'menù',
-        'nav.bnb': 'beb',
+        'nav.bnb': 'b&b',
         'nav.food': 'cibo',
         'nav.wine': 'vini',
         'nav.drinks': 'bevande',
