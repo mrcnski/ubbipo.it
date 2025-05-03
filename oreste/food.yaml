@@ -118,8 +118,8 @@
   visible: 'yes'
 
 - name:
-    it: 'Polpette di Pane e Ketchup Casalingo'
-    en: 'Breadballs and Homemade Ketchup'
+    it: 'Polpette di Pane e Cacioricotta'
+    en: 'Breadballs and Cacioricotta'
   description: ''
   ingredients:
     it:
@@ -139,14 +139,14 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*9*'
-    en: '*9*'
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
 - name:
-    it: 'Piatto del Giorno'
-    en: 'Dish of the Day'
+    it: 'Primi piatti'
+    en: 'Traditional first courses'
   description:
     it: '*In base alla disponibilità:*'
     en: '*Subject to availability:*'
