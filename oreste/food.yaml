@@ -18,8 +18,8 @@
 #   'Mulignane ''Mbattane'
 
 - name:
-    it: 'La vita slow del Cilento, piatto dopo piatto'
-    en: 'The slow life of Cilento, dish by dish'
+    it: '*La vita slow del Cilento, piatto dopo piatto*'
+    en: '*The slow life of Cilento, dish by dish*'
   description:
     it: 'A rotazione, ogni sera proponiamo una selezione di piatti tipici, tutti preparati con ingredienti freschi e locali.<br><br>'
     en: 'Our menu changes daily, offering a selection of dishes made with fresh, local ingredients..<br><br>'
