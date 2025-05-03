@@ -25,18 +25,18 @@
     en: 'Our menu changes daily, offering a selection of dishes made with fresh, local ingredients..<br><br>'
   ingredients:
     it:
-      - 'Il nostro menù è fisso, non serviamo piatti fuori menù.'
-      - 'Il costo è di 38 euro a persona, coperto incluso, bevande escluse.'
-      - 'La cena viene servita ad un orario prestabilito, vi chiediamo gentilmente di essere puntuali.'
+      - 'Il nostro *menù è fisso*, non serviamo piatti fuori menù.'
+      - 'Il costo è di *38 euro a persona*, coperto incluso, bevande escluse.'
+      - 'La cena viene servita ad un orario prestabilito, vi chiediamo gentilmente di essere *puntuali*.'
 
-      - ''
+    
       
     en:
-      - 'We offer a fixed menu, no à la carte options.'
-      - 'The price is 38 euros per person, cover charge included, beverages not included.'
-      - 'Dinner is served at a set time, we kindly ask you to be punctual.'
+      - 'We offer a *fixed menu*, no à la carte options.'
+      - 'The price is *38 euros per person*, cover charge included, beverages not included.'
+      - 'Dinner is served at a set time, we kindly ask you to be *punctual*.'
 
-      - ''
+     
       
   image: ''
   producer: ''
