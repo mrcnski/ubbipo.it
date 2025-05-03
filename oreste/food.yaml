@@ -26,7 +26,7 @@
   ingredients:
     it:
       - 'Il nostro menù è fisso, non serviamo piatti fuori menù.'
-      - 'Il costo è di 38 euro a persona, coperto incluso (bevande escluse).'
+      - 'Il costo è di 38 euro a persona, coperto incluso, bevande escluse.'
       - 'La cena viene servita ad un orario prestabilito, vi chiediamo gentilmente di essere puntuali.'
 
       - 'Poiché prepariamo tutto fresco, vi consigliamo di prenotare il prima possibile, preferibilmente il giorno prima.
@@ -34,7 +34,7 @@ Se volete sapere cosa sarà servito, contattateci: saremo felici di raccontarvi 
       
     en:
       - 'We offer a fixed menu, no à la carte options.'
-      - 'The price is 38 euros per person, cover charge included (beverages not included).'
+      - 'The price is 38 euros per person, cover charge included, beverages not included.'
       - 'Dinner is served at a set time, we kindly ask you to be punctual.'
 
       - 'As everything is prepared fresh, we recommend you book as early as possible, preferably the day before.
