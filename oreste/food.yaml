@@ -48,13 +48,13 @@
 
       - 'Baked Anchovies'
       - 'Scarola Sbuttunata with Menaica anchovies {slow}'
-  image: 'cilento boom.jpeg'
+  image: ''
   producer: ''
   location: ''
   tags: ''
   price:
-    it: '*29* "*a persona* min. 2 persone"'
-    en: '*29* "*per person* minimum 2 persons"'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
