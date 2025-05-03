@@ -200,8 +200,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*10*'
-    en: '*10*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -235,8 +235,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*12*'
-    en: '*12*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -266,8 +266,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*9*'
-    en: '*9*'
+    it: 
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -291,8 +291,8 @@
   location: ''
   tags: ''
   price:
-    it: '*14*'
-    en: '*14*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -322,8 +322,8 @@
   location: ''
   tags: ''
   price:
-    it: '*14*'
-    en: '*14*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -352,8 +352,8 @@
   location: ''
   tags: ''
   price:
-    it: '*12*'
-    en: '*12*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -375,8 +375,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*9*'
-    en: '*9*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -394,7 +394,7 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*10*'
-    en: '*10*'
+    it:
+    en: 
   available: 'yes'
   visible: 'yes'
