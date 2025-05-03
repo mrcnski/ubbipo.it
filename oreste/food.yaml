@@ -18,11 +18,11 @@
 #   'Mulignane ''Mbattane'
 
 - name:
-    it: 'Ecco alcuni piatti che potreste trovare durante la cena'
-    en: 'Here are some dishes you might find for dinner'
+    it: 'La vita slow del Cilento, piatto dopo piatto'
+    en: 'The slow life of Cilento, dish by dish'
   description:
-    it: 'Ecco alcuni piatti che potreste trovare durante la cena.<br><br>'
-    en: 'Here are some dishes you might find for dinner.<br><br>'
+    it: 'A rotazione, ogni sera proponiamo una selezione di piatti tipici, tutti preparati con ingredienti freschi e locali.<br><br>'
+    en: 'Our menu changes daily, offering a selection of dishes made with fresh, local ingredients..<br><br>'
   ingredients:
     it:
       - 'Mozzarella nella mortella "Az. Ag. Le Starze" {slow}'
