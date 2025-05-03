@@ -72,8 +72,8 @@
   location: ''
   tags: ''
   price:
-    it: '*22* "(per alici *+4*)"'
-    en: '*22* "(for anchovies *+4*)"'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
