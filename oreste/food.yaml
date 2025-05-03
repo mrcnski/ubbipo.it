@@ -95,8 +95,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: '*10* "(per alici *+4*)"'
-    en: '*10* "(for anchovies *+4*)"'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
@@ -112,8 +112,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: '*10*'
-    en: '*10*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
