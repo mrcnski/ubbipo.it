@@ -154,20 +154,21 @@
     it:
       - 'Lagane e ceci di Cicerale {slow} {bio}'
       - 'Cavatelli o Fusilli con cacioricotta cilentano {slow} {bio}'
-      - 'Cavatelli, pomodorini, Alici cilentane {slow}, colatura di Alici di Menaica di “Donatella Marino”'
+      - 'Cavatelli, pomodorini, Alici cilentane, colatura di Alici di Menaica {slow}'
+      - 'Pasta e Patate cilentana'
       - 'Pasta e fagioli di Controne {slow}'
     en:
       - 'Lagane pasta and chickpeas from Cicerale {slow} {bio}'
       - 'Cavatelli or Fusilli with Cilentan Cacioricotta {slow} {bio}'
-      - 'Cavatelli with Pomodorini, Alici di Menaica {slow}, colatura di Alici di Menaica'
+      - 'Cavatelli with Pomodorini, Cilentan anchovies, colatura di Alici di Menaica {slow}'
       - 'Pasta and beans from Controne {slow}'
   image: 'cavatellialici.jpeg'
   producer: ''
   location: ''
   tags: 'vegetarian, vegan'
   price:
-    it: '*16*'
-    en: '*16*'
+    it: 
+    en: 
   available: 'yes'
   visible: 'yes'
 
