@@ -18,37 +18,6 @@
 #   'Mulignane ''Mbattane'
 
 - name:
-    it: '*La vita slow del Cilento, piatto dopo piatto*'
-    en: '*The slow life of Cilento, dish by dish*'
-  description:
-    it: 'A rotazione, ogni sera proponiamo una selezione di piatti tipici, tutti preparati con ingredienti freschi e locali.<br><br>'
-    en: 'Our menu changes daily, offering a selection of dishes made with fresh, local ingredients..<br><br>'
-  ingredients:
-    it:
-      - 'Il nostro *menù è fisso*, non serviamo piatti fuori menù.'
-      - 'Il costo è di *38 euro a persona*, coperto incluso, bevande escluse.'
-      - 'La cena viene servita ad un orario prestabilito, vi chiediamo gentilmente di essere *puntuali*.'
-
-    
-      
-    en:
-      - 'We offer a *fixed menu*, no à la carte options.'
-      - 'The price is *38 euros per person*, cover charge included, beverages not included.'
-      - 'Dinner is served at a set time, we kindly ask you to be *punctual*.'
-
-     
-      
-  image: ''
-  producer: ''
-  location: ''
-  tags: ''
-  price:
-    it: 
-    en: 
-  available: 'yes'
-  visible: 'yes'
-
-- name:
     it: 'Tagliere Misto Cilentano'
     en: 'Cilento Mixed Platter'
   description: ''
@@ -72,8 +41,8 @@
   location: ''
   tags: ''
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -95,8 +64,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -112,8 +81,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -167,8 +136,8 @@
   location: ''
   tags: 'vegetarian, vegan'
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -200,8 +169,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -235,8 +204,8 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -266,7 +235,7 @@
   location: ''
   tags: 'vegetarian'
   price:
-    it: 
+    it:
     en:
   available: 'yes'
   visible: 'yes'
@@ -291,8 +260,8 @@
   location: ''
   tags: ''
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -322,8 +291,8 @@
   location: ''
   tags: ''
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -352,8 +321,8 @@
   location: ''
   tags: ''
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -375,8 +344,8 @@
   location: ''
   tags: 'vegan'
   price:
-    it: 
-    en: 
+    it:
+    en:
   available: 'yes'
   visible: 'yes'
 
@@ -395,6 +364,6 @@
   tags: 'vegan'
   price:
     it:
-    en: 
+    en:
   available: 'yes'
   visible: 'yes'

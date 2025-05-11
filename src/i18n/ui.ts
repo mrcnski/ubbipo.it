@@ -48,9 +48,9 @@ export const ui = {
         'index.title': "Home",
         'index.description': "Local family restaurant in Cilento. We are happy to serve you homemade, traditional Italian food for a unique culinary experience.",
         'index.1.title': "#OsteriaUbbìpò",
-        'index.1.description': "We prefer to identify ourselves as an OSTERIA, as the warm atmosphere and intimacy of the locale create the perfect setting to enjoy a glass of wine accompanied by simple dishes, Cilento cheeses and cured meats.",
+        'index.1.description': "Ubbìpò is an OSTERIA in the heart of Cilento, where family hospitality translates into simple and genuine dishes. Here you will find an informal and welcoming environment, where you can feel at home. Sometimes we prepare a large table to share dishes, wine, and conversations, just like in the old days when a simple dish was enough to create new friendships.",
         'index.2.title': "#100PercentCilento",
-        'index.2.description': "The menu reflects the love for home cooking, simple and genuine, and is inspired by the tradition of this wonderful land; the products are strictly Cilento. Every sip of wine and every bite of food carries centuries of tradition, giving a delightful journey through the flavors and scents of Cilento.",
+        'index.2.description': "Our fixed menu, which you can discover on the dedicated page, is an invitation to our table. Simple dishes, prepared daily with local ingredients and Slow Food Presidia, carefully and lovingly chosen. Our grandmother cooks for you as she would for her family: each dish is an act of simplicity, each bite a return home.",
 
         'menu.title': 'Menu',
         'menu.description': 'Authentic Cilento flavors in a cozy atmosphere',
@@ -59,7 +59,7 @@ export const ui = {
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
         'menu.food.tagline': 'A menu #100PERCENTCILENTO',
         'menu.food.info': 'Service charge: €3',
-        'menu.food.dishes': 'Dishes',
+        'menu.food.dishes': 'The slow life of Cilento, dish by dish',
         'menu.food.allergens': 'Allergens',
 
         'menu.food.allergens.description': '*Notification of Food Allergen* information to consumers according to EU regulation 1169/2011.<br><br>Food and beverages served in this establishment may contain one or more of the allergens listed below. In addition, cross-contamination of other ingredients with the same ingredients may occur in the kitchen during preparation.<br><br>If you suffer from food allergies or intolerances, please inform our staff who will be able to help you avoid foods that contain substances that could cause allergic reactions. Next to each dish you will find the corresponding numbers for the various Allergens.',
@@ -135,9 +135,9 @@ export const ui = {
         'index.title': "Home",
         'index.description': "Ristorante locale nel Cilento. Saremo lieti di servirvi cibo italiano tradizionale fatto in casa per un'esperienza culinaria unica.",
         'index.1.title': "#OsteriaUbbìpò",
-        'index.1.description': "Preferiamo identificarci come un'OSTERIA, poiché l'atmosfera calda e l'intimità del locale creano il perfetto scenario per godersi un bicchiere di vino accompagnato da piatti semplici, formaggi e salumi cilentani.",
+        'index.1.description': "Ubbìpò è un’OSTERIA nel cuore del Cilento, dove l’ospitalità di famiglia si traduce in piatti semplici e genuini. Qui troverete un ambiente informale e accogliente, dove sentirvi come a casa. A volte, prepariamo una grande tavolata per condividere piatti, vino e chiacchiere, proprio come un tempo, quando bastava un piatto semplice per creare nuove amicizie.",
         'index.2.title': "#CentoPerCentoCilento",
-        'index.2.description': "Il menu riflette l'amore per la cucina casalinga, semplice e genuina e si ispira alla tradizione di questa meravigliosa terra, i prodotti sono rigorosamente cilentani. Ogni sorso di vino e ogni morso di cibo portano con sé secoli di tradizione, regalando un viaggio deliziante tra sapori e profumi del Cilento.",
+        'index.2.description': "Il nostro menu fisso, che potete scoprire nella pagina dedicata, è un invito a tavola da noi. Piatti semplici, preparati in giornata con ingredienti locali e Presìdi Slow Food, scelti con cura e amore. La nostra nonna cucina per voi come farebbe per la sua famiglia: ogni piatto è un atto di semplicità, ogni morso un ritorno a casa.",
 
         'menu.title': 'Menù',
         'menu.description': "I sapori autentici del Cilento in un'atmosfera accogliente",
@@ -146,7 +146,7 @@ export const ui = {
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
         'menu.food.tagline': 'Un menù #100PERCENTCILENTO',
         'menu.food.info': 'Coperto: €3',
-        'menu.food.dishes': 'Piatti',
+        'menu.food.dishes': 'La vita slow del Cilento, piatto dopo piatto',
         'menu.food.allergens': 'Lista Allergeni',
 
         'menu.food.allergens.description': '*Segnalazione Allergeni Informativa* sugli alimenti ai consumatori secondo il regolamento UE1169/2011.<br><br>Gli alimenti e le bevande somministrati in questo locale possono contenere uno o più allergeni sotto riportati. Inoltre in cucina possono verificarsi durante le preparazioni contaminazioni crociate di altri ingredienti con gli stessi ingredienti.<br><br>Se soffrite di allergie o intolleranze alimentari segnalatelo al nostro personale che saprà mettervi nelle condizioni di evitare gli alimenti che contengono sostanze che potrebbero causarvi reazioni di natura allergica. A fianco di ogni pietanza troverete i numeri corrispondenti ai vari Allergeni.',
