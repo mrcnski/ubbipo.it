@@ -58,7 +58,23 @@ export const ui = {
         'menu.food.title': 'Food Menu',
         'menu.food.description': 'A menu offering a variety of traditional Cilento dishes. All of our dishes are homemade with fresh, high-quality ingredients.',
         'menu.food.tagline': 'A menu #100PERCENTCILENTO',
-        'menu.food.info': 'Service charge: €3',
+        'menu.food.info': `Welcome to Ubbìpò Osteria! 🍷✨<br>
+        We welcome you with a desire to make you feel at home, with simple, authentic dishes and a family atmosphere. Every bite and smile celebrates the authenticity of Cilento. 🌿🍅<br>
+        <br>
+        <br>
+        *How dinner works* 🍽️⏰<br>
+        We offer a *fixed menu*, celebrating the authentic flavors of Cilento, with dishes prepared by our grandmother using local ingredients and *Slow Food Presidia.*<br>
+        <br>
+        *We only serve dinner*, which is not available every night, so we suggest you inquire in advance.<br>
+        <br>
+        Dinner is served *at a set time* by us.<br>
+        *Cost: 38 euros per person* (excluding drinks).<br>
+        <br>
+        Since everything is prepared fresh, we recommend that you *book in advance.* If you want to know the time and menu, *contact us!* We will be happy to tell you all about it.<br>
+        <br>
+         On special evenings, we set up a *big table* to share dishes, stories and simple moments, just like in the old days, when conviviality was at the center of every gathering.<br>
+        <br>
+         If you are looking for traditional restaurant dishes, we are probably not what you are looking for. Our set menu reflects our simple and genuine cuisine, focused on the *Cilento tradition.* The dishes you see below *are the only ones we prepare:* each day we select a few of these to make up our set menu. You won't find anything else, but you can enjoy *the true essence of Cilento*, with fresh, lovingly prepared dishes.`,
         'menu.food.dishes': 'The slow life of Cilento, dish by dish',
         'menu.food.allergens': 'Allergens',
 
@@ -95,7 +111,9 @@ export const ui = {
         'menu.wine.title': 'Wine Menu',
         'menu.wine.description': 'A list of wines curated from different regions of Italy. We have a wide variety including red, white, rosé, and vegan wines.',
         'menu.wine.tagline': 'Exclusively from Cilento and Campania, with a predominance of biological and natural wines.',
-        'menu.wine.info': '{bio} Biological wines, made without any chemical substances added.<br><br>{natural} Natural wines, obtained from sustainable agriculture using simple or traditional methods.',
+        'menu.wine.info': `{bio} "Biological wines, made without any chemical substances added."<br>
+        <br>
+        {natural} "Natural wines, obtained from sustainable agriculture using simple or traditional methods."`,
         'menu.wine.vini-rossi': 'Red',
         'menu.wine.vini-bianchi': 'White',
         'menu.wine.vini-rosati': 'Rosé',
@@ -145,7 +163,23 @@ export const ui = {
         'menu.food.title': 'Menù Cibo',
         'menu.food.description': 'Un menù che offre una varietà di piatti tradizionali Cilentani. Tutti i nostri piatti sono fatti in casa con ingredienti freschi e di alta qualità.',
         'menu.food.tagline': 'Un menù #100PERCENTCILENTO',
-        'menu.food.info': 'Coperto: €3',
+        'menu.food.info': `Benvenuti da Ubbìpò Osteria! 🍷✨<br>
+        Vi accogliamo con il desiderio di farvi sentire a casa, con piatti semplici e genuini, e un’atmosfera familiare. Ogni boccone e sorriso celebrano l'autenticità del Cilento. 🌿🍅<br>
+        <br>
+        <br>
+        *Come funziona la cena* 🍽️⏰<br>
+        Offriamo un *menù fisso*, che celebra i sapori autentici del Cilento, con piatti preparati dalla nostra nonna usando ingredienti locali e *Presìdi Slow Food.*<br>
+        <br>
+        *Serviamo solo la cena*, che non è disponibile tutte le sere, quindi vi consigliamo di informarvi in anticipo.<br>
+        <br>
+        La cena è servita *ad orario prestabilito* da noi.<br>
+        *Costo: 38 euro a persona* (bevande escluse).<br>
+        <br>
+        Poiché tutto è preparato fresco, vi consigliamo di *prenotare in anticipo.* Se volete sapere l'orario e il menù, *contattateci!* Saremo felici di raccontarvi tutto.<br>
+        <br>
+         In particolari serate, apparecchiamo una *grande tavolata* per condividere piatti, racconti e momenti semplici, proprio come accadeva un tempo, quando la convivialità era al centro di ogni incontro.<br>
+        <br>
+         Se state cercando piatti da ristorante tradizionale, probabilmente non siamo ciò che fa per voi. Il nostro menù fisso riflette la nostra cucina semplice e genuina, focalizzata sulla *tradizione cilentana.* I piatti che vedete qui sotto *sono gli unici che prepariamo:* ogni giorno selezioniamo alcuni di questi per comporre il nostro menù fisso. Non troverete altro, ma potrete assaporare *la vera essenza del Cilento*, con piatti freschi e preparati con amore.`,
         'menu.food.dishes': 'La vita slow del Cilento, piatto dopo piatto',
         'menu.food.allergens': 'Lista Allergeni',
 
@@ -182,7 +216,9 @@ export const ui = {
         'menu.wine.title': 'Menù dei Vini',
         'menu.wine.description': "Una lista di vini curata da diverse regioni d'Italia. Abbiamo un'ampia varietà di vini rossi, bianchi, rosati e vegani.",
         'menu.wine.tagline': "Esclusivamente dal Cilento e dalla Campania con prevalenza di vini biologici e naturali",
-        'menu.wine.info': "{bio} Vini biologici, realizzati senza l'aggiunta di sostanze chimiche.<br><br>{natural} Vini naturali, ottenuti da agricoltura sostenibile utilizzando metodi semplici o tradizionali.",
+        'menu.wine.info': `{bio} "Vini biologici, realizzati senza l'aggiunta di sostanze chimiche."<br>
+        <br>
+        {natural} "Vini naturali, ottenuti da agricoltura sostenibile utilizzando metodi semplici o tradizionali."`,
         'menu.wine.vini-rossi': 'Rossi',
         'menu.wine.vini-bianchi': 'Bianchi',
         'menu.wine.vini-rosati': 'Rosati',

@@ -21,7 +21,7 @@ const { title, description, info } = Astro.props;
 	<PageContainer>
 		<div class="menu-header">
 			<Image src={logoFull} alt="Logo" width="300" />
-			{(info) && <span class="menu-info"><i><FormatText text={info} /></i></span>}
+			{(info) && <span class="menu-info"><FormatText text={info} /></span>}
 		</div>
 
 		<slot />
