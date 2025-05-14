@@ -44,7 +44,7 @@
   visible: 'yes'
 
 - name: 'Delle More'
-  description: 'Cilento DOP, Aglianico, Piedirosso, Barbera, 13%, 2022'
+  description: 'Cilento DOP, Aglianico, Piedirosso, Barbera, 13%, 2021'
   image: ''
   producer: 'Azienda Agricola Casebianche'
   location: 'Torchiara'
@@ -71,7 +71,7 @@
   producer: 'Azienda Agricola Marino'
   location: 'Agropoli'
   tags: ''
-  glass: ''
+  glass: '8'
   bottle: '26'
   available: 'yes'
   visible: 'yes'
