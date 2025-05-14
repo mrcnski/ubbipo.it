@@ -1,4 +1,4 @@
-# Some notes about the format:
+le # Some notes about the format:
 #
 # - Images go in the 'src/assets/images/menu' folder.
 #
@@ -18,11 +18,11 @@
 #   'Mulignane ''Mbattane'
 
 - name:
-    it: 'Acqua Microfiltrata'
-    en: 'Microfiltered Water'
+    it: 'Acqua Minerale Naturale'
+    en: 'Still or Sparkling mineral water'
   description:
-    it: 'Sistema Culligan, 75 cl'
-    en: 'Culligan System, 75 cl'
+    it: 'Orsini, 75 cl'
+    en: 'Orsini, 75 cl'
   image: ''
   producer: ''
   tags: ''
@@ -129,7 +129,7 @@
   glass: ''
   bottle: ''
   location: ''
-  price: '8'
+  price: '7'
   available: 'yes'
   visible: 'yes'
 
