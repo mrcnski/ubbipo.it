@@ -17,7 +17,7 @@ le # Some notes about the format:
 # - To make a single quote like in 'Mbattane, do this:
 #   'Mulignane ''Mbattane'
 
-- name:
+ - name:
     it: 'Acqua Minerale Naturale'
     en: 'Still or Sparkling mineral water'
   description:
