@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: AI Review - Commit to ${{ github.repository }}
           to: ${{ secrets.MAIL_TO }}
-          from: GitHub Bot <${{ secrets.SMTP_USER }}>
+          from: "GitHub Bot <${{ secrets.SMTP_USER }}>"
           html_body: file://ai_review.txt
           # Optional converting Markdown to HTML (set content_type to text/html too):
           convert_markdown: true
