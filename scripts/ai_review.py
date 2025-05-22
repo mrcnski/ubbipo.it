@@ -13,7 +13,7 @@ else:
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You're a careful assistant reviewing commit diffs for mistakes or bad practices."},
-            {"role": "user", "content": f"Please review the following git diff and identify any problems or mistakes. Use alert emoticons when calling out serious issues. Format your response using Markdown and write it first in Italian, then English:\n\n{diff}"}
+            {"role": "user", "content": f"Please review the following git diff and identify any problems or mistakes. Use alert emoticons ONLY when calling out serious issues. Format your response using Markdown and write it first in Italian, then English:\n\n{diff}"}
         ],
         temperature=0.3
     )
