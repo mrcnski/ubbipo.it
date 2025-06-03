@@ -68,7 +68,7 @@ export const ui = {
         *We only serve dinner*, which is not available every night, so we suggest you inquire in advance.<br>
         <br>
         Dinner is served *at a set time* by us.<br>
-        *Cost: 38 euros per person* (excluding drinks).<br>
+        *Cost: 45 euros per person* (excluding drinks).<br>
         <br>
         Since everything is prepared fresh, we recommend that you *book in advance.* If you want to know the time and menu, *contact us!* We will be happy to tell you all about it.<br>
         <br>
@@ -173,7 +173,7 @@ export const ui = {
         *Serviamo solo la cena*, che non è disponibile tutte le sere, quindi vi consigliamo di informarvi in anticipo.<br>
         <br>
         La cena è servita *ad orario prestabilito* da noi.<br>
-        *Costo: 38 euro a persona* (bevande escluse).<br>
+        *Costo: 45 euro a persona* (bevande escluse).<br>
         <br>
         Poiché tutto è preparato fresco, vi consigliamo di *prenotare in anticipo.* Se volete sapere l'orario e il menù, *contattateci!* Saremo felici di raccontarvi tutto.<br>
         <br>
