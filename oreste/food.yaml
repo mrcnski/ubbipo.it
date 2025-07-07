@@ -188,7 +188,7 @@
       - '*sugo di pomodoro*'
       - '*parmigiano*'
       - '*basilico*'
-      - '*olio EVO* "Az. Agr. Marino"'
+      - '*olio EVO*'
     en:
       - '*eggplant*'
       - '*zucchini*'
@@ -198,7 +198,7 @@
       - '*tomato sauce*'
       - '*parmigiano cheese*'
       - '*basil*'
-      - '*EVO oil* from "Marino farm"'
+      - '*EVO oil*'
   image: 'parmigiana.jpg'
   producer: ''
   location: ''
