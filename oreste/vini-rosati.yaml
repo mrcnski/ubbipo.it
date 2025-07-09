@@ -17,14 +17,14 @@
 # - To make a single quote like in 'Mbattane, do this:
 #   'Mulignane ''Mbattane'
 
-- name: 'Maricinè'
-  description: 'Paestum Rosato IGP, Aglianico, 13% 2023'
+- name: 'Rose D'Autunno'
+  description: 'Paestum Rosato IGP, Aglianico, 14% 2023'
   image: ''
-  producer: 'Azienda Agricola Albamarina'
-  location: 'Foria di Centola'
+  producer: 'Azienda Agricola Rotolo Alfonso'
+  location: 'Rutino'
   tags: ''
   glass: '7'
-  bottle: '23'
+  bottle: '26'
   available: 'yes'
   visible: 'yes'
 
