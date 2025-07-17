@@ -41,7 +41,7 @@
   glass: '7'
   bottle: '22'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 - name: 'Delle More'
   description: 'Cilento DOP, Aglianico, Piedirosso, Barbera, 13%, 2021'
@@ -120,14 +120,14 @@
   available: 'yes'
   visible: 'yes'
 
-- name: 'Primalaterra 2012'
+- name: 'Primalaterra 2015'
   description: 'Cilento DOP, Aglianico, 16%, 2012'
   image: ''
   producer: 'Azienda Agricola Salvatore Magnoni'
   location: 'Rutino'
   tags: 'no-sulfites, natural'
   glass: ''
-  bottle: '55'
+  bottle: '57'
   available: 'yes'
   visible: 'yes'
 
