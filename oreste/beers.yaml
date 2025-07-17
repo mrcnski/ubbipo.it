@@ -19,7 +19,7 @@
 
 - name: 'Birra Messina'
   description: 'Lager, 33 cl. vol. 4,7%'
-  image: 'Logo birra.png'
+  image: ''
   producer: 'Birrificio Messina'
   location: ''
   tags: ''
