@@ -26,7 +26,7 @@
   glass: ''
   bottle: '24'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 - name: 'Desiderio Bianco'
   description: 'Vino Bianco Frizzante, Fiano, 11%, 2023'
