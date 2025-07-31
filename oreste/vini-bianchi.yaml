@@ -83,6 +83,17 @@
   available: 'yes'
   visible: 'yes'
 
+- name: 'Fiano Vendemmia tardiva'
+  description: 'Paestum IGP, Fiano, 14,5%, 2024'
+  image: ''
+  producer: 'Azienda Vitivinicola Marino'
+  location: 'Agropoli'
+  tags: 'bio'
+  glass: ''
+  bottle: '32'
+  available: 'yes'
+  visible: 'yes'
+
 - name: 'Bianco del Ciglio'
   description: 'Paestum Bianco IGP, Fiano, Falanghina, Malvasia, 13%, 2023'
   image: ''
