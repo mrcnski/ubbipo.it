@@ -116,17 +116,6 @@
   available: 'yes'
   visible: 'yes'
 
-- name: 'Fiano Vendemmia tardiva'
-  description: 'Paestum IGP, Fiano, 14,5%, 2024'
-  image: ''
-  producer: 'Azienda Vitivinicola Marino'
-  location: 'Agropoli'
-  tags: 'bio'
-  glass: ''
-  bottle: '32'
-  available: 'yes'
-  visible: 'yes'
-
 - name: 'Calpazio'
   description: 'Paestum IGP, Greco, 13%, 2024'
   image: ''
