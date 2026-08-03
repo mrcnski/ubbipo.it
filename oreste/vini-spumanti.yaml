@@ -24,7 +24,7 @@
   location: 'Prignano Cilento'
   tags: ''
   glass: '7'
-  bottle: '25'
+  bottle: '26'
   available: 'yes'
   visible: 'yes'
 
@@ -37,4 +37,4 @@
   glass: ''
   bottle: '28'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
