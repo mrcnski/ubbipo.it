@@ -18,8 +18,8 @@
 #   'Mulignane ''Mbattane'
 
 - name:
-    it: 'Acqua Minerale Naturale/Frizzante'
-    en: 'Still or Sparkling mineral water'
+    it: 'Acqua Minerale'
+    en: 'Mineral Water'
   description:
     it: 'Electa/Ferrarelle, 75 cl'
     en: 'Electa/Ferrarelle, 75 cl'
@@ -73,7 +73,7 @@
   location: ''
   price: '3'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 - name: 'SanBitter'
   description:
@@ -87,7 +87,7 @@
   location: ''
   price: '3'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 
 - name: 'Gin tonic'
@@ -117,7 +117,7 @@
   location: ''
   price: '9'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 - name: 'Spritz'
   description:
