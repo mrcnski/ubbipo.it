@@ -35,7 +35,7 @@
   location: 'Montecorice'
   tags: ''
   glass: '7'
-  bottle: '22'
+  bottle: '24'
   available: 'yes'
   visible: 'yes'
 
@@ -57,7 +57,7 @@
   location: 'Montecorice'
   tags: ''
   glass: '7'
-  bottle: '25'
+  bottle: '27'
   available: 'yes'
   visible: 'yes'
 
@@ -68,7 +68,7 @@
   location: 'Agropoli'
   tags: 'vegan, bio'
   glass: '8'
-  bottle: '26'
+  bottle: '28'
   available: 'yes'
   visible: 'yes'
 
@@ -79,7 +79,7 @@
   location: 'Ogliastro Cilento'
   tags: ''
   glass: '8'
-  bottle: '26'
+  bottle: '28'
   available: 'yes'
   visible: 'yes'
 
@@ -90,7 +90,7 @@
   location: 'Agropoli'
   tags: 'bio'
   glass: ''
-  bottle: '28'
+  bottle: '32'
   available: 'yes'
   visible: 'yes'
 
@@ -103,7 +103,7 @@
   glass: ''
   bottle: '32'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 - name: 'Iscadoro'
   description: 'Paestum IGP, Fiano, Malvasia, Trebbiano, 12%, 2022'
