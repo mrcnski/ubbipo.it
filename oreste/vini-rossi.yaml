@@ -28,7 +28,7 @@
   location: 'Agropoli'
   tags: 'vegan, bio'
   glass: '7'
-  bottle: '22'
+  bottle: '24'
   available: 'yes'
   visible: 'yes'
 
@@ -50,7 +50,7 @@
   location: 'Torchiara'
   tags: 'bio, natural'
   glass: '7'
-  bottle: '25'
+  bottle: '26'
   available: 'yes'
   visible: 'yes'
 
@@ -61,7 +61,7 @@
   location: 'Torchiara'
   tags: ''
   glass: '8'
-  bottle: '26'
+  bottle: '27'
   available: 'yes'
   visible: 'yes'
 
@@ -85,7 +85,7 @@
   glass: '8'
   bottle: '27'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
 
 - name: 'Patrinus'
   description: 'Paestum IGT, Aglianico, Primitivo, 14,5%, 2022'
@@ -94,7 +94,7 @@
   location: 'Castellabate'
   tags: 'bio'
   glass: '10'
-  bottle: '32'
+  bottle: '34'
   available: 'yes'
   visible: 'yes'
 
@@ -105,7 +105,18 @@
   location: 'Rutino'
   tags: 'no-sulfites, bio, natural'
   glass: '10'
-  bottle: '32'
+  bottle: '35'
+  available: 'yes'
+  visible: 'yes'
+  
+- name: 'Castellabate'
+  description: 'Paestum IGP, Aglianico, Piedirosso, 13.5%, 2014'
+  image: ''
+  producer: 'Azienda Agricola San Giovanni'
+  location: 'Punta Tresino'
+  tags: ''
+  glass: '10'
+  bottle: '36'
   available: 'yes'
   visible: 'yes'
 
