@@ -35,7 +35,7 @@
   location: 'Rutino'
   tags: ''
   glass: ''
-  bottle: '24'
+  bottle: '25'
   available: 'yes'
   visible: 'yes'
 
@@ -48,4 +48,4 @@
   glass: ''
   bottle: '26'
   available: 'yes'
-  visible: 'yes'
+  visible: 'no'
