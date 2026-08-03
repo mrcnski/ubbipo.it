@@ -18,11 +18,11 @@
 #   'Mulignane ''Mbattane'
 
 - name:
-    it: 'Acqua Minerale Naturale'
+    it: 'Acqua Minerale Naturale/Frizzante'
     en: 'Still or Sparkling mineral water'
   description:
-    it: 'Orsini, 75 cl'
-    en: 'Orsini, 75 cl'
+    it: 'Electa/Ferrarelle, 75 cl'
+    en: 'Electa/Ferrarelle, 75 cl'
   image: ''
   producer: ''
   tags: ''
